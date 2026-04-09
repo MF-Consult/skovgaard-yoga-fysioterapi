@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Skovgaard Yoga- & Fysioterapi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white">
+    <div id="site-header"></div>
+    <script src="header.js"></script>
+
+    <!-- HEADER -->
+    <!-- HERO -->
+    <section class="page-hero"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/1416530/pexels-photo-1416530.jpeg?auto=format&fit=crop&q=80&w=2000'); background-position: center;">
+        <div class="text-center text-white px-6">
+            <span class="uppercase tracking-[0.4em] text-[10px] mb-4 block opacity-80 font-bold">Kom i gang</span>
+            <h1 class="text-5xl md:text-6xl font-bold serif italic leading-tight">Kontakt mig</h1>
+            <p class="mt-6 text-base md:text-lg opacity-85 max-w-xl mx-auto font-light">Udfyld formularen, og jeg
+                vender
+                tilbage inden for 24 timer. Du er altid velkommen til at ringe direkte.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM + INFO -->
+    <section class="py-24 bg-off-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto">
+                <div class="grid lg:grid-cols-5 gap-12 items-start">
+
+                    <!-- Contact info -->
+                    <div class="lg:col-span-2 fade-in fade-in-delay-1 space-y-8">
+                        <div class="info-item">
+                            <h5 class="text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Telefon</h5>
+                            <a href="tel:+4560873626"
+                                class="text-gray-600 text-sm hover:text-purple-900 transition-colors">60 87 36
+                                26</a>
+                        </div>
+                        <div class="info-item">
+                            <h5 class="text-[10px] font-bold uppercase tracking-widest text-plum mb-2">E-mail</h5>
+                            <a href="mailto:birgitte@skyf.dk"
+                                class="text-gray-600 text-sm hover:text-purple-900 transition-colors">birgitte@skyf.dk</a>
+                        </div>
+                        <div class="info-item">
+                            <h5 class="text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Adresse</h5>
+                            <p class="text-gray-600 text-sm">Vordingborgvej 61C (i gården)<br>4700 Næstved</p>
+                            <p class="text-gray-400 text-xs mt-1">Parkering på Norgesvej</p>
+                        </div>
+                        <div class="info-item">
+                            <h5 class="text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Åbningstider
+                            </h5>
+                            <p class="text-gray-600 text-sm">Man – Tir: 10:00 – 17:00<br>Ons: Lukket<br>Tor: 10:00 –
+                                19:00<br>Fre: 10:00 – 15:00<br>Lør – Søn: Lukket
+                            </p>
+                        </div>
+                        <div class="pt-2">
+                            <p class="text-gray-400 text-xs italic leading-relaxed">Usikker på, om du har brug for
+                                hjælp? Tag min gratis stresstest og få et overblik.</p>
+                            <a href="https://www.skovgaardyogaogfysioterapi.dk/cohen/"
+                                class="inline-block mt-3 text-plum text-[10px] uppercase tracking-widest font-bold border-b border-purple-300 pb-0.5 hover:opacity-70 transition-opacity">Tag
+                                stresstesten →</a>
+                        </div>
+                    </div>
+
+                    <!-- Contact form -->
+                    <form class="lg:col-span-3 space-y-5 fade-in fade-in-delay-2" onsubmit="handleFormSubmit(event)">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label
+                                    class="block text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Navn</label>
+                                <input type="text" required placeholder="Dit fulde navn"
+                                    class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-white rounded-lg">
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Telefon</label>
+                                <input type="tel" placeholder="Dit telefonnummer"
+                                    class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-white rounded-lg">
+                            </div>
+                        </div>
+                        <div>
+                            <label
+                                class="block text-[10px] font-bold uppercase tracking-widest text-plum mb-2">E-mail</label>
+                            <input type="email" required placeholder="Din e-mailadresse"
+                                class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-white rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Hvad
+                                søger du hjælp til?</label>
+                            <select
+                                class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-white rounded-lg appearance-none">
+                                <option value="">Vælg en kategori...</option>
+                                <option>Fysioterapi & Genoptræning</option>
+                                <option>Børnefysioterapi</option>
+                                <option>Stressforløb (Privat)</option>
+                                <option>Stressforløb (Virksomhed)</option>
+                                <option>Høj Begavelse (Gifted Children)</option>
+                                <option>GLA:D® Træning (Slidgigt)</option>
+                                <option>Yoga & Yogaterapi</option>
+                                <option>Ekstern konsulent</option>
+                                <option>Andet / Ved ikke endnu</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label
+                                class="block text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Besked</label>
+                            <textarea rows="5" placeholder="Fortæl kort om din situation..."
+                                class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-white rounded-lg resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send besked</button>
+                        <div id="form-success"
+                            class="hidden text-center text-sm text-purple-700 font-medium py-3 bg-purple-50 rounded-lg">
+                            ✓ Tak! Din besked er sendt. Jeg vender tilbage snarest.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADDRESS BLOCK -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-8 items-center fade-in">
+                <div class="address-card" style="border-color: rgba(70,43,88,0.06)">
+                    <h3 class="text-lg font-bold text-plum serif italic mb-4">Find klinikken</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                        <strong class="text-gray-700 font-semibold">Skovgaard Yoga- & Fysioterapi</strong><br>
+                        Vordingborgvej 61C (i gården)<br>
+                        4700 Næstved
+                    </p>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">Klinikken ligger i gården ved
+                        Vordingborgvej
+                        61C. Parkering er mulig på Norgesvej.</p>
+                    <a href="https://maps.google.com/?q=Vordingborgvej+61C,+4700+Næstved" target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-plum text-[10px] uppercase tracking-widest font-bold border-b border-purple-300 pb-0.5 hover:opacity-70 transition-opacity">Se
+                        på Google Maps →</a>
+                </div>
+                <div class="address-card" style="border-color: rgba(70,43,88,0.06)">
+                    <h3 class="text-lg font-bold text-plum serif italic mb-4">Åbningstider</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between text-gray-600">
+                            <span>Mandag</span><span>10:00 – 17:00</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600">
+                            <span>Tirsdag</span><span>10:00 – 17:00</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600">
+                            <span>Onsdag</span><span>Lukket</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600">
+                            <span>Torsdag</span><span>10:00 – 19:00</span>
+                        </div>
+                        <div class="flex justify-between text-gray-600">
+                            <span>Fredag</span><span>10:00 – 15:00</span>
+                        </div>
+                        <div class="flex justify-between text-gray-400 border-t border-gray-100 pt-2 mt-2">
+                            <span>Weekend</span><span>Lukket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="site-footer"></div>
+    <script src="footer.js"></script>
+
+    <script>
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successMsg = document.getElementById('form-success');
+            successMsg.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => successMsg.classList.add('hidden'), 6000);
+        }
+    </script>
+</body>
+
+</html>
