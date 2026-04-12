@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "label": "Ydelser",
+    "heading": "GLA:D® Træning",
+    "tagline": "Målrettet og evidensbaseret træning for slidgigt i knæ og hofte."
+  },
+  "intro": {
+    "label": "Forskning & praksis",
+    "heading": "Mindre smerte, mere livskvalitet",
+    "para1": "Mange med nyopdaget artrose (slidgigt) i knæ eller hofte takker nej til træning, fordi det koster penge — selvom forskningen klart viser, at det kan mindske smerter, øge livskvaliteten og i mange tilfælde udskyde en operation markant.",
+    "para2": "Som en del af et forskningsprojekt i samarbejde med Næstved Kommune og Region Sjælland tilbyder jeg et gratis GLA:D®-forløb på 8 uger. Formålet er at se, om gratis adgang får flere til at søge hjælp tidligt. Som deltager bidrager du til vigtig forskning ved at besvare spørgeskemaer, der hjælper med at forbedre fremtidens behandling.",
+    "cta_primary": "Book en plads",
+    "cta_secondary": "Læs om projektet"
+  },
+  "effects": {
+    "label": "Dokumenteret effekt",
+    "heading": "Hvad kan træningen gøre for dig?",
+    "intro": "Forskningen bag GLA:D® viser tydelige og positive resultater for patienter med slidgigt i knæ og hofte.",
+    "effect1_title": "Mindre smerte",
+    "effect1_body": "Gennemsnitlig smertelindring på 25% for de fleste deltagere.",
+    "effect2_title": "Bedre livskvalitet",
+    "effect2_body": "Øget evne og overskud til at klare dagligdagens gøremål.",
+    "effect3_title": "Udskudt operation",
+    "effect3_body": "Forløbet kan udskyde behovet for operation i mindst to år.",
+    "effect4_title": "Mindre medicin",
+    "effect4_body": "Mange oplever et nedsat behov for smertestillende piller."
+  },
+  "content": {
+    "label": "Indholdet i forløbet",
+    "heading": "Hvad er et GLA:D®-forløb?",
+    "item1_title": "Undervisning",
+    "item1_body": "To sessioner med patientuddannelse, hvor du får afgørende indsigt i din slidgigt, hvordan du tackler smerter, og hvordan du bedst lever et aktivt liv.",
+    "item2_title": "Holdtræning",
+    "item2_body": "16 superviserede holdtræninger (2 gange ugentligt). Træningen er evidensbaseret og tilpasses altid dit personlige niveau og din smertetærskel.",
+    "item3_title": "Målinger og evaluering",
+    "item3_body": "Fysiske målinger før og efter de 8 uger. Forløbet er tilkoblet det nationale GLA:D®-register for løbende at sikre kvaliteten af din behandling."
+  },
+  "session": {
+    "label": "Praksis",
+    "heading": "En typisk træningstime",
+    "intro": "Træningen foregår på hold og varer ca. 60 minutter pr. gang (to gange ugentligt). Selvom man kan træne hjemme, viser forskningen, at effekten er væsentligt større, når træningen foregår under vejledning af en certificeret GLA:D®-terapeut.",
+    "step1_title": "Opvarmning (10 min)",
+    "step1_body": "Opvarmningen foregår på kondicykel. Arbejdsbelastningen indstilles individuelt og øges gradvist over de 10 minutter, indtil du rammer et niveau, der føles \"nogenlunde hårdt\".",
+    "step2_title": "Neuromuskulær træning (40 min)",
+    "step2_body": "Træningsprogrammet er bygget op omkring fire vigtige elementer: core-stabilitet (kropsstamme), led-kontrol for at sikre korrekte bevægemønstre, muskelstyrke i benene, samt funktionelle øvelser, der relaterer sig direkte til dine daglige aktiviteter.",
+    "step3_title": "Nedkøling (10 min)",
+    "step3_body": "Vi afslutter timen med at samle ned. Dette indebærer en gangøvelse (ofte foran et spejl for at give visuel feedback på din kropsholdning) samt grundige udstrækningsøvelser for benene."
+  },
+  "criteria": {
+    "label": "Kriterier for deltagelse",
+    "heading": "Hvem kan deltage i det gratis projekt?",
+    "crit1_title": "Bopæl",
+    "crit1_body": "Du er voksen og har bopæl i Næstved Kommune.",
+    "crit2_title": "Symptomer",
+    "crit2_body": "Du har nyligt opdagede symptomer på slidgigt (artrose) i enten hofte eller knæ.",
+    "crit3_title": "Historik",
+    "crit3_body": "Du har ikke tidligere fået superviseret træning for din slidgigt.",
+    "project_heading": "Læs mere om projektet på Næstved Kommunes hjemmeside",
+    "project_body1": "Projektet er et samarbejde mellem Næstved Kommune, Region Sjælland og Den Sociale Investeringsfond. Det er gratis at deltage (transport dækkes dog kun ved henvisning fra sygehus med genoptræningsplan).",
+    "project_body2": "Du kan læse alle detaljer om projektet, samtykke og databehandling direkte hos kommunen.",
+    "project_link": "Læs mere her"
+  },
+  "cta": {
+    "heading": "Vil du være med?",
+    "body": "Tag ansvar for din slidgigt og lær, hvordan træning kan forbedre din hverdag. Kontakt mig for at høre nærmere om næste holdopstart.",
+    "button": "Book din plads her"
+  }
+}

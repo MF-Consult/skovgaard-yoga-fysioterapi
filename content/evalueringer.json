@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "label": "Feedback",
+    "heading": "Evalueringer fra virksomheder",
+    "tagline": "Konstante målinger og ærlig feedback sikrer et forløb af højeste kvalitet."
+  },
+  "intro": {
+    "heading": "Hvad HR-afdelinger og medarbejdere siger",
+    "body": "Efter hvert 3-måneders holdforløb indsamles der anonyme evalueringer til HR-afdelingen. Herunder kan du læse et udvalg af de tilbagemeldinger, jeg har modtaget gennem de sidste 17 forløb. Statistikken taler sit eget tydelige sprog: markant lavere stressniveau og øget arbejdsglæde."
+  },
+  "reviews": [
+    {
+      "quote": "\"Forløbet har været en øjenåbner for mig. Jeg har fået nogle helt konkrete værktøjer til at håndtere pressede situationer, og jeg føler mig meget mere robust i min hverdag nu. Kombinationen af det teoretiske og det kropslige virker bare.\"",
+      "role": "Medarbejder",
+      "organization": "3-måneders stressforløb (Erhverv)"
+    },
+    {
+      "quote": "\"Vi har set en mærkbar forskel i trivslen på de pågældende teams. Birgittes evne til at kombinere natur, fysioterapi og stressbehandling er helt unik. Det er underbygget af data, men med et ekstremt stort hjerte.\"",
+      "role": "HR Manager",
+      "organization": "Statlig organisation"
+    },
+    {
+      "quote": "\"Det vigtigste for mig var at blive mødt med forståelse frem for krav. Samtalerne ude i naturen og de yogaterapeutiske øvelser har gjort, at jeg for første gang i lang tid kan trække vejret helt ned i maven.\"",
+      "role": "Medarbejder",
+      "organization": "Privat virksomhed"
+    },
+    {
+      "quote": "\"Forløbet har givet os et fælles sprog for trivsel og mental sundhed. Det er ikke længere tabu at tale om pres, og vi har fået konkrete rutiner i hverdagen, der holder stressen i ave. Det er den bedste investering, vi har gjort i vores medarbejdere længe.\"",
+      "role": "Afdelingsleder",
+      "organization": "Kommunal institution"
+    },
+    {
+      "quote": "\"Jeg var skeptisk over for online-delen, men det fungerede overraskende godt som supplement. Portalen er nem at bruge, og lydfilerne med afspænding er guld værd, når man sidder midt i en travl dag.\"",
+      "role": "Konsulent",
+      "organization": "IT-virksomhed"
+    },
+    {
+      "quote": "\"Resultaterne på vores stress-målinger taler for sig selv. Der er sket et markant fald i symptomerne hos alle de medarbejdere, der deltog. Birgitte er ekstremt professionel og formidler tung viden på en letforståelig måde.\"",
+      "role": "Personalechef",
+      "organization": "Produktionsvirksomhed"
+    }
+  ],
+  "back": {
+    "heading": "Vil du vide mere om hvordan vi opnår disse resultater?",
+    "cta_primary": "Se programmet her",
+    "cta_secondary": "Book et møde"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "label": "Ydelser",
+    "heading": "Børnefysioterapi",
+    "tagline": "Her har børnene første prioritet — mødt i øjenhøjde i trygge rammer i klinikken."
+  },
+  "intro": {
+    "label": "Ikke i en kasse",
+    "heading": "Hvert barn er et selvstændigt individ",
+    "para1": "Hos mig bliver dit barn ikke \"puttet i en kasse\" med en diagnose — eller i en kasse, der hedder \"normal\" eller \"ikke normal\". Her er barnet et selvstændigt individ, der får lov til at udvikle sig derfra, hvor det er nået til i sit liv.",
+    "para2": "Alle forløb, behandlinger og motoriktests foregår i klinikkens egne trygge lokaler, hvor der er plads til både leg, fordybelse og standardiserede opmålinger.",
+    "para3": "Det handler om at give barnet de allerbedste betingelser for at få succesoplevelser — både i forhold til at mestre noget med kroppen, og til at opleve følelsen af at være god nok, som den det er.",
+    "cta": "Book en tid"
+  },
+  "services": {
+    "label": "Hvad tilbyder jeg?",
+    "heading": "Ydelser for børn & unge",
+    "item1_title": "Motorik & motorisk test",
+    "item1_body": "Standardiseret og valideret vurdering af barnets motoriske evner vha. Movement ABC-2 testen — en international test til måling og dokumentation af motorik. Testen foregår i klinikkens lokaler.",
+    "item2_title": "Genoptræning",
+    "item2_body": "Individuelle genoptræningsforløb tilpasset barnets behov og alder — med fokus på styrke, stabilitet, fleksibilitet og kropsbevidsthed. Foregår i klinikken.",
+    "item3_title": "Yoga som terapeutisk redskab",
+    "item3_body": "Foreningen af fysioterapeutisk fagviden om krop, anatomi og motorik med yogaens tilgang til det kropslige, sanselige, kognitive og følelsesmæssige. Der sættes konkrete og målbare mål — og yoga bruges til at nå dem. Barnet lærer at selvregulere og mærke sig selv.",
+    "item4_title": "Børneyogahold",
+    "item4_body": "Yogahold særligt tilrettelagt til børn og teenagere — enkeltvis eller i samarbejde med skoler og børnehaver. Børnene får bedre kropsbevidsthed, lærer åndedrætsteknikker, styrkes fysisk og mentalt, og arbejder med mindfulness og afspænding. Studier viser, at børn der praktiserer yoga klarer sig bedre i skolen.",
+    "item5_title": "Yoga for teens",
+    "item5_body": "Yoga og mindfulness for teenagere — med redskaber til at håndtere pres, præstationskrav og hverdagslivets udfordringer. Et trygt rum til at mærke sig selv og finde roen.",
+    "item6_title": "Familieyogahold",
+    "item6_body": "Yoga for hele familien — et fælles rum, hvor forældre og børn øver sig i nærvær, bevægelse og samhørighed. Kontakt mig for næste holdstart."
+  },
+  "approach": {
+    "label": "Tilgang & baggrund",
+    "heading": "Krop og sind hænger sammen",
+    "para1": "Jeg interesserer mig for sammenhængen mellem krop og sind og barnets trivsel i det hele taget. Krop og sind påvirker hinanden gensidigt — og påvirker også barnets selvværd og selvtillid.",
+    "para2": "Mit hjerte brænder særligt for børn med særlige behov, herunder psykisk sårbare børn. Jeg samarbejder tæt med forældre, pædagoger og lærere for at skabe sammenhæng i barnets hverdag.",
+    "cred1": "Autoriseret fysioterapeut, specialiseret i børn siden 2007",
+    "cred2": "Certificeret børneyogalærer (Yoga Alliance) inkl. børn med særlige behov",
+    "cred3": "Medlem af Dansk Selskab for Pædiatrisk Fysioterapi",
+    "cred4": "Behandling og forløb foregår i trygge rammer i klinikken",
+    "cred5": "Diplomuddannelse i psykologi (inkl. udviklingspsykologi)"
+  },
+  "cta": {
+    "heading": "Lad os finde den rigtige hjælp til dit barn",
+    "body": "Ring eller skriv for en uforpligtende snak om, hvad der vil passe bedst til netop dit barn.",
+    "button": "Book en tid"
+  }
+}

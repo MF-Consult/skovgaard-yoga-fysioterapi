@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "label": "Kom i gang",
+    "heading": "Kontakt mig"
+  },
+  "form": {
+    "heading": "Send en besked",
+    "intro": "Udfyld felterne herunder, og jeg vender tilbage inden for 24 timer. Har du spørgsmål, der kræver et hurtigere svar, er du altid velkommen til at kontakte mig direkte.",
+    "image_overlay_heading": "Jeg glæder mig til at høre fra dig",
+    "success_message": "✓ Tak! Din besked er sendt. Jeg vender tilbage snarest."
+  },
+  "address": {
+    "heading": "Find klinikken",
+    "name": "Skovgaard Yoga- & Fysioterapi",
+    "parking_note": "Klinikken ligger i gården ved Vordingborgvej 61C. Parkering er mulig på Norgesvej.",
+    "maps_link": "Se på Google Maps →"
+  },
+  "hours_heading": "Åbningstider",
+  "hours": [
+    { "day": "Mandag", "time": "10:00 – 17:00" },
+    { "day": "Tirsdag", "time": "10:00 – 17:00" },
+    { "day": "Onsdag", "time": "Lukket" },
+    { "day": "Torsdag", "time": "10:00 – 19:00" },
+    { "day": "Fredag", "time": "10:00 – 15:00" },
+    { "day": "Weekend", "time": "Lukket" }
+  ]
+}

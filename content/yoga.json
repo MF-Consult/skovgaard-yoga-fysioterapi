@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "label": "Ydelser",
+    "heading": "Yoga",
+    "tagline": "Find hjem til dig selv gennem bevægelse, åndedræt og nærvær."
+  },
+  "intro": {
+    "label": "Yogaterapi & Hold",
+    "heading": "Yoga som helbredende praksis",
+    "para1": "Yoga hos mig er ikke kun motion — det er en helhedsorienteret praksis, der forbinder krop, sind og åndedræt. Jeg tilbyder både individuel yogaterapi og holdundervisning tilpasset alle niveauer.",
+    "para2": "Med over 1000 timers yogauddannelse kombinerer jeg min viden om kroppen som fysioterapeut med dybden i yogaens traditioner for at skabe en unik og virkningsfuld praksis.",
+    "cta": "Tilmeld dig"
+  },
+  "offers": {
+    "label": "Hvad tilbyder jeg?",
+    "heading": "Mine yogatilbud",
+    "item1_title": "Individuel yogaterapi",
+    "item1_body": "Et personligt forløb skræddersyet til dine specifikke udfordringer, hvad enten det er smerter, stress eller et ønske om dybere fordybelse.",
+    "item2_title": "Holdundervisning",
+    "item2_body": "Blide og tilgængelige yogahold for alle niveauer. Et trygt fællesskab, hvor du kan udforske din praksis i dit eget tempo.",
+    "item3_title": "Åndedrætsarbejde",
+    "item3_body": "Pranayama og åndedrætsteknikker, der roer nervesystemet, øger energien og skaber indre balance."
+  },
+  "audience": {
+    "label": "Hvem er yoga for?",
+    "heading": "Yoga er for alle kroppe",
+    "intro": "Du behøver ikke at være smidig eller have erfaring. Yoga tilpasses din krop og dine behov — ikke omvendt. Jeg møder dig præcis, hvor du er.",
+    "group1_title": "Begyndere",
+    "group1_body": "Blid introduktion til yogaens grundprincipper i et trygt miljø.",
+    "group2_title": "Med smerter eller skader",
+    "group2_body": "Tilpasset yoga, der støtter helingsprocessen og øger bevægelighed.",
+    "group3_title": "Under stress",
+    "group3_body": "Yoga som redskab til at finde ro og genoprette balancen i hverdagen.",
+    "group4_title": "Erfarne udøvere",
+    "group4_body": "Dybere arbejde med krop, åndedræt og meditation for dem med erfaring."
+  },
+  "cta": {
+    "heading": "Klar til at finde din ro?",
+    "body": "Tilmeld dig et hold eller book en individuel session — og tag det første skridt mod mere balance.",
+    "button": "Kom i gang"
+  }
+}

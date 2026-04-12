@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "label": "Ydelser",
+    "heading": "Fysioterapi",
+    "tagline": "En kropslig indgangsvinkel til dit helbred — hvor jeg arbejder med årsagen, ikke kun symptomet."
+  },
+  "intro": {
+    "label": "Hvad er fysioterapi?",
+    "heading": "En helhedsorienteret tilgang til kroppen",
+    "para1": "Fysioterapi handler for mig om at forstå kroppen som en helhed. Uanset om du har akutte smerter, kroniske gener eller søger at genvinde balancen, bruger jeg min klassiske fysioterapeutiske baggrund som fundamentet i et holistisk forløb.",
+    "para2": "Som autoriseret fysioterapeut siden 2000 kombinerer jeg den sundhedsfaglige videnskab med en dyb forståelse for sammenhængen mellem krop, sind og sjæl. Jeg ser ikke blot på knæet eller skulderen, men på hele det menneske, der bærer dem.",
+    "cta": "Book en tid"
+  },
+  "treatments": {
+    "label": "Hvad kan jeg hjælpe med?",
+    "heading": "Behandlingsområder",
+    "item1_title": "Ryg- og nakkesmerter",
+    "item1_body": "Behandling af akutte og kroniske smerter i ryg og nakke, herunder diskusprolaps, spændingshovedpine og whiplash.",
+    "item2_title": "Skulder, knæ & hofter",
+    "item2_body": "Genoptræning efter skader og operationer samt behandling af overbelastningsskader i led og muskler.",
+    "item3_title": "Sportsskader",
+    "item3_body": "Hurtig og effektiv behandling af sportsskader med fokus på at komme sikkert tilbage til din aktivitet.",
+    "item4_title": "Kroniske smerter",
+    "item4_body": "Helhedsorienteret tilgang til langvarige smertetilstande, der kombinerer fysisk behandling med psykologisk forståelse.",
+    "item5_title": "Graviditet & efterfødsel",
+    "item5_body": "Støtte til gravide og nybagte mødre med bækkensmerter, bækkenbundstræning og genoptræning.",
+    "item6_title": "Forebyggelse",
+    "item6_body": "Ergonomisk vejledning og øvelsesprogrammer, der hjælper dig med at undgå fremtidige skader og smerter."
+  },
+  "process": {
+    "label": "Sådan foregår det",
+    "heading": "Dit behandlingsforløb",
+    "step1_title": "Undersøgelse",
+    "step1_body": "En grundig samtale og fysisk undersøgelse, så jeg forstår din situation til fulde.",
+    "step2_title": "Behandling",
+    "step2_body": "Målrettet behandling med manuelle teknikker, øvelser og vejledning tilpasset dig.",
+    "step3_title": "Opfølgning",
+    "step3_body": "Jeg følger løbende din fremgang og justerer forløbet, så du opnår det bedste resultat."
+  },
+  "cta": {
+    "heading": "Klar til at komme i gang?",
+    "body": "Book en tid i dag og tag det første skridt mod et liv med mindre smerte og mere bevægelighed.",
+    "button": "Book tid nu"
+  }
+}

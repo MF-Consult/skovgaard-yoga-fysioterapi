@@ -1,0 +1,880 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: da
+
+media_folder: "Assets"
+public_folder: "/Assets"
+
+collections:
+  - name: "global"
+    label: "Globalt indhold"
+    files:
+      - name: "global"
+        label: "Kontaktinfo, åbningstider & footer"
+        file: "content/global.json"
+        format: json
+        fields:
+          - label: "Kontaktoplysninger"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Telefon", name: "phone", widget: "string"}
+              - {label: "E-mail", name: "email", widget: "string"}
+              - {label: "Adresse", name: "address", widget: "string"}
+              - {label: "Parkeringsnote", name: "parking", widget: "string"}
+          - label: "Åbningstider"
+            name: "hours"
+            widget: "list"
+            fields:
+              - {label: "Dag", name: "day", widget: "string"}
+              - {label: "Tid", name: "time", widget: "string"}
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Slagord", name: "tagline", widget: "string"}
+              - {label: "CTA overskrift", name: "cta_heading", widget: "string"}
+              - {label: "CTA undertekst", name: "cta_subtext", widget: "string"}
+              - {label: "CTA knaptekst", name: "cta_button", widget: "string"}
+              - {label: "Copyright", name: "copyright", widget: "string"}
+
+  - name: "pages"
+    label: "Sider"
+    files:
+      - name: "index"
+        label: "Forside"
+        file: "content/index.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Lille label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Brødtekst", name: "body", widget: "text"}
+              - {label: "Primær knap", name: "cta_primary", widget: "string"}
+              - {label: "Sekundær knap", name: "cta_secondary", widget: "string"}
+          - label: "Stress-sektion"
+            name: "stress"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - label: "Kort: Privat"
+                name: "card_private"
+                widget: "object"
+                fields:
+                  - {label: "Overskrift", name: "heading", widget: "string"}
+                  - {label: "Beskrivelse", name: "body", widget: "text"}
+                  - {label: "Knap", name: "cta", widget: "string"}
+              - label: "Kort: Erhverv"
+                name: "card_business"
+                widget: "object"
+                fields:
+                  - {label: "Overskrift", name: "heading", widget: "string"}
+                  - {label: "Beskrivelse", name: "body", widget: "text"}
+                  - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Høj begavelse-sektion"
+            name: "gifted"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Manchet", name: "lead", widget: "text"}
+              - {label: "Brødtekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Børn-sektion"
+            name: "children"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Manchet", name: "lead", widget: "text"}
+              - {label: "Punkt 1", name: "bullet1", widget: "string"}
+              - {label: "Punkt 2", name: "bullet2", widget: "string"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Ydelser"
+            name: "services"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Ydelse 1 titel", name: "item1_title", widget: "string"}
+              - {label: "Ydelse 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Ydelse 2 titel", name: "item2_title", widget: "string"}
+              - {label: "Ydelse 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Ydelse 3 titel", name: "item3_title", widget: "string"}
+              - {label: "Ydelse 3 tekst", name: "item3_body", widget: "text"}
+          - label: "Udtalelser"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Udtalelse 1 citat", name: "item0_quote", widget: "text"}
+              - {label: "Udtalelse 1 navn", name: "item0_name", widget: "string"}
+              - {label: "Udtalelse 2 citat", name: "item1_quote", widget: "text"}
+              - {label: "Udtalelse 2 navn", name: "item1_name", widget: "string"}
+              - {label: "Udtalelse 3 citat", name: "item2_quote", widget: "text"}
+              - {label: "Udtalelse 3 navn", name: "item2_name", widget: "string"}
+          - label: "Forløb (trin)"
+            name: "process"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Trin 1 titel", name: "step1_title", widget: "string"}
+              - {label: "Trin 1 tekst", name: "step1_body", widget: "text"}
+              - {label: "Trin 2 titel", name: "step2_title", widget: "string"}
+              - {label: "Trin 2 tekst", name: "step2_body", widget: "text"}
+              - {label: "Trin 3 titel", name: "step3_title", widget: "string"}
+              - {label: "Trin 3 tekst", name: "step3_body", widget: "text"}
+              - {label: "Trin 4 titel", name: "step4_title", widget: "string"}
+              - {label: "Trin 4 tekst", name: "step4_body", widget: "text"}
+          - label: "CTA-sektion"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Primær knap", name: "cta_primary", widget: "string"}
+              - {label: "Sekundær knap", name: "cta_secondary", widget: "string"}
+          - label: "Om-preview"
+            name: "about_preview"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Baggrund", name: "background", widget: "text"}
+              - {label: "Tilgang", name: "approach", widget: "text"}
+
+      - name: "priser"
+        label: "Priser"
+        file: "content/priser.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Gitter-overskrift"
+            name: "grid"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+          - label: "Priskategorier"
+            name: "categories"
+            widget: "list"
+            fields:
+              - {label: "Kategorinavn", name: "title", widget: "string"}
+              - label: "Priser"
+                name: "rows"
+                widget: "list"
+                fields:
+                  - {label: "Ydelse / varighed", name: "name", widget: "string"}
+                  - {label: "Undertitel (valgfri)", name: "subtitle", widget: "string", required: false}
+                  - {label: "Pris", name: "price", widget: "string"}
+          - label: "Praktisk info"
+            name: "praktisk"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afbestilling titel", name: "cancellation_title", widget: "string"}
+              - {label: "Afbestilling tekst", name: "cancellation_body", widget: "text"}
+              - {label: "Tilskud titel", name: "subsidy_title", widget: "string"}
+              - {label: "Tilskud tekst", name: "subsidy_body", widget: "text"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "button", widget: "string"}
+
+      - name: "om"
+        label: "Om mig"
+        file: "content/om.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 3", name: "para3", widget: "text"}
+              - {label: "Citat", name: "blockquote", widget: "text"}
+          - label: "Uddannelse & erfaring"
+            name: "education"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Kompetence 1 titel", name: "credential0_title", widget: "string"}
+              - {label: "Kompetence 1 tekst", name: "credential0_body", widget: "text"}
+              - {label: "Kompetence 2 titel", name: "credential1_title", widget: "string"}
+              - {label: "Kompetence 2 tekst", name: "credential1_body", widget: "text"}
+              - {label: "Kompetence 3 titel", name: "credential2_title", widget: "string"}
+              - {label: "Kompetence 3 tekst", name: "credential2_body", widget: "text"}
+              - {label: "Kompetence 4 titel", name: "credential3_title", widget: "string"}
+              - {label: "Kompetence 4 tekst", name: "credential3_body", widget: "text"}
+              - {label: "Kompetence 5 titel", name: "credential4_title", widget: "string"}
+              - {label: "Kompetence 5 tekst", name: "credential4_body", widget: "text"}
+          - label: "Videoer"
+            name: "videos"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Video 1 tekst", name: "video1_caption", widget: "text"}
+              - {label: "Video 2 tekst", name: "video2_caption", widget: "text"}
+          - label: "Værdier"
+            name: "values"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Værdi 1 titel", name: "value1_title", widget: "string"}
+              - {label: "Værdi 1 tekst", name: "value1_body", widget: "text"}
+              - {label: "Værdi 2 titel", name: "value2_title", widget: "string"}
+              - {label: "Værdi 2 tekst", name: "value2_body", widget: "text"}
+              - {label: "Værdi 3 titel", name: "value3_title", widget: "string"}
+              - {label: "Værdi 3 tekst", name: "value3_body", widget: "text"}
+          - label: "Udtalelser"
+            name: "testimonials"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Udtalelse 1 citat", name: "item0_quote", widget: "text"}
+              - {label: "Udtalelse 1 navn", name: "item0_name", widget: "string"}
+              - {label: "Udtalelse 2 citat", name: "item1_quote", widget: "text"}
+              - {label: "Udtalelse 2 navn", name: "item1_name", widget: "string"}
+              - {label: "Udtalelse 3 citat", name: "item2_quote", widget: "text"}
+              - {label: "Udtalelse 3 navn", name: "item2_name", widget: "string"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "button", widget: "string"}
+
+      - name: "kontakt"
+        label: "Kontakt"
+        file: "content/kontakt.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Kontaktformular"
+            name: "form"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Billede-overlay tekst", name: "image_overlay_heading", widget: "string"}
+              - {label: "Succesbesked", name: "success_message", widget: "text"}
+          - label: "Adresse & info"
+            name: "address"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+          - label: "Åbningstider (visning)"
+            name: "hours"
+            widget: "list"
+            fields:
+              - {label: "Dag", name: "day", widget: "string"}
+              - {label: "Tid", name: "time", widget: "string"}
+
+      - name: "evalueringer"
+        label: "Evalueringer"
+        file: "content/evalueringer.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+          - label: "Anmeldelser"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - {label: "Citat", name: "quote", widget: "text"}
+              - {label: "Rolle / titel", name: "role", widget: "string"}
+              - {label: "Organisation", name: "organization", widget: "string"}
+          - label: "Tilbage-sektion"
+            name: "back"
+            widget: "object"
+            fields:
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "cta", widget: "string"}
+
+      - name: "stress"
+        label: "Stressforløb (privat)"
+        file: "content/stress.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Tegn på stress"
+            name: "signs"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tegn 1", name: "sign1", widget: "string"}
+              - {label: "Tegn 2", name: "sign2", widget: "string"}
+              - {label: "Tegn 3", name: "sign3", widget: "string"}
+              - {label: "Tegn 4", name: "sign4", widget: "string"}
+              - {label: "Tegn 5", name: "sign5", widget: "string"}
+          - label: "Tilgang"
+            name: "approach"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Metode 1 titel", name: "method1_title", widget: "string"}
+              - {label: "Metode 1 tekst", name: "method1_body", widget: "text"}
+              - {label: "Metode 2 titel", name: "method2_title", widget: "string"}
+              - {label: "Metode 2 tekst", name: "method2_body", widget: "text"}
+              - {label: "Metode 3 titel", name: "method3_title", widget: "string"}
+              - {label: "Metode 3 tekst", name: "method3_body", widget: "text"}
+              - {label: "Metode 4 titel", name: "method4_title", widget: "string"}
+              - {label: "Metode 4 tekst", name: "method4_body", widget: "text"}
+          - label: "Forløb"
+            name: "process"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Trin 1 titel", name: "step1_title", widget: "string"}
+              - {label: "Trin 1 tekst", name: "step1_body", widget: "text"}
+              - {label: "Trin 2 titel", name: "step2_title", widget: "string"}
+              - {label: "Trin 2 tekst", name: "step2_body", widget: "text"}
+              - {label: "Trin 3 titel", name: "step3_title", widget: "string"}
+              - {label: "Trin 3 tekst", name: "step3_body", widget: "text"}
+              - {label: "Trin 4 titel", name: "step4_title", widget: "string"}
+              - {label: "Trin 4 tekst", name: "step4_body", widget: "text"}
+              - {label: "Stresstest note", name: "stresstest_note", widget: "text"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "button", widget: "string"}
+
+      - name: "stress-erhverv"
+        label: "Stressforløb (erhverv)"
+        file: "content/stress-erhverv.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Indhold"
+            name: "content"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Punkt 1 titel", name: "item1_title", widget: "string"}
+              - {label: "Punkt 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Punkt 2 titel", name: "item2_title", widget: "string"}
+              - {label: "Punkt 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Punkt 3 titel", name: "item3_title", widget: "string"}
+              - {label: "Punkt 3 tekst", name: "item3_body", widget: "text"}
+              - {label: "Punkt 4 titel", name: "item4_title", widget: "string"}
+              - {label: "Punkt 4 tekst", name: "item4_body", widget: "text"}
+              - {label: "Punkt 5 titel", name: "item5_title", widget: "string"}
+              - {label: "Punkt 5 tekst", name: "item5_body", widget: "text"}
+              - {label: "Punkt 6 titel", name: "item6_title", widget: "string"}
+              - {label: "Punkt 6 tekst", name: "item6_body", widget: "text"}
+          - label: "Statistik"
+            name: "stats"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Stat 1 tal", name: "stat1_number", widget: "string"}
+              - {label: "Stat 1 tekst", name: "stat1_body", widget: "string"}
+              - {label: "Stat 2 tal", name: "stat2_number", widget: "string"}
+              - {label: "Stat 2 tekst", name: "stat2_body", widget: "string"}
+              - {label: "Stat 3 tal", name: "stat3_number", widget: "string"}
+              - {label: "Stat 3 tekst", name: "stat3_body", widget: "string"}
+              - {label: "Citat", name: "quote", widget: "text"}
+              - {label: "Citatkilde", name: "quote_source", widget: "string"}
+          - label: "Garanti"
+            name: "guarantee"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "button", widget: "string"}
+
+      - name: "yoga"
+        label: "Yoga"
+        file: "content/yoga.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Tilbud"
+            name: "offers"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tilbud 1 titel", name: "item1_title", widget: "string"}
+              - {label: "Tilbud 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Tilbud 2 titel", name: "item2_title", widget: "string"}
+              - {label: "Tilbud 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Tilbud 3 titel", name: "item3_title", widget: "string"}
+              - {label: "Tilbud 3 tekst", name: "item3_body", widget: "text"}
+          - label: "Målgruppe"
+            name: "audience"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Gruppe 1 titel", name: "group1_title", widget: "string"}
+              - {label: "Gruppe 1 tekst", name: "group1_body", widget: "text"}
+              - {label: "Gruppe 2 titel", name: "group2_title", widget: "string"}
+              - {label: "Gruppe 2 tekst", name: "group2_body", widget: "text"}
+              - {label: "Gruppe 3 titel", name: "group3_title", widget: "string"}
+              - {label: "Gruppe 3 tekst", name: "group3_body", widget: "text"}
+              - {label: "Gruppe 4 titel", name: "group4_title", widget: "string"}
+              - {label: "Gruppe 4 tekst", name: "group4_body", widget: "text"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "button", widget: "string"}
+
+      - name: "fysioterapi"
+        label: "Fysioterapi"
+        file: "content/fysioterapi.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Behandlingsområder"
+            name: "treatments"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Område 1 titel", name: "item1_title", widget: "string"}
+              - {label: "Område 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Område 2 titel", name: "item2_title", widget: "string"}
+              - {label: "Område 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Område 3 titel", name: "item3_title", widget: "string"}
+              - {label: "Område 3 tekst", name: "item3_body", widget: "text"}
+              - {label: "Område 4 titel", name: "item4_title", widget: "string"}
+              - {label: "Område 4 tekst", name: "item4_body", widget: "text"}
+              - {label: "Område 5 titel", name: "item5_title", widget: "string"}
+              - {label: "Område 5 tekst", name: "item5_body", widget: "text"}
+              - {label: "Område 6 titel", name: "item6_title", widget: "string"}
+              - {label: "Område 6 tekst", name: "item6_body", widget: "text"}
+          - label: "Forløb"
+            name: "process"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Trin 1 titel", name: "step1_title", widget: "string"}
+              - {label: "Trin 1 tekst", name: "step1_body", widget: "text"}
+              - {label: "Trin 2 titel", name: "step2_title", widget: "string"}
+              - {label: "Trin 2 tekst", name: "step2_body", widget: "text"}
+              - {label: "Trin 3 titel", name: "step3_title", widget: "string"}
+              - {label: "Trin 3 tekst", name: "step3_body", widget: "text"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "button", widget: "string"}
+
+      - name: "glad"
+        label: "GLA:D Træning"
+        file: "content/glad.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Primær knap", name: "cta_primary", widget: "string"}
+              - {label: "Sekundær knap", name: "cta_secondary", widget: "string"}
+          - label: "Effekter"
+            name: "effects"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Effekt 1 titel", name: "effect1_title", widget: "string"}
+              - {label: "Effekt 1 tekst", name: "effect1_body", widget: "text"}
+              - {label: "Effekt 2 titel", name: "effect2_title", widget: "string"}
+              - {label: "Effekt 2 tekst", name: "effect2_body", widget: "text"}
+              - {label: "Effekt 3 titel", name: "effect3_title", widget: "string"}
+              - {label: "Effekt 3 tekst", name: "effect3_body", widget: "text"}
+              - {label: "Effekt 4 titel", name: "effect4_title", widget: "string"}
+              - {label: "Effekt 4 tekst", name: "effect4_body", widget: "text"}
+          - label: "Indhold"
+            name: "content"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Punkt 1 titel", name: "item1_title", widget: "string"}
+              - {label: "Punkt 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Punkt 2 titel", name: "item2_title", widget: "string"}
+              - {label: "Punkt 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Punkt 3 titel", name: "item3_title", widget: "string"}
+              - {label: "Punkt 3 tekst", name: "item3_body", widget: "text"}
+          - label: "Typisk træningstime"
+            name: "session"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Fase 1 titel", name: "step1_title", widget: "string"}
+              - {label: "Fase 1 tekst", name: "step1_body", widget: "text"}
+              - {label: "Fase 2 titel", name: "step2_title", widget: "string"}
+              - {label: "Fase 2 tekst", name: "step2_body", widget: "text"}
+              - {label: "Fase 3 titel", name: "step3_title", widget: "string"}
+              - {label: "Fase 3 tekst", name: "step3_body", widget: "text"}
+          - label: "Kriterier"
+            name: "criteria"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Kriterium 1 titel", name: "crit1_title", widget: "string"}
+              - {label: "Kriterium 1 tekst", name: "crit1_body", widget: "text"}
+              - {label: "Kriterium 2 titel", name: "crit2_title", widget: "string"}
+              - {label: "Kriterium 2 tekst", name: "crit2_body", widget: "text"}
+              - {label: "Kriterium 3 titel", name: "crit3_title", widget: "string"}
+              - {label: "Kriterium 3 tekst", name: "crit3_body", widget: "text"}
+              - {label: "Projekt overskrift", name: "project_heading", widget: "string"}
+              - {label: "Projekt tekst 1", name: "project_body1", widget: "text"}
+              - {label: "Projekt tekst 2", name: "project_body2", widget: "text"}
+              - {label: "Projekt link tekst", name: "project_link", widget: "string"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "button", widget: "string"}
+
+      - name: "gifted"
+        label: "Høj Begavelse"
+        file: "content/gifted.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+          - label: "Børn & unge"
+            name: "children"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Punkt 1", name: "li1", widget: "string"}
+              - {label: "Punkt 2", name: "li2", widget: "string"}
+              - {label: "Punkt 3", name: "li3", widget: "string"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Voksne"
+            name: "adults"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Forældre & partnerskab"
+            name: "parents"
+            widget: "object"
+            fields:
+              - {label: "Forældre overskrift", name: "parent_title", widget: "string"}
+              - {label: "Forældre tekst", name: "parent_body", widget: "text"}
+              - {label: "Partner overskrift", name: "partner_title", widget: "string"}
+              - {label: "Partner tekst", name: "partner_body", widget: "text"}
+              - {label: "Partner knap", name: "partner_cta", widget: "string"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "button", widget: "string"}
+
+      - name: "boern"
+        label: "Børnefysioterapi"
+        file: "content/boern.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 3", name: "para3", widget: "text"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Ydelser"
+            name: "services"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Ydelse 1 titel", name: "item1_title", widget: "string"}
+              - {label: "Ydelse 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Ydelse 2 titel", name: "item2_title", widget: "string"}
+              - {label: "Ydelse 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Ydelse 3 titel", name: "item3_title", widget: "string"}
+              - {label: "Ydelse 3 tekst", name: "item3_body", widget: "text"}
+              - {label: "Ydelse 4 titel", name: "item4_title", widget: "string"}
+              - {label: "Ydelse 4 tekst", name: "item4_body", widget: "text"}
+              - {label: "Ydelse 5 titel", name: "item5_title", widget: "string"}
+              - {label: "Ydelse 5 tekst", name: "item5_body", widget: "text"}
+              - {label: "Ydelse 6 titel", name: "item6_title", widget: "string"}
+              - {label: "Ydelse 6 tekst", name: "item6_body", widget: "text"}
+          - label: "Tilgang"
+            name: "approach"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Kompetence 1", name: "cred1", widget: "string"}
+              - {label: "Kompetence 2", name: "cred2", widget: "string"}
+              - {label: "Kompetence 3", name: "cred3", widget: "string"}
+              - {label: "Kompetence 4", name: "cred4", widget: "string"}
+              - {label: "Kompetence 5", name: "cred5", widget: "string"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "button", widget: "string"}
+
+      - name: "konsulent"
+        label: "Ekstern konsulent"
+        file: "content/konsulent.json"
+        format: json
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tagline", name: "tagline", widget: "string"}
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Workshop"
+            name: "workshop"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Brødtekst", name: "body", widget: "text"}
+              - {label: "Overlay-citat", name: "overlay_quote", widget: "string"}
+              - {label: "Punkt 1 titel", name: "item1_title", widget: "string"}
+              - {label: "Punkt 1 tekst", name: "item1_body", widget: "string"}
+              - {label: "Punkt 2 titel", name: "item2_title", widget: "string"}
+              - {label: "Punkt 2 tekst", name: "item2_body", widget: "string"}
+          - label: "Stressforløb"
+            name: "stress"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Kort 1 titel", name: "card1_title", widget: "string"}
+              - {label: "Kort 1 tekst", name: "card1_body", widget: "string"}
+              - {label: "Kort 2 titel", name: "card2_title", widget: "string"}
+              - {label: "Kort 2 tekst", name: "card2_body", widget: "string"}
+              - {label: "Kort 3 titel", name: "card3_title", widget: "string"}
+              - {label: "Kort 3 tekst", name: "card3_body", widget: "string"}
+              - {label: "Knap", name: "cta", widget: "string"}
+          - label: "Leder-forløbet"
+            name: "leader"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Afsnit 1", name: "para1", widget: "text"}
+              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Knap", name: "cta", widget: "string"}
+              - {label: "Feature 1 titel", name: "feature1_title", widget: "string"}
+              - {label: "Feature 1 tekst", name: "feature1_body", widget: "text"}
+              - {label: "Feature 2 titel", name: "feature2_title", widget: "string"}
+              - {label: "Feature 2 tekst", name: "feature2_body", widget: "text"}
+          - label: "Statistik"
+            name: "stats"
+            widget: "object"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Stat 1 tal", name: "stat1_number", widget: "string"}
+              - {label: "Stat 1 tekst", name: "stat1_body", widget: "string"}
+              - {label: "Stat 2 tal", name: "stat2_number", widget: "string"}
+              - {label: "Stat 2 tekst", name: "stat2_body", widget: "string"}
+              - {label: "Stat 3 tal", name: "stat3_number", widget: "string"}
+              - {label: "Stat 3 tekst", name: "stat3_body", widget: "string"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Knap", name: "button", widget: "string"}
