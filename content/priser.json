@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "label": "Praktisk info",
+    "heading": "Priser & Vilkår",
+    "tagline": "Gennemsigtighed omkring priser og vilkår."
+  },
+  "grid": {
+    "label": "Prisoversigt",
+    "heading": "Mine Ydelser"
+  },
+  "categories": [
+    {
+      "title": "Individuel Yogaterapeutisk Session",
+      "rows": [
+        { "name": "Op til 90 min.", "subtitle": "", "price": "1.499 kr." }
+      ]
+    },
+    {
+      "title": "Holistisk Fysioterapi Session",
+      "rows": [
+        { "name": "Op til 60 min.", "subtitle": "", "price": "900 kr." }
+      ]
+    },
+    {
+      "title": "Børnefysioterapeutisk Vurdering & Undersøgelse",
+      "rows": [
+        { "name": "Kort session", "subtitle": "Vurdering og undersøgelse", "price": "650 kr." },
+        { "name": "Lang session", "subtitle": "Inkl. behandling, råd & vejledning", "price": "900 kr." }
+      ]
+    },
+    {
+      "title": "Forløb & Virksomheder",
+      "rows": [
+        { "name": "Specielt tilrettelagte individuelle forløb", "subtitle": "Pris aftales individuelt efter behov og omfang", "price": "Kontakt mig" },
+        { "name": "B2B Stressforløb", "subtitle": "3 mdrs. holdforløb — lukkede hold", "price": "Tilbud gives" }
+      ]
+    }
+  ],
+  "subsidy_note": "Jeg arbejder uden for den offentlige sygesikring, men der er tilskud fra Sygeforsikringen \"danmark\" og andre private sundhedsforsikringer og pensionsselskaber — alt efter hvilken personlig aftale eller ordning man har med dem.",
+  "praktisk": {
+    "cancellation_title": "Afbud & betaling",
+    "cancellation_body1": "Afbud skal ske senest dagen før kl. 16.00 på telefon, sms eller mail. Ved udeblivelse eller for sent afbud opkræves fuldt honorar.",
+    "cancellation_body2": "Betaling kan gøres med dankort, Nem bankoverførsel, kontant, MobilePay eller via EAN nr. Og sker enten efter hver session eller forud.",
+    "subsidy_title": "Tilskud",
+    "subsidy_body1": "Har du en sundhedsforsikring via dit arbejde eller pensionsselskab, dækker de ofte dele af eller hele beløbet. Tjek betingelserne hos dit eget selskab.",
+    "subsidy_body2": "Sygeforsikringen \"danmark\" giver i mange tilfælde også tilskud til fysioterapeutisk behandling (se også teksten under priserne)."
+  },
+  "cta": {
+    "heading": "Har du spørgsmål?",
+    "body": "Du er altid velkommen til at kontakte mig, hvis du vil høre mere om priser, tilskudsmuligheder eller hvilket forløb der passer bedst til dig.",
+    "button": "Kontakt mig"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "label": "Ydelser (Virksomheder)",
+    "heading": "3 måneder. Et nyt fundament.",
+    "tagline": "Et 3-måneders holdforløb, der kombinerer evidensbaseret stressbehandling med kropslig forankring og natur."
+  },
+  "intro": {
+    "label": "Holdforløb for ledere & virksomheder",
+    "heading": "Opnå indre ro — og stå stærkt i dig selv",
+    "para1": "Et 3-måneders holdforløb, der tager udgangspunkt i den nyeste stressforskning (udgivet marts 2023) og kombinerer teori, praktiske øvelser og terapeutiske sessioner. Forløbet er designet til ledere og medarbejdere, der enten er ramt af stress eller befinder sig i farezonen — med et klart mål: varig forandring og individuel styrkelse.",
+    "para2": "Alle deltagere mødes i en lukket, tryg ramme. Forløbet kan afholdes fysisk eller som hybridforløb med Zoom. Deltagerne starter og slutter med en individuel samtale og måles på en valideret stresskala ved opstart, midtvejs og afslutning.",
+    "cta": "Kontakt mig for aftale"
+  },
+  "content": {
+    "label": "Indholdet",
+    "heading": "Hvad er med i forløbet?",
+    "item1_title": "Individuelle samtaler",
+    "item1_body": "Personlig opstarts- og afslutningssamtale. Opstartstest med måling på valideret stresskala — gentaget midtvejs og ved afslutning — så fremgangen er synlig og dokumenteret.",
+    "item2_title": "8 moduler + online",
+    "item2_body": "8 fysiske fremmøder samt evt. online sessions via Zoom. Hvert modul indeholder både undervisning og terapeutiske sessioner — og en del af undervisningen foregår ude i naturen.",
+    "item3_title": "Teori & praktiske øvelser",
+    "item3_body": "Undervisning baseret på ny stressforskning (udgivet marts 2023). Øvelserne dækker mentale og strukturerede refleksionsøvelser, yogaterapeutiske øvelser, åndedrætsøvelser, dybdeafspænding, meditation og mindfulness.",
+    "item4_title": "Online undervisningsportal",
+    "item4_body": "Adgang til en online portal gennem hele forløbet med: skriftligt pensum til evigt eje, videooptagelser og undervisningsmateriale til hjemmeøvelser, samt lydfiler med afspændinger, meditationer og mindfulness til fri brug.",
+    "item5_title": "Hjemmeøvelser",
+    "item5_body": "Individuelt tilpassede hjemmeøvelser mellem modulerne styrker den personlige integration og sikrer progression i hverdagen.",
+    "item6_title": "Ubegrænset support",
+    "item6_body": "Ubegrænset adgang til support fra underviseren/terapeuten gennem hele forløbet. Deltagerne er aldrig alene med deres proces."
+  },
+  "stats": {
+    "label": "Resultater",
+    "heading": "Målbare resultater & evalueringer",
+    "intro": "Gennem årene har jeg gennemført adskillige forløb for både offentlige og private virksomheder med markante resultater.",
+    "stat1_number": "17",
+    "stat1_label": "Gennemførte holdforløb",
+    "stat1_body": "Systematiske 3-måneders forløb afviklet for HR-afdelinger med fokus på trivsel og bundlinje.",
+    "stat2_number": "100%",
+    "stat2_label": "Positive evalueringer",
+    "stat2_body": "Alle deltagere har givet topkarakterer i deres evalueringer til HR efter endt forløb.",
+    "stat3_number": "Stat.",
+    "stat3_label": "Signifikant effekt",
+    "stat3_body": "Målbare forbedringer på de validerede stress-skalaer hos samtlige deltagere.",
+    "quote_box_heading": "Hvad siger de medvirkende?",
+    "quote_box_body": "Efter hvert forløb indsamler jeg anonyme evalueringer for at sikre den højeste kvalitet. Det giver et ærligt billede af den forskel, 3-måneders forløbet gør for både trivslen og den mentale sundhed.",
+    "quote_box_link": "Læs flere anmeldelser"
+  },
+  "guarantee": {
+    "label": "Din investering er tryg",
+    "heading": "Garanti for positiv effekt",
+    "body": "Vi garanterer en positiv effekt i forhold til de individuelt aftalte mål — forudsat fremmøde til alle undervisningsmoduler og udførelse af hjemmeøvelserne som aftalt.",
+    "note": "Andre statslige, kommunale og private virksomheder har opnået meget positive og varige effekter af disse forløb. Referencer kan indhentes via HR-afdelinger ved behov."
+  },
+  "cta": {
+    "heading": "Klar til at tage det første skridt?",
+    "body": "Kontakt mig for en uforpligtende snak om, hvordan forløbet kan tilpasses jeres organisation, ledere og medarbejdere.",
+    "button": "Kontakt mig for aftale"
+  }
+}

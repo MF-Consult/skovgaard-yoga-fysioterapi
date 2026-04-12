@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "label": "Ydelser (Privat)",
+    "heading": "Stressforløb (Privat)",
+    "tagline": "Redskaber til at finde ro, når nervesystemet er på overarbejde."
+  },
+  "intro": {
+    "label": "Stresshåndtering & Coaching",
+    "heading": "Når kroppen og sindet siger fra",
+    "para1": "Stress er ikke bare en følelse — det er en fysiologisk tilstand, der påvirker hele kroppen. Her kombinerer jeg samtaleterapi med kropslig bevidsthed og yogaredskaber for at hjælpe dig tilbage til balance.",
+    "para2": "Mit stressforløb er individuelt og tilpasset din situation. Jeg arbejder ikke med hurtige løsninger, men med varige forandringer, der giver dig redskaber til resten af livet.",
+    "cta": "Book et forløb"
+  },
+  "signs": {
+    "label": "Kender du det?",
+    "heading": "Tegn på, at du har brug for hjælp",
+    "sign1": "Du sover dårligt og vågner udmattet, selvom du har sovet nok timer.",
+    "sign2": "Du har svært ved at koncentrere dig og glemmer ting, du normalt husker.",
+    "sign3": "Du føler dig konstant på vagt og kan ikke slappe af, selv når du har fri.",
+    "sign4": "Kroppen giver tegn: spændinger, hovedpine, hjertebanken eller maveproblemer.",
+    "sign5": "Du har mistet glæden ved ting, du normalt holder af."
+  },
+  "approach": {
+    "label": "Min tilgang",
+    "heading": "Krop og sind som én enhed",
+    "intro": "Jeg tror på, at varig forandring kræver, at jeg arbejder med hele mennesket — ikke kun tankerne eller kun kroppen. Mit forløb kombinerer:",
+    "method1_title": "Samtaleterapi & coaching",
+    "method1_body": "Jeg udforsker mønstre, overbevisninger og adfærd, der holder dig fast i stress.",
+    "method2_title": "Kropslig bevidsthed",
+    "method2_body": "Lær at mærke kroppens signaler og bruge dem som vejledning frem for at ignorere dem.",
+    "method3_title": "Åndedræt & yoga",
+    "method3_body": "Konkrete teknikker, du kan bruge i hverdagen til at regulere nervesystemet.",
+    "method4_title": "Livsstilsvejledning",
+    "method4_body": "Praktiske redskaber til søvn, energi og balance i en travl hverdag."
+  },
+  "process": {
+    "label": "Sådan foregår det",
+    "heading": "Dit stressforløb",
+    "step1_title": "Afklaring",
+    "step1_body": "En indledende samtale om din situation og dine mål.",
+    "step2_title": "Forløb",
+    "step2_body": "Regelmæssige sessioner med samtale, krop og åndedræt.",
+    "step3_title": "Redskaber",
+    "step3_body": "Du får konkrete øvelser og strategier til hverdagen.",
+    "step4_title": "Balance",
+    "step4_body": "Varig forandring og et liv med mere ro og overskud.",
+    "stresstest_note": "Usikker på om du har brug for hjælp? Tag min gratis stresstest.",
+    "stresstest_link": "Tag stresstesten →"
+  },
+  "cta": {
+    "heading": "Du behøver ikke klare det alene",
+    "body": "Tag det første skridt og kontakt mig for en uforpligtende snak om, hvordan jeg kan hjælpe dig videre.",
+    "button": "Book et forløb"
+  }
+}

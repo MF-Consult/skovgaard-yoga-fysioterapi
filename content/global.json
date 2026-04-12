@@ -1,0 +1,25 @@
+{
+  "contact": {
+    "phone": "60 87 36 26",
+    "email": "birgitte@skyf.dk",
+    "address_line1": "Vordingborgvej 61C (i gården)",
+    "address_line2": "4700 Næstved",
+    "parking": "Parkering på Norgesvej"
+  },
+  "hours": [
+    { "day": "Mandag", "time": "10:00 – 17:00" },
+    { "day": "Tirsdag", "time": "10:00 – 17:00" },
+    { "day": "Onsdag", "time": "Lukket" },
+    { "day": "Torsdag", "time": "10:00 – 19:00" },
+    { "day": "Fredag", "time": "10:00 – 15:00" },
+    { "day": "Lørdag–Søndag", "time": "Lukket" }
+  ],
+  "footer": {
+    "tagline": "Fra hjerte til hjerte.\nHolistisk terapi og undervisning\ni Næstved.",
+    "cta_heading": "Klar til at tage det første skridt?",
+    "cta_subtext": "Book en uforpligtende samtale — jeg svarer inden for 24 timer.",
+    "cta_button": "Book tid nu",
+    "copyright": "© 2026 Skovgaard Yoga- & Fysioterapi · CVR 26002680",
+    "credit": "Designet og udviklet i Danmark"
+  }
+}

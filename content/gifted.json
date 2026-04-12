@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "label": "Specialisering",
+    "heading": "Høj Begavelse",
+    "tagline": "Et fristed for det intensive sind — hvor der er plads til at være præcis den, du er."
+  },
+  "intro": {
+    "label": "Nervesystemet i fokus",
+    "heading": "Når verden mærkes stærkere",
+    "para1": "Mennesker med høj begavelse oplever ofte verden med en særlig intensitet. Sanseindtryk, tanker og følelser kan føles kraftigere, og det kan lægge et stort pres på nervesystemet. For mange betyder det en hverdag præget af \"high arousal\", hvor krop og sind har svært ved at finde ro.",
+    "para2": "Her hos mig, vil du blive mødt med varme og en dyb forståelse for dit nervesystem. Det handler aldrig om at ændre på den, du er, men om at skabe et fristed, hvor du kan finde ro og lære at navigere i din intensitet, så din begavelse kan få lov til at folde sig ud uden at overvælde dig."
+  },
+  "children": {
+    "label": "For de mindste & teenagere",
+    "heading": "Mødt i øjenhøjde",
+    "body": "Til højt begavede børn og unge tilbyder jeg et rum, hvor de kan møde ligesindede og lære deres egne reaktioner at kende. Gennem leg, bevægelse og kropslige teknikker hjælper jeg dem med at forstå deres \"Busy Brains\" og finde vejen tilbage til ro.",
+    "li1": "Specielt tilrettelagte workshops",
+    "li2": "Teknikker til selvregulering",
+    "li3": "Fokus på succesoplevelser og kropslig mestring",
+    "cta": "Find ro her"
+  },
+  "adults": {
+    "label": "For voksne",
+    "heading": "At forstå sig selv",
+    "para1": "Voksne højt begavede kan ofte føle sig presset af systemer eller forventninger, der ikke tager højde for deres kropslige og mentale intensitet. Individuelle forløb hos mig giver dig indsigt i dit nervesystem og konkrete teknikker til at skabe den nødvendige pause i hverdagen.",
+    "para2": "Vi arbejder med kropsbevidsthed, åndedræt og samtale for at mindske følelsen af overvældelse og genfinde din kerne.",
+    "cta": "Book en samtale"
+  },
+  "parents": {
+    "parent_title": "Støtte til forældre",
+    "parent_body": "Som forælder til et højt begavet barn kan man ofte føle sig alene og presset af systemet. Jeg tilbyder rådgivning og rum til forældre, så I kan støtte jeres barn bedst muligt — samtidig med at I selv holder balancen.",
+    "partner_title": "Gifted Children Partnerskab",
+    "partner_body": "Jeg er stolt samarbejdspartner med Gifted Children. Dette er et særligt hjertebarn for mig, og jeg tilbyder derfor en fordelagtig medlemsrabat på individuelle forløb og udvalgte workshops til medlemmer.",
+    "partner_cta": "Kontakt mig for detaljer om rabat"
+  },
+  "cta": {
+    "heading": "Lad os skabe roen sammen",
+    "body": "Uanset om du er barn, ung eller voksen, er du velkommen her. Kontakt mig for en uforpligtende snak om, hvordan jeg kan hjælpe dig eller dit barn.",
+    "button": "Kontakt mig nu"
+  }
+}

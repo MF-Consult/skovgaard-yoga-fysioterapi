@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "label": "Ydelser",
+    "heading": "Ekstern konsulent",
+    "tagline": "Sundhed og trivsel som en investering i din organisation."
+  },
+  "intro": {
+    "label": "For virksomheder & organisationer",
+    "heading": "Trivsel på arbejdspladsen starter med mennesket",
+    "para1": "Som ekstern konsulent bringer jeg min brede faglighed inden for fysioterapi, stresshåndtering og yoga direkte ud til virksomheder og organisationer.",
+    "para2": "Jeg tilbyder skræddersyede forløb, der styrker medarbejdernes trivsel, reducerer sygefravær og skaber en sundere arbejdskultur — med dokumenterede resultater.",
+    "cta": "kontakt mig"
+  },
+  "workshop": {
+    "label": "Foredrag & workshops",
+    "heading": "Væk kroppens iboende intelligens",
+    "body": "Undervisning i og smagsprøver på, hvordan vi selv kan aktivere kroppens selvhelbredende system og dermed regulere vores eget nervesystem, inklusiv skrue op og ned for vores vågenhedstilstand og energi.",
+    "overlay_quote": "Det hele starter og slutter i kroppen.",
+    "item1_title": "Nervesystemets Magi",
+    "item1_body": "Forstå og reguler kroppens reaktioner bevidst.",
+    "item2_title": "Kropslig Bevidsthed",
+    "item2_body": "Genfind fokus og nærvær i en travl hverdag."
+  },
+  "stress": {
+    "heading": "3 måneders Stressforløb",
+    "body": "\"Opnå indre ro — og stå stærkt i dig selv.\" Et dedikeret holdforløb over 90 dage med individuel opfølgning, validerede stresstests, undervisning og kropslige øvelser, der giver varige forandringer.",
+    "card1_title": "Behandlende",
+    "card1_body": "Lindring af symptomer",
+    "card2_title": "Forebyggende",
+    "card2_body": "Værktøjer til fremtiden",
+    "card3_title": "Vedvarende",
+    "card3_body": "Langtidsholdbar ro",
+    "cta": "START DIN REJSE HER"
+  },
+  "leader": {
+    "label": "Leder-forløbet",
+    "heading": "Eksklusiv indsigt og udvikling for ledere",
+    "para1": "Individuelt tilrettelagte forløb for ledere, inkluderende både stresshåndtering, mental og personlig udvikling. Når man bærer et stort ansvar, er ens eget fundament og evne til at navigere i pres helt centralt for bæredygtig ledelse.",
+    "para2": "Leder-forløbet er et eksklusivt rum til dybdegående, fortrolig afklaring og strategisk restitution. Gennem målrettet indsats sikrer vi, at din kropslige og mentale kapacitet forbliver stærk.",
+    "cta": "Book en samtale",
+    "feature1_title": "Kognitiv Klarhed",
+    "feature1_body": "Reduktion af hjernetåge og forbedring af beslutningskraften gennem målrettet hvile.",
+    "feature2_title": "Målbare Resultater",
+    "feature2_body": "En krop i balance afspejler sig direkte i daglig eksekvering og bundlinje."
+  },
+  "stats": {
+    "label": "Hvorfor investere i trivsel?",
+    "heading": "Sunde medarbejdere = stærk organisation",
+    "stat1_number": "↓ 30%",
+    "stat1_body": "Reduktion i stressrelateret sygefravær ved målrettet indsats.",
+    "stat2_number": "↑ 21%",
+    "stat2_body": "Øget produktivitet hos medarbejdere med god trivsel.",
+    "stat3_number": "6×",
+    "stat3_body": "Afkast på investering i medarbejdertrivsel ifølge forskning."
+  },
+  "cta": {
+    "heading": "Lad os skabe et sundere arbejdsmiljø sammen",
+    "body": "kontakt mig for en uforpligtende snak om, hvordan jeg kan hjælpe jeres organisation.",
+    "button": "kontakt mig i dag"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "label": "Mød mig",
+    "heading": "Faglighed møder nærvær",
+    "tagline": "Med over 25 års erfaring og et hjerte, der brænder for healing og udvikling."
+  },
+  "intro": {
+    "label": "Birgitte Skovgaard",
+    "heading": "Walk the talk",
+    "para1": "Min overordnede mission i livet er at være kærlighed — at sprede healing, kindness og compassion til de mennesker, der kommer hos mig, så det spredes videre som ringe i vandet. Dét er min dharma — mit livsformål.",
+    "para2": "Jeg tror på at skabe plads til det hele menneske med både krop, psyke og sjæl. Samtidig er én af mine kerneværdier: Walk the talk — hvilket betyder, at jeg går vejen selv, først. Jeg kan nemlig aldrig hjælpe et andet menneske længere, end jeg selv er kommet.",
+    "para3": "Her vil du opleve en dybt holistisk tilgang, der forener jordnær professionalisme med kropslig bevidsthed. Uanset om du kommer for at få behandlet fysiske smerter, afhjælpe stress, genoptræning, eller søger udvikling gennem yogaterapi, kombinerer jeg mine fagligheder for at favne hele dig.",
+    "blockquote": "\"Du er i trygge hænder hos mig. Med mine mange års erfaring og indsigt i menneskets udvikling kommer jeg hele vejen rundt om dig, med plads og ro til at du bliver både set og hørt.\""
+  },
+  "education": {
+    "label": "Baggrund",
+    "heading": "Uddannelse & erfaring",
+    "intro": "Min faglighed bygger på årtiers studier, praksis og personlig udvikling. Jeg uddanner mig fortsat og kombinerer en solid videnskabelig base med dybdegående kendskab til kroppens og sindets samspil.",
+    "credential0_title": "Autoriseret Fysioterapeut",
+    "credential0_body": "Autoriseret siden 2000. Specialiseret i holistisk fysioterapi, genoptræning og smertebehandling.",
+    "credential1_title": "Yogaterapeut — 1000+ timer",
+    "credential1_body": "Uddannet hos KHYF i Indien. Dybdegående studier i yogaterapi som helbredende praksis.",
+    "credential2_title": "MediYoga Instruktør",
+    "credential2_body": "Certificeret MediYoga instruktør med fokus på terapeutisk yoga til mennesker med helbredsmæssige udfordringer.",
+    "credential3_title": "Børneyogalærer",
+    "credential3_body": "Uddannet børneyogalærer med særlig erfaring i at møde børn gennem leg, bevægelse og nærvær.",
+    "credential4_title": "Diplomuddannelse i psykologi",
+    "credential4_body": "Udviklingspsykologi, kognitions- og neuropsykologi samt gruppe- og organisationspsykologi. Giver dybde til den holistiske tilgang."
+  },
+  "videos": {
+    "label": "Hvad andre siger",
+    "heading": "Klienternes fortællinger",
+    "intro": "Jeg er dybt taknemmelig for de mennesker, der deler deres oplevelse. Hør her om deres rejse mod mere balance og mindre smerte.",
+    "video0_name": "Jesper",
+    "video0_caption": "Om at finde vej gennem sit forløb og genvinde overskuddet.",
+    "video1_name": "Søren Olsen",
+    "video1_caption": "En ærlig fortælling om effekten af et holistisk stressforløb."
+  },
+  "values": {
+    "label": "Hvad jeg tror på",
+    "heading": "Mine værdier",
+    "value0_title": "Walk the talk",
+    "value0_body": "Jeg går vejen selv, først. Jeg kan kun hjælpe dig så langt, som jeg selv er nået — og derfor er min egen fortsatte udvikling en forudsætning for mit arbejde.",
+    "value1_title": "Hele mennesket",
+    "value1_body": "Krop og sind er uadskillelige. Varig forandring kræver, at jeg arbejder med hele dig — ikke kun symptomet. Jeg skaber rum, hvor du bliver set og hørt i din helhed.",
+    "value2_title": "Livslang læring",
+    "value2_body": "Et menneske udvikles hele livet. Jeg uddanner mig fortsat og bringer den nyeste viden ind i klinikken — for at du kan få den bedst mulige behandling og støtte."
+  },
+  "testimonials": {
+    "heading": "Erfaringer fra klinikken",
+    "intro": "Det vigtigste for mig er ikke kun metoderne, men den forskel det gør i din hverdag.",
+    "item0_quote": "\"Et varmt og kærligt sted, hvor man er i yderst kompetente hænder. Jeg er meget imponeret over Birgittes store viden om (og dybe forståelse for) hvordan vi som mennesker påvirkes af skader, stress og traumer - og måske endnu vigtigere: Hvordan vi igennem kropsbevægelser og åndedrættet kan komme ud på den anden side og rejse os igen, som hele mennesker. Hos Birgitte føler man sig tryg, set og forstået. En kæmpe anbefaling herfra!\"",
+    "item0_name": "Mille Sylvest",
+    "item1_quote": "\"Kære Birgitte ! Du kan dit kram, du kan læse en og handle på det, og du rammer plet. Du har givet mig nogle værktøjer der med få besøg hos dig har ændret mit liv🙏💚 Du er et meget kærligt og lyttende menneske der for en til at føle sig velkommen fra start. Med et åbent sind er du guld værd, ses igen og kan klart anbefale dig til andre, tusind tak Namaste Henrik🙏💚\"",
+    "item1_name": "Henrik Nielsen",
+    "item2_quote": "\"Deltog i en 3 timers workshop - Opnå ro indeni. De 3+ timer fløj forbi i fantastiske Birgittes selskab. Birgitte delte ud af sin store viden om hvordan vi påvirkes fx af stress og hvordan vi kan komme i bedre balance og trivsel. Vi oplevede på egen krop hvordan vi kunne opnå ro gennem praktiske yoga- og åndedrætsøvelser, og fik mange praktisk redskaber med hjem til at mindske stress i hverdagen. Kan kun anbefale Birgitte hvis du ønsker tryg og kompetent behandling af det hele menneske.\"",
+    "item2_name": "Helle Rasmussen"
+  },
+  "cta": {
+    "heading": "Lad os mødes",
+    "body": "Tag det første skridt og book en tid. Jeg glæder mig til at lære dig at kende.",
+    "button": "Book en tid"
+  }
+}

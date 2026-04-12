@@ -19,8 +19,8 @@
     <!-- Meget kort sidehoved -->
     <section class="pt-32 pb-8 md:pt-36 md:pb-12 brand-gradient text-white relative">
         <div class="container mx-auto px-6 text-center relative z-10">
-            <span class="uppercase tracking-[0.4em] text-[10px] mb-3 block font-bold" style="color: #e2d5f8;">Kom i gang</span>
-            <h1 class="text-4xl md:text-5xl font-bold serif italic leading-tight">Kontakt mig</h1>
+            <span class="uppercase tracking-[0.4em] text-[10px] mb-3 block font-bold" style="color: #e2d5f8;" data-content-key="hero.label">Kom i gang</span>
+            <h1 class="text-4xl md:text-5xl font-bold serif italic leading-tight" data-content-key="hero.heading">Kontakt mig</h1>
         </div>
     </section>
 
@@ -33,8 +33,8 @@
                 <!-- Venstre side: Tekst & Formular -->
                 <div class="lg:w-[55%] p-8 md:p-12 lg:p-16 flex flex-col justify-center">
                     <div class="mb-10">
-                        <h2 class="text-3xl font-bold text-plum serif italic mb-4">Send en besked</h2>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                        <h2 class="text-3xl font-bold text-plum serif italic mb-4" data-content-key="form.heading">Send en besked</h2>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4" data-content-key="form.intro">
                             Udfyld felterne herunder, og jeg vender tilbage inden for 24 timer. Har du spørgsmål, der kræver et hurtigere svar, er du altid velkommen til at kontakte mig direkte.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 mt-6 pt-6 border-t border-gray-100">
@@ -88,7 +88,7 @@
                                 class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg resize-none"></textarea>
                         </div>
                         <button type="submit" class="btn-primary w-full sm:w-auto px-10">Send besked</button>
-                        <div id="form-success" class="hidden text-center text-sm text-purple-700 font-medium py-3 bg-purple-50 rounded-lg mt-4">
+                        <div id="form-success" class="hidden text-center text-sm text-purple-700 font-medium py-3 bg-purple-50 rounded-lg mt-4" data-content-key="form.success_message">
                             ✓ Tak! Din besked er sendt. Jeg vender tilbage snarest.
                         </div>
                     </form>
@@ -103,7 +103,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-[#2a1738]/80 via-transparent to-transparent pointer-events-none"></div>
                     <!-- Tekst hen over billedet -->
                     <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 text-white">
-                        <p class="font-serif italic text-2xl md:text-3xl mb-2 text-white shadow-sm">Jeg glæder mig til at høre fra dig</p>
+                        <p class="font-serif italic text-2xl md:text-3xl mb-2 text-white shadow-sm" data-content-key="form.image_overlay_heading">Jeg glæder mig til at høre fra dig</p>
                         <p class="text-xs tracking-widest uppercase font-bold text-[#e2d5f8]">Skovgaard Yoga- & Fysioterapi</p>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
         <div class="container mx-auto px-6 max-w-5xl">
             <div class="grid md:grid-cols-2 gap-8 items-center fade-in">
                 <div class="address-card" style="border-color: rgba(70,43,88,0.06)">
-                    <h3 class="text-lg font-bold text-plum serif italic mb-4">Find klinikken</h3>
+                    <h3 class="text-lg font-bold text-plum serif italic mb-4" data-content-key="address.heading">Find klinikken</h3>
                     <p class="text-gray-600 text-sm leading-relaxed mb-3">
                         <strong class="text-gray-700 font-semibold">Skovgaard Yoga- & Fysioterapi</strong><br>
                         Vordingborgvej 61C (i gården)<br>
@@ -171,6 +171,7 @@
             setTimeout(() => successMsg.classList.add('hidden'), 6000);
         }
     </script>
+    <script src="/js/content-loader.js"></script>
 </body>
 
 </html>
