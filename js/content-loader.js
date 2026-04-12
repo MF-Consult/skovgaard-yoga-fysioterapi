@@ -39,9 +39,27 @@
   }
 
   /**
+   * Converts a minimal subset of Markdown to safe HTML.
+   * Always escapes HTML entities first to prevent XSS.
+   * Supports: **bold**, *italic*, and paragraph breaks (\n\n → <br><br>).
+   */
+  function markdownToHtml(md) {
+    return md
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+      .replace(/\n\n/g, '<br><br>')
+      .replace(/\n/g, '<br>');
+  }
+
+  /**
    * Applies resolved content values to all [data-content-key] elements
    * within the given root element.
-   * Keys ending in "_html" use innerHTML (for bold/links); all others use textContent.
+   * - Values containing newlines or markdown are rendered via markdownToHtml + innerHTML (safe — always HTML-escaped first).
+   * - Plain single-line values use textContent.
+   * - Keys ending in "_html" always use innerHTML (legacy behaviour).
    */
   function applyContent(data, root) {
     root = root || document;
@@ -52,8 +70,11 @@
       var value = resolve(data, key);
       if (value == null || typeof value === 'object') continue;
       var str = String(value);
-      if (key.slice(-5) === '_html') {
-        el.innerHTML = str;
+      var isMarkdown = str.indexOf('\n') !== -1 ||
+                       str.indexOf('**') !== -1 ||
+                       str.indexOf('*') !== -1;
+      if (key.slice(-5) === '_html' || isMarkdown) {
+        el.innerHTML = markdownToHtml(str);
       } else {
         el.textContent = str;
       }
