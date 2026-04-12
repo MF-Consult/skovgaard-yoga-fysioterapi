@@ -4,12 +4,17 @@ backend:
 
 locale: da
 
+site_url: "https://birgitte-skovgaard.netlify.app"
+show_preview_links: true
+
 media_folder: "Assets"
 public_folder: "/Assets"
 
 collections:
   - name: "global"
     label: "Globalt indhold"
+    editor:
+      preview: false
     files:
       - name: "global"
         label: "Kontaktinfo, åbningstider & footer"
@@ -19,29 +24,36 @@ collections:
           - label: "Kontaktoplysninger"
             name: "contact"
             widget: "object"
+            collapsed: true
+            hint: "Vises i footeren og på kontaktsiden"
             fields:
-              - {label: "Telefon", name: "phone", widget: "string"}
-              - {label: "E-mail", name: "email", widget: "string"}
-              - {label: "Adresse", name: "address", widget: "string"}
-              - {label: "Parkeringsnote", name: "parking", widget: "string"}
+              - {label: "Telefon", name: "phone", widget: "string", hint: "Vises i header, footer og kontaktside"}
+              - {label: "E-mail", name: "email", widget: "string", hint: "Vises i footer og kontaktside"}
+              - {label: "Adresse", name: "address", widget: "string", hint: "Vises i footer og kontaktside"}
+              - {label: "Parkeringsnote", name: "parking", widget: "string", hint: "Den lille parkeringstekst under adressen"}
           - label: "Åbningstider"
             name: "hours"
             widget: "list"
+            hint: "Vises i footer og på kontaktsiden — tilføj, fjern eller rediger dage frit"
             fields:
               - {label: "Dag", name: "day", widget: "string"}
-              - {label: "Tid", name: "time", widget: "string"}
+              - {label: "Tid", name: "time", widget: "string", hint: "F.eks. '10:00 – 17:00' eller 'Lukket'"}
           - label: "Footer"
             name: "footer"
             widget: "object"
+            collapsed: true
+            hint: "Tekster nederst på alle sider"
             fields:
-              - {label: "Slagord", name: "tagline", widget: "string"}
-              - {label: "CTA overskrift", name: "cta_heading", widget: "string"}
-              - {label: "CTA undertekst", name: "cta_subtext", widget: "string"}
-              - {label: "CTA knaptekst", name: "cta_button", widget: "string"}
-              - {label: "Copyright", name: "copyright", widget: "string"}
+              - {label: "Slagord", name: "tagline", widget: "string", hint: "Den lille beskrivende tekst i footerens venstre side"}
+              - {label: "CTA overskrift", name: "cta_heading", widget: "string", hint: "Overskriften i den grønne opfordringsboks"}
+              - {label: "CTA undertekst", name: "cta_subtext", widget: "string", hint: "Teksten under overskriften i den grønne boks"}
+              - {label: "CTA knaptekst", name: "cta_button", widget: "string", hint: "Teksten på knappen i den grønne boks"}
+              - {label: "Copyright", name: "copyright", widget: "string", hint: "Teksten helt nederst (årstal + CVR)"}
 
   - name: "pages"
     label: "Sider"
+    editor:
+      preview: false
     files:
       - name: "index"
         label: "Forside"
@@ -51,71 +63,85 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
+            hint: "Det første der ses når siden åbnes"
             fields:
-              - {label: "Lille label", name: "label", widget: "string"}
-              - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Brødtekst", name: "body", widget: "text"}
-              - {label: "Primær knap", name: "cta_primary", widget: "string"}
-              - {label: "Sekundær knap", name: "cta_secondary", widget: "string"}
+              - {label: "Lille label", name: "label", widget: "string", hint: "Den lille tekst øverst (f.eks. 'Fra hjerte til hjerte')"}
+              - {label: "Overskrift", name: "heading", widget: "string", hint: "Sidens store hovedoverskrift"}
+              - {label: "Brødtekst", name: "body", widget: "markdown", hint: "Den korte velkomsttekst under overskriften"}
+              - {label: "Primær knap", name: "cta_primary", widget: "string", hint: "Teksten på den mørke knap"}
+              - {label: "Sekundær knap", name: "cta_secondary", widget: "string", hint: "Teksten på den lyse knap"}
           - label: "Stress-sektion"
             name: "stress"
             widget: "object"
+            collapsed: true
+            hint: "Sektionen om stressforløb midt på forsiden"
             fields:
-              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Label", name: "label", widget: "string", hint: "Den lille tekst over overskriften"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Intro", name: "intro", widget: "text"}
-              - label: "Kort: Privat"
+              - {label: "Intro", name: "intro", widget: "markdown", hint: "Introduktionsteksten under overskriften"}
+              - label: "Kort: Privatpersoner"
                 name: "card_private"
                 widget: "object"
+                collapsed: true
                 fields:
                   - {label: "Overskrift", name: "heading", widget: "string"}
-                  - {label: "Beskrivelse", name: "body", widget: "text"}
+                  - {label: "Beskrivelse", name: "body", widget: "markdown"}
                   - {label: "Knap", name: "cta", widget: "string"}
-              - label: "Kort: Erhverv"
+              - label: "Kort: Ledere & Virksomheder"
                 name: "card_business"
                 widget: "object"
+                collapsed: true
                 fields:
                   - {label: "Overskrift", name: "heading", widget: "string"}
-                  - {label: "Beskrivelse", name: "body", widget: "text"}
+                  - {label: "Beskrivelse", name: "body", widget: "markdown"}
                   - {label: "Knap", name: "cta", widget: "string"}
           - label: "Høj begavelse-sektion"
             name: "gifted"
             widget: "object"
+            collapsed: true
+            hint: "Sektionen om høj begavelse og Gifted Children"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Manchet", name: "lead", widget: "text"}
-              - {label: "Brødtekst", name: "body", widget: "text"}
+              - {label: "Manchet", name: "lead", widget: "markdown", hint: "Den fremhævede indledende tekst"}
+              - {label: "Brødtekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
           - label: "Børn-sektion"
             name: "children"
             widget: "object"
+            collapsed: true
+            hint: "Sektionen om børnefysioterapi"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Manchet", name: "lead", widget: "text"}
+              - {label: "Manchet", name: "lead", widget: "markdown"}
               - {label: "Punkt 1", name: "bullet1", widget: "string"}
               - {label: "Punkt 2", name: "bullet2", widget: "string"}
               - {label: "Knap", name: "cta", widget: "string"}
           - label: "Ydelser"
             name: "services"
             widget: "object"
+            collapsed: true
+            hint: "De tre ydelseskort (Fysioterapi, Yogaterapi, GLA:D)"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Intro", name: "intro", widget: "markdown"}
               - {label: "Ydelse 1 titel", name: "item1_title", widget: "string"}
-              - {label: "Ydelse 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Ydelse 1 tekst", name: "item1_body", widget: "markdown"}
               - {label: "Ydelse 2 titel", name: "item2_title", widget: "string"}
-              - {label: "Ydelse 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Ydelse 2 tekst", name: "item2_body", widget: "markdown"}
               - {label: "Ydelse 3 titel", name: "item3_title", widget: "string"}
-              - {label: "Ydelse 3 tekst", name: "item3_body", widget: "text"}
+              - {label: "Ydelse 3 tekst", name: "item3_body", widget: "markdown"}
           - label: "Udtalelser"
             name: "testimonials"
             widget: "object"
+            collapsed: true
+            hint: "Klientudtalelser på forsiden"
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Intro", name: "intro", widget: "markdown"}
               - {label: "Udtalelse 1 citat", name: "item0_quote", widget: "text"}
               - {label: "Udtalelse 1 navn", name: "item0_name", widget: "string"}
               - {label: "Udtalelse 2 citat", name: "item1_quote", widget: "text"}
@@ -125,34 +151,40 @@ collections:
           - label: "Forløb (trin)"
             name: "process"
             widget: "object"
+            collapsed: true
+            hint: "De fire trin i forløbet"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Intro", name: "intro", widget: "markdown"}
               - {label: "Trin 1 titel", name: "step1_title", widget: "string"}
-              - {label: "Trin 1 tekst", name: "step1_body", widget: "text"}
+              - {label: "Trin 1 tekst", name: "step1_body", widget: "markdown"}
               - {label: "Trin 2 titel", name: "step2_title", widget: "string"}
-              - {label: "Trin 2 tekst", name: "step2_body", widget: "text"}
+              - {label: "Trin 2 tekst", name: "step2_body", widget: "markdown"}
               - {label: "Trin 3 titel", name: "step3_title", widget: "string"}
-              - {label: "Trin 3 tekst", name: "step3_body", widget: "text"}
+              - {label: "Trin 3 tekst", name: "step3_body", widget: "markdown"}
               - {label: "Trin 4 titel", name: "step4_title", widget: "string"}
-              - {label: "Trin 4 tekst", name: "step4_body", widget: "text"}
+              - {label: "Trin 4 tekst", name: "step4_body", widget: "markdown"}
           - label: "CTA-sektion"
             name: "cta"
             widget: "object"
+            collapsed: true
+            hint: "Den grønne opfordringssektion"
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Primær knap", name: "cta_primary", widget: "string"}
               - {label: "Sekundær knap", name: "cta_secondary", widget: "string"}
           - label: "Om-preview"
             name: "about_preview"
             widget: "object"
+            collapsed: true
+            hint: "Den lille 'Om mig'-sektion nær bunden af forsiden"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Baggrund", name: "background", widget: "text"}
-              - {label: "Tilgang", name: "approach", widget: "text"}
+              - {label: "Baggrund", name: "background", widget: "markdown"}
+              - {label: "Tilgang", name: "approach", widget: "markdown"}
 
       - name: "priser"
         label: "Priser"
@@ -162,6 +194,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -169,12 +202,14 @@ collections:
           - label: "Gitter-overskrift"
             name: "grid"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
           - label: "Priskategorier"
             name: "categories"
             widget: "list"
+            hint: "Tilføj, fjern eller omdøb kategorier og priser frit"
             fields:
               - {label: "Kategorinavn", name: "title", widget: "string"}
               - label: "Priser"
@@ -183,23 +218,26 @@ collections:
                 fields:
                   - {label: "Ydelse / varighed", name: "name", widget: "string"}
                   - {label: "Undertitel (valgfri)", name: "subtitle", widget: "string", required: false}
-                  - {label: "Pris", name: "price", widget: "string"}
+                  - {label: "Pris", name: "price", widget: "string", hint: "F.eks. '650 kr.'"}
           - label: "Praktisk info"
             name: "praktisk"
             widget: "object"
+            collapsed: true
+            hint: "Afbestilling og tilskudsinfo under pristabellen"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Afbestilling titel", name: "cancellation_title", widget: "string"}
-              - {label: "Afbestilling tekst", name: "cancellation_body", widget: "text"}
+              - {label: "Afbestilling tekst", name: "cancellation_body", widget: "markdown"}
               - {label: "Tilskud titel", name: "subsidy_title", widget: "string"}
-              - {label: "Tilskud tekst", name: "subsidy_body", widget: "text"}
+              - {label: "Tilskud tekst", name: "subsidy_body", widget: "markdown"}
           - label: "CTA"
             name: "cta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "button", widget: "string"}
 
       - name: "om"
@@ -210,6 +248,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -217,52 +256,61 @@ collections:
           - label: "Intro"
             name: "intro"
             widget: "object"
+            collapsed: true
+            hint: "Den personlige introduktion øverst på siden"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
-              - {label: "Afsnit 3", name: "para3", widget: "text"}
-              - {label: "Citat", name: "blockquote", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
+              - {label: "Afsnit 3", name: "para3", widget: "markdown"}
+              - {label: "Citat", name: "blockquote", widget: "markdown", hint: "Det fremhævede citat i boksen"}
           - label: "Uddannelse & erfaring"
             name: "education"
             widget: "object"
+            collapsed: true
+            hint: "De fem kompetence-/uddannelseskort"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Kompetence 1 titel", name: "credential0_title", widget: "string"}
-              - {label: "Kompetence 1 tekst", name: "credential0_body", widget: "text"}
+              - {label: "Kompetence 1 tekst", name: "credential0_body", widget: "markdown"}
               - {label: "Kompetence 2 titel", name: "credential1_title", widget: "string"}
-              - {label: "Kompetence 2 tekst", name: "credential1_body", widget: "text"}
+              - {label: "Kompetence 2 tekst", name: "credential1_body", widget: "markdown"}
               - {label: "Kompetence 3 titel", name: "credential2_title", widget: "string"}
-              - {label: "Kompetence 3 tekst", name: "credential2_body", widget: "text"}
+              - {label: "Kompetence 3 tekst", name: "credential2_body", widget: "markdown"}
               - {label: "Kompetence 4 titel", name: "credential3_title", widget: "string"}
-              - {label: "Kompetence 4 tekst", name: "credential3_body", widget: "text"}
+              - {label: "Kompetence 4 tekst", name: "credential3_body", widget: "markdown"}
               - {label: "Kompetence 5 titel", name: "credential4_title", widget: "string"}
-              - {label: "Kompetence 5 tekst", name: "credential4_body", widget: "text"}
+              - {label: "Kompetence 5 tekst", name: "credential4_body", widget: "markdown"}
           - label: "Videoer"
             name: "videos"
             widget: "object"
+            collapsed: true
+            hint: "Billedteksterne under de to videoer"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Video 1 tekst", name: "video1_caption", widget: "text"}
-              - {label: "Video 2 tekst", name: "video2_caption", widget: "text"}
+              - {label: "Video 1 tekst", name: "video1_caption", widget: "markdown"}
+              - {label: "Video 2 tekst", name: "video2_caption", widget: "markdown"}
           - label: "Værdier"
             name: "values"
             widget: "object"
+            collapsed: true
+            hint: "De tre værdikort"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Værdi 1 titel", name: "value1_title", widget: "string"}
-              - {label: "Værdi 1 tekst", name: "value1_body", widget: "text"}
+              - {label: "Værdi 1 tekst", name: "value1_body", widget: "markdown"}
               - {label: "Værdi 2 titel", name: "value2_title", widget: "string"}
-              - {label: "Værdi 2 tekst", name: "value2_body", widget: "text"}
+              - {label: "Værdi 2 tekst", name: "value2_body", widget: "markdown"}
               - {label: "Værdi 3 titel", name: "value3_title", widget: "string"}
-              - {label: "Værdi 3 tekst", name: "value3_body", widget: "text"}
+              - {label: "Værdi 3 tekst", name: "value3_body", widget: "markdown"}
           - label: "Udtalelser"
             name: "testimonials"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -275,9 +323,10 @@ collections:
           - label: "CTA"
             name: "cta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "button", widget: "string"}
 
       - name: "kontakt"
@@ -288,6 +337,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -295,19 +345,22 @@ collections:
           - label: "Kontaktformular"
             name: "form"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Intro", name: "intro", widget: "text"}
-              - {label: "Billede-overlay tekst", name: "image_overlay_heading", widget: "string"}
-              - {label: "Succesbesked", name: "success_message", widget: "text"}
+              - {label: "Intro", name: "intro", widget: "markdown"}
+              - {label: "Billede-overlay tekst", name: "image_overlay_heading", widget: "string", hint: "Teksten der vises oven på billedet"}
+              - {label: "Succesbesked", name: "success_message", widget: "markdown", hint: "Vises når formularen er sendt"}
           - label: "Adresse & info"
             name: "address"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
           - label: "Åbningstider (visning)"
             name: "hours"
             widget: "list"
+            hint: "Åbningstider til visning på kontaktsiden"
             fields:
               - {label: "Dag", name: "day", widget: "string"}
               - {label: "Tid", name: "time", widget: "string"}
@@ -320,6 +373,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -327,22 +381,25 @@ collections:
           - label: "Intro"
             name: "intro"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
           - label: "Anmeldelser"
             name: "reviews"
             widget: "list"
+            hint: "Tilføj eller fjern anmeldelser frit"
             fields:
-              - {label: "Citat", name: "quote", widget: "text"}
-              - {label: "Rolle / titel", name: "role", widget: "string"}
+              - {label: "Citat", name: "quote", widget: "text", hint: "Selve anmeldelsesteksten"}
+              - {label: "Rolle / titel", name: "role", widget: "string", hint: "F.eks. 'Deltager' eller 'Leder, IT-virksomhed'"}
               - {label: "Organisation", name: "organization", widget: "string"}
           - label: "Tilbage-sektion"
             name: "back"
             widget: "object"
+            collapsed: true
             fields:
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
 
       - name: "stress"
@@ -353,6 +410,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -360,15 +418,18 @@ collections:
           - label: "Intro"
             name: "intro"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
           - label: "Tegn på stress"
             name: "signs"
             widget: "object"
+            collapsed: true
+            hint: "De fem symptomer/tegn på stress"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -380,38 +441,42 @@ collections:
           - label: "Tilgang"
             name: "approach"
             widget: "object"
+            collapsed: true
+            hint: "De fire behandlingsmetoder"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Metode 1 titel", name: "method1_title", widget: "string"}
-              - {label: "Metode 1 tekst", name: "method1_body", widget: "text"}
+              - {label: "Metode 1 tekst", name: "method1_body", widget: "markdown"}
               - {label: "Metode 2 titel", name: "method2_title", widget: "string"}
-              - {label: "Metode 2 tekst", name: "method2_body", widget: "text"}
+              - {label: "Metode 2 tekst", name: "method2_body", widget: "markdown"}
               - {label: "Metode 3 titel", name: "method3_title", widget: "string"}
-              - {label: "Metode 3 tekst", name: "method3_body", widget: "text"}
+              - {label: "Metode 3 tekst", name: "method3_body", widget: "markdown"}
               - {label: "Metode 4 titel", name: "method4_title", widget: "string"}
-              - {label: "Metode 4 tekst", name: "method4_body", widget: "text"}
+              - {label: "Metode 4 tekst", name: "method4_body", widget: "markdown"}
           - label: "Forløb"
             name: "process"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Trin 1 titel", name: "step1_title", widget: "string"}
-              - {label: "Trin 1 tekst", name: "step1_body", widget: "text"}
+              - {label: "Trin 1 tekst", name: "step1_body", widget: "markdown"}
               - {label: "Trin 2 titel", name: "step2_title", widget: "string"}
-              - {label: "Trin 2 tekst", name: "step2_body", widget: "text"}
+              - {label: "Trin 2 tekst", name: "step2_body", widget: "markdown"}
               - {label: "Trin 3 titel", name: "step3_title", widget: "string"}
-              - {label: "Trin 3 tekst", name: "step3_body", widget: "text"}
+              - {label: "Trin 3 tekst", name: "step3_body", widget: "markdown"}
               - {label: "Trin 4 titel", name: "step4_title", widget: "string"}
-              - {label: "Trin 4 tekst", name: "step4_body", widget: "text"}
-              - {label: "Stresstest note", name: "stresstest_note", widget: "text"}
+              - {label: "Trin 4 tekst", name: "step4_body", widget: "markdown"}
+              - {label: "Stresstest note", name: "stresstest_note", widget: "markdown", hint: "Noten om den gratis stresstest"}
           - label: "CTA"
             name: "cta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "button", widget: "string"}
 
       - name: "stress-erhverv"
@@ -422,6 +487,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -429,56 +495,63 @@ collections:
           - label: "Intro"
             name: "intro"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
           - label: "Indhold"
             name: "content"
             widget: "object"
+            collapsed: true
+            hint: "De seks punkter i erhvervsforløbet"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Punkt 1 titel", name: "item1_title", widget: "string"}
-              - {label: "Punkt 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Punkt 1 tekst", name: "item1_body", widget: "markdown"}
               - {label: "Punkt 2 titel", name: "item2_title", widget: "string"}
-              - {label: "Punkt 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Punkt 2 tekst", name: "item2_body", widget: "markdown"}
               - {label: "Punkt 3 titel", name: "item3_title", widget: "string"}
-              - {label: "Punkt 3 tekst", name: "item3_body", widget: "text"}
+              - {label: "Punkt 3 tekst", name: "item3_body", widget: "markdown"}
               - {label: "Punkt 4 titel", name: "item4_title", widget: "string"}
-              - {label: "Punkt 4 tekst", name: "item4_body", widget: "text"}
+              - {label: "Punkt 4 tekst", name: "item4_body", widget: "markdown"}
               - {label: "Punkt 5 titel", name: "item5_title", widget: "string"}
-              - {label: "Punkt 5 tekst", name: "item5_body", widget: "text"}
+              - {label: "Punkt 5 tekst", name: "item5_body", widget: "markdown"}
               - {label: "Punkt 6 titel", name: "item6_title", widget: "string"}
-              - {label: "Punkt 6 tekst", name: "item6_body", widget: "text"}
+              - {label: "Punkt 6 tekst", name: "item6_body", widget: "markdown"}
           - label: "Statistik"
             name: "stats"
             widget: "object"
+            collapsed: true
+            hint: "De tre tal/fakta-bokse"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Stat 1 tal", name: "stat1_number", widget: "string"}
+              - {label: "Stat 1 tal", name: "stat1_number", widget: "string", hint: "F.eks. '43%'"}
               - {label: "Stat 1 tekst", name: "stat1_body", widget: "string"}
               - {label: "Stat 2 tal", name: "stat2_number", widget: "string"}
               - {label: "Stat 2 tekst", name: "stat2_body", widget: "string"}
               - {label: "Stat 3 tal", name: "stat3_number", widget: "string"}
               - {label: "Stat 3 tekst", name: "stat3_body", widget: "string"}
               - {label: "Citat", name: "quote", widget: "text"}
-              - {label: "Citatkilde", name: "quote_source", widget: "string"}
+              - {label: "Citatkilde", name: "quote_source", widget: "string", hint: "Kilden til citatet"}
           - label: "Garanti"
             name: "guarantee"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
           - label: "CTA"
             name: "cta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "button", widget: "string"}
 
       - name: "yoga"
@@ -489,6 +562,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -496,45 +570,51 @@ collections:
           - label: "Intro"
             name: "intro"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
           - label: "Tilbud"
             name: "offers"
             widget: "object"
+            collapsed: true
+            hint: "De tre yoga-tilbud"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tilbud 1 titel", name: "item1_title", widget: "string"}
-              - {label: "Tilbud 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Tilbud 1 tekst", name: "item1_body", widget: "markdown"}
               - {label: "Tilbud 2 titel", name: "item2_title", widget: "string"}
-              - {label: "Tilbud 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Tilbud 2 tekst", name: "item2_body", widget: "markdown"}
               - {label: "Tilbud 3 titel", name: "item3_title", widget: "string"}
-              - {label: "Tilbud 3 tekst", name: "item3_body", widget: "text"}
+              - {label: "Tilbud 3 tekst", name: "item3_body", widget: "markdown"}
           - label: "Målgruppe"
             name: "audience"
             widget: "object"
+            collapsed: true
+            hint: "De fire målgruppeafsnit"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Intro", name: "intro", widget: "markdown"}
               - {label: "Gruppe 1 titel", name: "group1_title", widget: "string"}
-              - {label: "Gruppe 1 tekst", name: "group1_body", widget: "text"}
+              - {label: "Gruppe 1 tekst", name: "group1_body", widget: "markdown"}
               - {label: "Gruppe 2 titel", name: "group2_title", widget: "string"}
-              - {label: "Gruppe 2 tekst", name: "group2_body", widget: "text"}
+              - {label: "Gruppe 2 tekst", name: "group2_body", widget: "markdown"}
               - {label: "Gruppe 3 titel", name: "group3_title", widget: "string"}
-              - {label: "Gruppe 3 tekst", name: "group3_body", widget: "text"}
+              - {label: "Gruppe 3 tekst", name: "group3_body", widget: "markdown"}
               - {label: "Gruppe 4 titel", name: "group4_title", widget: "string"}
-              - {label: "Gruppe 4 tekst", name: "group4_body", widget: "text"}
+              - {label: "Gruppe 4 tekst", name: "group4_body", widget: "markdown"}
           - label: "CTA"
             name: "cta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "button", widget: "string"}
 
       - name: "fysioterapi"
@@ -545,6 +625,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -552,48 +633,54 @@ collections:
           - label: "Intro"
             name: "intro"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
           - label: "Behandlingsområder"
             name: "treatments"
             widget: "object"
+            collapsed: true
+            hint: "De seks behandlingsområder"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Område 1 titel", name: "item1_title", widget: "string"}
-              - {label: "Område 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Område 1 tekst", name: "item1_body", widget: "markdown"}
               - {label: "Område 2 titel", name: "item2_title", widget: "string"}
-              - {label: "Område 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Område 2 tekst", name: "item2_body", widget: "markdown"}
               - {label: "Område 3 titel", name: "item3_title", widget: "string"}
-              - {label: "Område 3 tekst", name: "item3_body", widget: "text"}
+              - {label: "Område 3 tekst", name: "item3_body", widget: "markdown"}
               - {label: "Område 4 titel", name: "item4_title", widget: "string"}
-              - {label: "Område 4 tekst", name: "item4_body", widget: "text"}
+              - {label: "Område 4 tekst", name: "item4_body", widget: "markdown"}
               - {label: "Område 5 titel", name: "item5_title", widget: "string"}
-              - {label: "Område 5 tekst", name: "item5_body", widget: "text"}
+              - {label: "Område 5 tekst", name: "item5_body", widget: "markdown"}
               - {label: "Område 6 titel", name: "item6_title", widget: "string"}
-              - {label: "Område 6 tekst", name: "item6_body", widget: "text"}
+              - {label: "Område 6 tekst", name: "item6_body", widget: "markdown"}
           - label: "Forløb"
             name: "process"
             widget: "object"
+            collapsed: true
+            hint: "De tre behandlingstrin"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Trin 1 titel", name: "step1_title", widget: "string"}
-              - {label: "Trin 1 tekst", name: "step1_body", widget: "text"}
+              - {label: "Trin 1 tekst", name: "step1_body", widget: "markdown"}
               - {label: "Trin 2 titel", name: "step2_title", widget: "string"}
-              - {label: "Trin 2 tekst", name: "step2_body", widget: "text"}
+              - {label: "Trin 2 tekst", name: "step2_body", widget: "markdown"}
               - {label: "Trin 3 titel", name: "step3_title", widget: "string"}
-              - {label: "Trin 3 tekst", name: "step3_body", widget: "text"}
+              - {label: "Trin 3 tekst", name: "step3_body", widget: "markdown"}
           - label: "CTA"
             name: "cta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "button", widget: "string"}
 
       - name: "glad"
@@ -604,6 +691,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -611,75 +699,83 @@ collections:
           - label: "Intro"
             name: "intro"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Primær knap", name: "cta_primary", widget: "string"}
               - {label: "Sekundær knap", name: "cta_secondary", widget: "string"}
           - label: "Effekter"
             name: "effects"
             widget: "object"
+            collapsed: true
+            hint: "De fire dokumenterede effekter"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Intro", name: "intro", widget: "markdown"}
               - {label: "Effekt 1 titel", name: "effect1_title", widget: "string"}
-              - {label: "Effekt 1 tekst", name: "effect1_body", widget: "text"}
+              - {label: "Effekt 1 tekst", name: "effect1_body", widget: "markdown"}
               - {label: "Effekt 2 titel", name: "effect2_title", widget: "string"}
-              - {label: "Effekt 2 tekst", name: "effect2_body", widget: "text"}
+              - {label: "Effekt 2 tekst", name: "effect2_body", widget: "markdown"}
               - {label: "Effekt 3 titel", name: "effect3_title", widget: "string"}
-              - {label: "Effekt 3 tekst", name: "effect3_body", widget: "text"}
+              - {label: "Effekt 3 tekst", name: "effect3_body", widget: "markdown"}
               - {label: "Effekt 4 titel", name: "effect4_title", widget: "string"}
-              - {label: "Effekt 4 tekst", name: "effect4_body", widget: "text"}
+              - {label: "Effekt 4 tekst", name: "effect4_body", widget: "markdown"}
           - label: "Indhold"
             name: "content"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Punkt 1 titel", name: "item1_title", widget: "string"}
-              - {label: "Punkt 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Punkt 1 tekst", name: "item1_body", widget: "markdown"}
               - {label: "Punkt 2 titel", name: "item2_title", widget: "string"}
-              - {label: "Punkt 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Punkt 2 tekst", name: "item2_body", widget: "markdown"}
               - {label: "Punkt 3 titel", name: "item3_title", widget: "string"}
-              - {label: "Punkt 3 tekst", name: "item3_body", widget: "text"}
+              - {label: "Punkt 3 tekst", name: "item3_body", widget: "markdown"}
           - label: "Typisk træningstime"
             name: "session"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Intro", name: "intro", widget: "markdown"}
               - {label: "Fase 1 titel", name: "step1_title", widget: "string"}
-              - {label: "Fase 1 tekst", name: "step1_body", widget: "text"}
+              - {label: "Fase 1 tekst", name: "step1_body", widget: "markdown"}
               - {label: "Fase 2 titel", name: "step2_title", widget: "string"}
-              - {label: "Fase 2 tekst", name: "step2_body", widget: "text"}
+              - {label: "Fase 2 tekst", name: "step2_body", widget: "markdown"}
               - {label: "Fase 3 titel", name: "step3_title", widget: "string"}
-              - {label: "Fase 3 tekst", name: "step3_body", widget: "text"}
+              - {label: "Fase 3 tekst", name: "step3_body", widget: "markdown"}
           - label: "Kriterier"
             name: "criteria"
             widget: "object"
+            collapsed: true
+            hint: "Hvem kan deltage og projektinfo"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Kriterium 1 titel", name: "crit1_title", widget: "string"}
-              - {label: "Kriterium 1 tekst", name: "crit1_body", widget: "text"}
+              - {label: "Kriterium 1 tekst", name: "crit1_body", widget: "markdown"}
               - {label: "Kriterium 2 titel", name: "crit2_title", widget: "string"}
-              - {label: "Kriterium 2 tekst", name: "crit2_body", widget: "text"}
+              - {label: "Kriterium 2 tekst", name: "crit2_body", widget: "markdown"}
               - {label: "Kriterium 3 titel", name: "crit3_title", widget: "string"}
-              - {label: "Kriterium 3 tekst", name: "crit3_body", widget: "text"}
+              - {label: "Kriterium 3 tekst", name: "crit3_body", widget: "markdown"}
               - {label: "Projekt overskrift", name: "project_heading", widget: "string"}
-              - {label: "Projekt tekst 1", name: "project_body1", widget: "text"}
-              - {label: "Projekt tekst 2", name: "project_body2", widget: "text"}
+              - {label: "Projekt tekst 1", name: "project_body1", widget: "markdown"}
+              - {label: "Projekt tekst 2", name: "project_body2", widget: "markdown"}
               - {label: "Projekt link tekst", name: "project_link", widget: "string"}
           - label: "CTA"
             name: "cta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "button", widget: "string"}
 
       - name: "gifted"
@@ -690,6 +786,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -697,18 +794,20 @@ collections:
           - label: "Intro"
             name: "intro"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
           - label: "Børn & unge"
             name: "children"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Punkt 1", name: "li1", widget: "string"}
               - {label: "Punkt 2", name: "li2", widget: "string"}
               - {label: "Punkt 3", name: "li3", widget: "string"}
@@ -716,27 +815,30 @@ collections:
           - label: "Voksne"
             name: "adults"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
           - label: "Forældre & partnerskab"
             name: "parents"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Forældre overskrift", name: "parent_title", widget: "string"}
-              - {label: "Forældre tekst", name: "parent_body", widget: "text"}
+              - {label: "Forældre tekst", name: "parent_body", widget: "markdown"}
               - {label: "Partner overskrift", name: "partner_title", widget: "string"}
-              - {label: "Partner tekst", name: "partner_body", widget: "text"}
+              - {label: "Partner tekst", name: "partner_body", widget: "markdown"}
               - {label: "Partner knap", name: "partner_cta", widget: "string"}
           - label: "CTA"
             name: "cta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "button", widget: "string"}
 
       - name: "boern"
@@ -747,6 +849,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -754,39 +857,43 @@ collections:
           - label: "Intro"
             name: "intro"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
-              - {label: "Afsnit 3", name: "para3", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
+              - {label: "Afsnit 3", name: "para3", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
           - label: "Ydelser"
             name: "services"
             widget: "object"
+            collapsed: true
+            hint: "De seks ydelseskort"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Ydelse 1 titel", name: "item1_title", widget: "string"}
-              - {label: "Ydelse 1 tekst", name: "item1_body", widget: "text"}
+              - {label: "Ydelse 1 tekst", name: "item1_body", widget: "markdown"}
               - {label: "Ydelse 2 titel", name: "item2_title", widget: "string"}
-              - {label: "Ydelse 2 tekst", name: "item2_body", widget: "text"}
+              - {label: "Ydelse 2 tekst", name: "item2_body", widget: "markdown"}
               - {label: "Ydelse 3 titel", name: "item3_title", widget: "string"}
-              - {label: "Ydelse 3 tekst", name: "item3_body", widget: "text"}
+              - {label: "Ydelse 3 tekst", name: "item3_body", widget: "markdown"}
               - {label: "Ydelse 4 titel", name: "item4_title", widget: "string"}
-              - {label: "Ydelse 4 tekst", name: "item4_body", widget: "text"}
+              - {label: "Ydelse 4 tekst", name: "item4_body", widget: "markdown"}
               - {label: "Ydelse 5 titel", name: "item5_title", widget: "string"}
-              - {label: "Ydelse 5 tekst", name: "item5_body", widget: "text"}
+              - {label: "Ydelse 5 tekst", name: "item5_body", widget: "markdown"}
               - {label: "Ydelse 6 titel", name: "item6_title", widget: "string"}
-              - {label: "Ydelse 6 tekst", name: "item6_body", widget: "text"}
+              - {label: "Ydelse 6 tekst", name: "item6_body", widget: "markdown"}
           - label: "Tilgang"
             name: "approach"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Kompetence 1", name: "cred1", widget: "string"}
               - {label: "Kompetence 2", name: "cred2", widget: "string"}
               - {label: "Kompetence 3", name: "cred3", widget: "string"}
@@ -795,9 +902,10 @@ collections:
           - label: "CTA"
             name: "cta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "button", widget: "string"}
 
       - name: "konsulent"
@@ -808,6 +916,7 @@ collections:
           - label: "Hero"
             name: "hero"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
@@ -815,20 +924,22 @@ collections:
           - label: "Intro"
             name: "intro"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
           - label: "Workshop"
             name: "workshop"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Brødtekst", name: "body", widget: "text"}
-              - {label: "Overlay-citat", name: "overlay_quote", widget: "string"}
+              - {label: "Brødtekst", name: "body", widget: "markdown"}
+              - {label: "Overlay-citat", name: "overlay_quote", widget: "string", hint: "Citatet oven på billedet"}
               - {label: "Punkt 1 titel", name: "item1_title", widget: "string"}
               - {label: "Punkt 1 tekst", name: "item1_body", widget: "string"}
               - {label: "Punkt 2 titel", name: "item2_title", widget: "string"}
@@ -836,9 +947,11 @@ collections:
           - label: "Stressforløb"
             name: "stress"
             widget: "object"
+            collapsed: true
+            hint: "De tre forløbskort"
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Kort 1 titel", name: "card1_title", widget: "string"}
               - {label: "Kort 1 tekst", name: "card1_body", widget: "string"}
               - {label: "Kort 2 titel", name: "card2_title", widget: "string"}
@@ -849,23 +962,26 @@ collections:
           - label: "Leder-forløbet"
             name: "leader"
             widget: "object"
+            collapsed: true
+            hint: "Sektionen om ledersparring"
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Afsnit 1", name: "para1", widget: "text"}
-              - {label: "Afsnit 2", name: "para2", widget: "text"}
+              - {label: "Afsnit 1", name: "para1", widget: "markdown"}
+              - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
               - {label: "Feature 1 titel", name: "feature1_title", widget: "string"}
-              - {label: "Feature 1 tekst", name: "feature1_body", widget: "text"}
+              - {label: "Feature 1 tekst", name: "feature1_body", widget: "markdown"}
               - {label: "Feature 2 titel", name: "feature2_title", widget: "string"}
-              - {label: "Feature 2 tekst", name: "feature2_body", widget: "text"}
+              - {label: "Feature 2 tekst", name: "feature2_body", widget: "markdown"}
           - label: "Statistik"
             name: "stats"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Stat 1 tal", name: "stat1_number", widget: "string"}
+              - {label: "Stat 1 tal", name: "stat1_number", widget: "string", hint: "F.eks. '43%'"}
               - {label: "Stat 1 tekst", name: "stat1_body", widget: "string"}
               - {label: "Stat 2 tal", name: "stat2_number", widget: "string"}
               - {label: "Stat 2 tekst", name: "stat2_body", widget: "string"}
@@ -874,7 +990,8 @@ collections:
           - label: "CTA"
             name: "cta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: "Overskrift", name: "heading", widget: "string"}
-              - {label: "Tekst", name: "body", widget: "text"}
+              - {label: "Tekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "button", widget: "string"}
