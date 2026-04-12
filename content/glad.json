@@ -13,17 +13,17 @@
     "cta_secondary": "Læs om projektet"
   },
   "effects": {
-    "label": "Dokumenteret effekt",
+    "effect2_body": "Øget evne og overskud til at klare dagligdagens gøremål.",
+    "effect1_body": "Gennemsnitlig smertelindring på 25% for de fleste deltagere.",
     "heading": "Hvad kan træningen gøre for dig?",
     "intro": "Forskningen bag GLA:D® viser tydelige og positive resultater for patienter med slidgigt i knæ og hofte.",
+    "label": "Dokumenteret effekt",
     "effect1_title": "Mindre smerte",
-    "effect1_body": "Gennemsnitlig smertelindring på 25% for de fleste deltagere.",
     "effect2_title": "Bedre livskvalitet",
-    "effect2_body": "Øget evne og overskud til at klare dagligdagens gøremål.",
     "effect3_title": "Udskudt operation",
-    "effect3_body": "Forløbet kan udskyde behovet for operation i mindst to år.",
     "effect4_title": "Mindre medicin",
-    "effect4_body": "Mange oplever et nedsat behov for smertestillende piller."
+    "effect4_body": "Mange oplever et nedsat behov for smertestillende piller.",
+    "effect3_body": "Forløbet kan udskyde behovet for operation i mindst to år."
   },
   "content": {
     "label": "Indholdet i forløbet",
@@ -36,29 +36,29 @@
     "item3_body": "Fysiske målinger før og efter de 8 uger. Forløbet er tilkoblet det nationale GLA:D®-register for løbende at sikre kvaliteten af din behandling."
   },
   "session": {
-    "label": "Praksis",
+    "step3_title": "Nedkøling (10 min)",
     "heading": "En typisk træningstime",
     "intro": "Træningen foregår på hold og varer ca. 60 minutter pr. gang (to gange ugentligt). Selvom man kan træne hjemme, viser forskningen, at effekten er væsentligt større, når træningen foregår under vejledning af en certificeret GLA:D®-terapeut.",
-    "step1_title": "Opvarmning (10 min)",
-    "step1_body": "Opvarmningen foregår med blide gangøvelser og let mobilisering af leddene. Belastningen indstilles individuelt og øges gradvist, indtil du rammer et niveau, der føles \"nogenlunde hårdt\".",
-    "step2_title": "Neuromuskulær træning (40 min)",
+    "label": "Praksis",
+    "step3_body": "Vi afslutter timen med at samle ned. Dette indebærer en gangøvelse (ofte foran et spejl for at give visuel feedback på din kropsholdning) samt grundige udstrækningsøvelser for benene.",
     "step2_body": "Træningsprogrammet er bygget op omkring fire vigtige elementer: core-stabilitet (kropsstamme), led-kontrol for at sikre korrekte bevægemønstre, muskelstyrke i benene, samt funktionelle øvelser, der relaterer sig direkte til dine daglige aktiviteter.",
-    "step3_title": "Afslutning (10 min)",
-    "step3_body": "Vi afslutter ved at komme ned i tempo med rolige stræk."
+    "step1_body": "Opvarmningen foregår på kondicykel. Arbejdsbelastningen indstilles individuelt og øges gradvist over de 10 minutter, indtil du rammer et niveau, der føles \"nogenlunde hårdt\".",
+    "step1_title": "Opvarmning (10 min)",
+    "step2_title": "Neuromuskulær træning (40 min)"
   },
   "criteria": {
-    "label": "Kriterier for deltagelse",
+    "project_link": "Læs mere her",
     "heading": "Hvem kan deltage i det gratis projekt?",
-    "crit1_title": "Bopæl",
-    "crit1_body": "Du er voksen og har bopæl i Næstved Kommune.",
-    "crit2_title": "Symptomer",
-    "crit2_body": "Du har nyligt opdagede symptomer på slidgigt (artrose) i enten hofte eller knæ.",
-    "crit3_title": "Historik",
     "crit3_body": "Du har ikke tidligere fået superviseret træning for din slidgigt.",
-    "project_heading": "Læs mere om projektet på Næstved Kommunes hjemmeside",
     "project_body1": "Projektet er et samarbejde mellem Næstved Kommune, Region Sjælland og Den Sociale Investeringsfond. Det er gratis at deltage (transport dækkes dog kun ved henvisning fra sygehus med genoptræningsplan).",
+    "crit2_body": "Du har nyligt opdagede symptomer på slidgigt (artrose) i enten hofte eller knæ.",
     "project_body2": "Du kan læse alle detaljer om projektet, samtykke og databehandling direkte hos kommunen.",
-    "project_link": "Læs mere her"
+    "crit1_body": "Du er voksen og har bopæl i Næstved Kommune.",
+    "crit1_title": "Bopæl",
+    "crit2_title": "Symptomer",
+    "crit3_title": "Historik",
+    "label": "Kriterier for deltagelse",
+    "project_heading": "Læs mere om projektet på Næstved Kommunes hjemmeside"
   },
   "cta": {
     "heading": "Vil du være med?",
