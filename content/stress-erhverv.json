@@ -2,11 +2,13 @@
   "hero": {
     "label": "Ydelser (Virksomheder)",
     "heading": "3 måneder. Et nyt fundament.",
-    "tagline": "Et 3-måneders holdforløb, der kombinerer evidensbaseret stressbehandling med kropslig forankring og natur."
+    "tagline": "Et 3-måneders holdforløb, der kombinerer evidensbaseret stressbehandling med kropslig forankring og natur.",
+    "bg_image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=2000"
   },
   "intro": {
     "label": "Holdforløb for ledere & virksomheder",
     "heading": "Opnå indre ro — og stå stærkt i dig selv",
+    "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800",
     "para1": "Et 3-måneders holdforløb, der tager udgangspunkt i den nyeste stressforskning (udgivet marts 2023) og kombinerer teori, praktiske øvelser og terapeutiske sessioner. Forløbet er designet til ledere og medarbejdere, der enten er ramt af stress eller befinder sig i farezonen — med et klart mål: varig forandring og individuel styrkelse.",
     "para2": "Alle deltagere mødes i en lukket, tryg ramme. Forløbet kan afholdes fysisk eller som hybridforløb med Zoom. Deltagerne starter og slutter med en individuel samtale og måles på en valideret stresskala ved opstart, midtvejs og afslutning.",
     "cta": "Kontakt mig for aftale"

@@ -16,7 +16,9 @@
     <div id="site-header"></div>
     <script src="header.js"></script>
     <section class="page-hero"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&q=80&w=2000'); background-position: center 40%;">
+        data-bg-key="hero.bg_image"
+    data-bg-overlay="linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35))"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)), url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&q=80&w=2000'); background-position: center 40%;">
         <div class="text-center text-white px-6">
             <span data-content-key="hero.label" class="uppercase tracking-[0.4em] text-[10px] mb-4 block opacity-80 font-bold">Ydelser</span>
             <h1 data-content-key="hero.heading" class="text-5xl md:text-6xl font-bold serif italic leading-tight">Ekstern konsulent</h1>
@@ -46,7 +48,7 @@
                     <a data-content-key="intro.cta" href="kontakt.html" class="btn-primary">kontakt mig</a>
                 </div>
                 <div class="lg:w-1/2 fade-in fade-in-delay-2">
-                    <img src="https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=format&fit=crop&q=80&w=800"
+                    <img data-content-key="intro.image" src="https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=format&fit=crop&q=80&w=800"
                         alt="Holistisk workshop og trivsel" class="rounded-2xl shadow-xl w-full">
                 </div>
             </div>
@@ -61,7 +63,7 @@
                 <div class="lg:w-1/2 relative fade-in fade-in-delay-1">
                     <div class="aspect-square relative flex justify-center items-center">
 
-                        <img src="Assets/Yogasalen-Opnaa-ro-indeni-1.jpg" alt="Holistisk ro og nærvær"
+                        <img data-content-key="workshop.image" src="Assets/Yogasalen-Opnaa-ro-indeni-1.jpg" alt="Holistisk ro og nærvær"
                             class="object-cover w-5/6 h-5/6 rounded-[2rem] shadow-2xl relative z-10 filter sepia-[.1]">
                         <!-- Overlay -->
                         <div

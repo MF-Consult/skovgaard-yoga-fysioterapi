@@ -2,11 +2,13 @@
   "hero": {
     "label": "Ydelser",
     "heading": "Fysioterapi",
-    "tagline": "En kropslig indgangsvinkel til dit helbred — hvor jeg arbejder med årsagen, ikke kun symptomet."
+    "tagline": "En kropslig indgangsvinkel til dit helbred — hvor jeg arbejder med årsagen, ikke kun symptomet.",
+    "bg_image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=2000"
   },
   "intro": {
     "label": "Hvad er fysioterapi?",
     "heading": "En helhedsorienteret tilgang til kroppen",
+    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=800",
     "para1": "Fysioterapi handler for mig om at forstå kroppen som en helhed. Uanset om du har akutte smerter, kroniske gener eller søger at genvinde balancen, bruger jeg min klassiske fysioterapeutiske baggrund som fundamentet i et holistisk forløb.",
     "para2": "Som autoriseret fysioterapeut siden 2000 kombinerer jeg den sundhedsfaglige videnskab med en dyb forståelse for sammenhængen mellem krop, sind og sjæl. Jeg ser ikke blot på knæet eller skulderen, men på hele det menneske, der bærer dem.",
     "cta": "Book en tid"

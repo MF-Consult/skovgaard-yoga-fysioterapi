@@ -2,7 +2,8 @@
   "hero": {
     "label": "Specialisering",
     "heading": "Høj Begavelse",
-    "tagline": "Et fristed for det intensive sind — hvor der er plads til at være præcis den, du er."
+    "tagline": "Et fristed for det intensive sind — hvor der er plads til at være præcis den, du er.",
+    "bg_image": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=2000"
   },
   "intro": {
     "label": "Nervesystemet i fokus",
@@ -13,6 +14,7 @@
   "children": {
     "label": "For de mindste & teenagere",
     "heading": "Mødt i øjenhøjde",
+    "image": "https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?auto=format&fit=crop&q=80&w=800",
     "body": "Til højt begavede børn og unge tilbyder jeg et rum, hvor de kan møde ligesindede og lære deres egne reaktioner at kende. Gennem leg, bevægelse og kropslige teknikker hjælper jeg dem med at forstå deres \"Busy Brains\" og finde vejen tilbage til ro.",
     "li1": "Specielt tilrettelagte workshops",
     "li2": "Teknikker til selvregulering",
@@ -22,6 +24,7 @@
   "adults": {
     "label": "For voksne",
     "heading": "At forstå sig selv",
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800",
     "para1": "Voksne højt begavede kan ofte føle sig presset af systemer eller forventninger, der ikke tager højde for deres kropslige og mentale intensitet. Individuelle forløb hos mig giver dig indsigt i dit nervesystem og konkrete teknikker til at skabe den nødvendige pause i hverdagen.",
     "para2": "Vi arbejder med kropsbevidsthed, åndedræt og samtale for at mindske følelsen af overvældelse og genfinde din kerne.",
     "cta": "Book en samtale"

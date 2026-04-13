@@ -2,7 +2,8 @@
   "hero": {
     "label": "Praktisk info",
     "heading": "Priser & Vilkår",
-    "tagline": "Gennemsigtighed omkring priser og vilkår."
+    "tagline": "Gennemsigtighed omkring priser og vilkår.",
+    "bg_image": "Assets/woman_laptop_image.png"
   },
   "grid": {
     "label": "Prisoversigt",
