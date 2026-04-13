@@ -7,6 +7,7 @@
     "heading": "Send en besked",
     "intro": "Udfyld felterne herunder, og jeg vender tilbage inden for 24 timer. Har du spørgsmål, der kræver et hurtigere svar, er du altid velkommen til at kontakte mig direkte.",
     "image_overlay_heading": "Jeg glæder mig til at høre fra dig",
+    "image": "Assets/old_phone.png",
     "success_message": "✓ Tak! Din besked er sendt. Jeg vender tilbage snarest."
   },
   "address": {

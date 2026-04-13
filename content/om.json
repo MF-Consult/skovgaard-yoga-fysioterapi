@@ -2,11 +2,13 @@
   "hero": {
     "label": "Mød mig",
     "heading": "Faglighed møder nærvær",
-    "tagline": "Med over 25 års erfaring og et hjerte, der brænder for healing og udvikling."
+    "tagline": "Med over 25 års erfaring og et hjerte, der brænder for healing og udvikling.",
+    "bg_image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=2000"
   },
   "intro": {
     "label": "Birgitte Skovgaard",
     "heading": "Walk the talk",
+    "image": "https://www.skovgaardyogaogfysioterapi.dk/wp-content/uploads/2022/12/Profilbillede-1.jpg",
     "para1": "Min overordnede mission i livet er at være kærlighed — at sprede healing, kindness og compassion til de mennesker, der kommer hos mig, så det spredes videre som ringe i vandet. Dét er min dharma — mit livsformål.",
     "para2": "Jeg tror på at skabe plads til det hele menneske med både krop, psyke og sjæl. Samtidig er én af mine kerneværdier: Walk the talk — hvilket betyder, at jeg går vejen selv, først. Jeg kan nemlig aldrig hjælpe et andet menneske længere, end jeg selv er kommet.",
     "para3": "Her vil du opleve en dybt holistisk tilgang, der forener jordnær professionalisme med kropslig bevidsthed. Uanset om du kommer for at få behandlet fysiske smerter, afhjælpe stress, genoptræning, eller søger udvikling gennem yogaterapi, kombinerer jeg mine fagligheder for at favne hele dig.",

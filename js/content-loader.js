@@ -70,6 +70,11 @@
       var value = resolve(data, key);
       if (value == null || typeof value === 'object') continue;
       var str = String(value);
+      // Image elements: set src attribute directly
+      if (el.tagName === 'IMG') {
+        if (str) el.src = str;
+        continue;
+      }
       var isMarkdown = str.indexOf('\n') !== -1 ||
                        str.indexOf('**') !== -1 ||
                        str.indexOf('*') !== -1;
@@ -78,6 +83,24 @@
       } else {
         el.textContent = str;
       }
+    }
+  }
+
+  /**
+   * Applies background-image values to elements with data-bg-key attribute.
+   * The gradient overlay (from data-bg-overlay) is preserved; only the image URL changes.
+   */
+  function applyBackgroundImages(data) {
+    var elements = document.querySelectorAll('[data-bg-key]');
+    for (var i = 0; i < elements.length; i++) {
+      var el = elements[i];
+      var key = el.dataset.bgKey;
+      var value = resolve(data, key);
+      if (!value) continue;
+      var overlay = el.dataset.bgOverlay || '';
+      el.style.backgroundImage = overlay
+        ? overlay + ', url(' + value + ')'
+        : 'url(' + value + ')';
     }
   }
 
@@ -95,12 +118,20 @@
       var pageData = results[0];
       var globalData = results[1];
 
+      // Merge page and global data for background image resolution
+      var merged = {};
+      for (var k in pageData) { if (pageData.hasOwnProperty(k)) merged[k] = pageData[k]; }
+      merged.global = globalData;
+
       // Apply page-specific content
       applyContent(pageData);
 
       // Apply global content (keys prefixed with "global." in the HTML)
       var globalWrapped = { global: globalData };
       applyContent(globalWrapped);
+
+      // Apply background images (uses merged data)
+      applyBackgroundImages(merged);
     }).catch(function (err) {
       // Fail silently — original HTML text remains visible as fallback
       if (typeof console !== 'undefined') {

@@ -71,6 +71,7 @@ collections:
               - {label: "Brødtekst", name: "body", widget: "markdown", hint: "Den korte velkomsttekst under overskriften"}
               - {label: "Primær knap", name: "cta_primary", widget: "string", hint: "Teksten på den mørke knap"}
               - {label: "Sekundær knap", name: "cta_secondary", widget: "string", hint: "Teksten på den lyse knap"}
+              - {label: "Hero-billede", name: "image", widget: "image", required: false, hint: "Det store billede bag teksten øverst på forsiden"}
           - label: "Stress-sektion"
             name: "stress"
             widget: "object"
@@ -107,6 +108,7 @@ collections:
               - {label: "Manchet", name: "lead", widget: "markdown", hint: "Den fremhævede indledende tekst"}
               - {label: "Brødtekst", name: "body", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i sektionen om høj begavelse"}
           - label: "Børn-sektion"
             name: "children"
             widget: "object"
@@ -119,6 +121,7 @@ collections:
               - {label: "Punkt 1", name: "bullet1", widget: "string"}
               - {label: "Punkt 2", name: "bullet2", widget: "string"}
               - {label: "Knap", name: "cta", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i børnefysioterapisektionen"}
           - label: "Ydelser"
             name: "services"
             widget: "object"
@@ -185,6 +188,7 @@ collections:
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Baggrund", name: "background", widget: "markdown"}
               - {label: "Tilgang", name: "approach", widget: "markdown"}
+              - {label: "Profilbillede", name: "image", widget: "image", required: false, hint: "Birgittes profilbillede på forsiden"}
 
       - name: "priser"
         label: "Priser"
@@ -199,6 +203,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Gitter-overskrift"
             name: "grid"
             widget: "object"
@@ -253,6 +258,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Intro"
             name: "intro"
             widget: "object"
@@ -261,6 +267,7 @@ collections:
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Profilbillede", name: "image", widget: "image", required: false, hint: "Birgittes profilbillede"}
               - {label: "Afsnit 1", name: "para1", widget: "markdown"}
               - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Afsnit 3", name: "para3", widget: "markdown"}
@@ -350,6 +357,7 @@ collections:
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Intro", name: "intro", widget: "markdown"}
               - {label: "Billede-overlay tekst", name: "image_overlay_heading", widget: "string", hint: "Teksten der vises oven på billedet"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet til højre i kontaktformularen"}
               - {label: "Succesbesked", name: "success_message", widget: "markdown", hint: "Vises når formularen er sendt"}
           - label: "Adresse & info"
             name: "address"
@@ -378,6 +386,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Intro"
             name: "intro"
             widget: "object"
@@ -415,6 +424,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Intro"
             name: "intro"
             widget: "object"
@@ -422,6 +432,7 @@ collections:
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i introduktionssektionen"}
               - {label: "Afsnit 1", name: "para1", widget: "markdown"}
               - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
@@ -492,6 +503,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Intro"
             name: "intro"
             widget: "object"
@@ -499,6 +511,7 @@ collections:
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i introduktionssektionen"}
               - {label: "Afsnit 1", name: "para1", widget: "markdown"}
               - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
@@ -567,6 +580,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Intro"
             name: "intro"
             widget: "object"
@@ -574,6 +588,7 @@ collections:
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i introduktionssektionen"}
               - {label: "Afsnit 1", name: "para1", widget: "markdown"}
               - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
@@ -599,6 +614,7 @@ collections:
             fields:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i målgruppesektionen"}
               - {label: "Intro", name: "intro", widget: "markdown"}
               - {label: "Gruppe 1 titel", name: "group1_title", widget: "string"}
               - {label: "Gruppe 1 tekst", name: "group1_body", widget: "markdown"}
@@ -630,6 +646,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Intro"
             name: "intro"
             widget: "object"
@@ -640,6 +657,7 @@ collections:
               - {label: "Afsnit 1", name: "para1", widget: "markdown"}
               - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i introduktionssektionen"}
           - label: "Behandlingsområder"
             name: "treatments"
             widget: "object"
@@ -696,6 +714,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Intro"
             name: "intro"
             widget: "object"
@@ -707,6 +726,7 @@ collections:
               - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Primær knap", name: "cta_primary", widget: "string"}
               - {label: "Sekundær knap", name: "cta_secondary", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i introduktionssektionen"}
           - label: "Effekter"
             name: "effects"
             widget: "object"
@@ -751,6 +771,7 @@ collections:
               - {label: "Fase 2 tekst", name: "step2_body", widget: "markdown"}
               - {label: "Fase 3 titel", name: "step3_title", widget: "string"}
               - {label: "Fase 3 tekst", name: "step3_body", widget: "markdown"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i træningssektionen"}
           - label: "Kriterier"
             name: "criteria"
             widget: "object"
@@ -791,6 +812,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Intro"
             name: "intro"
             widget: "object"
@@ -812,6 +834,7 @@ collections:
               - {label: "Punkt 2", name: "li2", widget: "string"}
               - {label: "Punkt 3", name: "li3", widget: "string"}
               - {label: "Knap", name: "cta", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i sektionen for børn og unge"}
           - label: "Voksne"
             name: "adults"
             widget: "object"
@@ -822,6 +845,7 @@ collections:
               - {label: "Afsnit 1", name: "para1", widget: "markdown"}
               - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i sektionen for voksne"}
           - label: "Forældre & partnerskab"
             name: "parents"
             widget: "object"
@@ -854,6 +878,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Intro"
             name: "intro"
             widget: "object"
@@ -865,6 +890,7 @@ collections:
               - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Afsnit 3", name: "para3", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i introduktionssektionen"}
           - label: "Ydelser"
             name: "services"
             widget: "object"
@@ -899,6 +925,7 @@ collections:
               - {label: "Kompetence 3", name: "cred3", widget: "string"}
               - {label: "Kompetence 4", name: "cred4", widget: "string"}
               - {label: "Kompetence 5", name: "cred5", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i tilgangssektionen"}
           - label: "CTA"
             name: "cta"
             widget: "object"
@@ -921,6 +948,7 @@ collections:
               - {label: "Label", name: "label", widget: "string"}
               - {label: "Overskrift", name: "heading", widget: "string"}
               - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Baggrundsbillede", name: "bg_image", widget: "image", required: false, hint: "Billedet bag overskriften øverst på siden"}
           - label: "Intro"
             name: "intro"
             widget: "object"
@@ -931,6 +959,7 @@ collections:
               - {label: "Afsnit 1", name: "para1", widget: "markdown"}
               - {label: "Afsnit 2", name: "para2", widget: "markdown"}
               - {label: "Knap", name: "cta", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i introduktionssektionen"}
           - label: "Workshop"
             name: "workshop"
             widget: "object"
@@ -944,6 +973,7 @@ collections:
               - {label: "Punkt 1 tekst", name: "item1_body", widget: "string"}
               - {label: "Punkt 2 titel", name: "item2_title", widget: "string"}
               - {label: "Punkt 2 tekst", name: "item2_body", widget: "string"}
+              - {label: "Billede", name: "image", widget: "image", required: false, hint: "Billedet i workshop-sektionen"}
           - label: "Stressforløb"
             name: "stress"
             widget: "object"

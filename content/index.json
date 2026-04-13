@@ -4,7 +4,8 @@
     "heading": "Genfind roen i din krop og din hverdag",
     "body": "Holistisk fysioterapi og yogaterapi med hjertet i centrum. Et trygt rum, hvor krop, sind og sjæl får lov til at finde hinanden igen.",
     "cta_primary": "Tag din gratis stresstest",
-    "cta_secondary": "Mød Mig"
+    "cta_secondary": "Mød Mig",
+    "image": "Assets/595f18ec-928c-4b5c-b34c-2e9871d2b90b.jpg"
   },
   "stress": {
     "label": "Specialisering",
@@ -24,6 +25,7 @@
   "gifted": {
     "label": "Særligt fokus",
     "heading": "Et fristed for det intensive sind",
+    "image": "https://images.unsplash.com/photo-1637766717192-0f2d350ba7ee?auto=format&fit=crop&q=80&w=800",
     "lead": "Mennesker med høj begavelse oplever ofte verden mere intenst. Hos mig finder du et trygt rum med fokus på at skabe ro i et nervesystem, der ofte kører i højeste gear.",
     "body": "Som samarbejdspartner med Gifted Children tilbyder jeg specialiserede forløb og workshops tilpasset både børn, unge og voksne – altid med nærvær og det hele menneske i centrum.",
     "cta": "Find ro her"
@@ -31,6 +33,7 @@
   "children": {
     "label": "Specialisering",
     "heading": "Børnenes Fysioterapi",
+    "image": "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800",
     "lead": "Som autoriseret børnefysioterapeut har jeg fokus på barnets motoriske udvikling og trivsel. Jeg møder barnet i øjenhøjde og gør træningen til en tryg leg, så vi støtter både den fysiske styrke og den indre ro.",
     "bullet1": "Motoriske screeninger og test af børn i alle aldre med et helhedsorienteret blik.",
     "bullet2": "Individuelle og nærværende forløb tilpasset barnets behov og familiens hverdag.",
@@ -79,6 +82,7 @@
   "about_preview": {
     "label": "Mød mig",
     "heading": "Faglighed møder nærvær",
+    "image": "https://www.skovgaardyogaogfysioterapi.dk/wp-content/uploads/2022/12/Profilbillede-1.jpg",
     "background": "Autoriseret fysioterapeut (2000) og Yogaterapeut med over 1000 timers professionel træning.",
     "approach": "Jeg kombinerer dyb, evidensbaseret viden med en ægte forståelse for sammenhængen mellem krop, sind og sjæl."
   }
