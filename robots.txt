@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://birgitte-skovgaard.netlify.app/sitemap.xml
