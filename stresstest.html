@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohen's Stresstest (PSS) | Skovgaard Yoga &amp; Fysioterapi Næstved</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Tag Cohen's Perceived Stress Scale (PSS) stresstest og find ud af, om du har lavt, moderat eller højt stressniveau. Gratis – på under 3 minutter.">
+    <link rel="canonical" href="https://birgitte-skovgaard.netlify.app/stresstest.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="da_DK">
+    <meta property="og:site_name" content="Skovgaard Yoga &amp; Fysioterapi">
+    <meta property="og:url" content="https://birgitte-skovgaard.netlify.app/stresstest.html">
+    <meta property="og:title" content="Cohen's Stresstest (PSS) | Skovgaard Yoga &amp; Fysioterapi">
+    <meta property="og:description" content="Tag Cohen's Perceived Stress Scale (PSS) stresstest og find ud af, om du har lavt, moderat eller højt stressniveau. Gratis – på under 3 minutter.">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="bg-white">
+    <div id="site-header"></div>
+    <script src="header.js"></script>
+
+    <!-- HERO -->
+    <section class="pt-32 pb-8 md:pt-36 md:pb-12 brand-gradient text-white relative">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <span class="uppercase tracking-[0.4em] text-[0.75rem] mb-3 block font-bold" style="color: #e2d5f8;">Cohen's PSS</span>
+            <h1 class="text-4xl md:text-5xl font-bold serif italic leading-tight">Stresstest</h1>
+            <p class="mt-4 text-base opacity-85 max-w-xl mx-auto font-light">Find ud af dit stressniveau på under 3 minutter.</p>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="py-16 bg-off-white">
+        <div class="container mx-auto px-6 max-w-3xl text-center fade-in">
+            <h2 class="text-3xl font-bold text-plum serif italic mb-6">Om testen</h2>
+            <p class="text-gray-600 text-base leading-relaxed mb-4">
+                Stress-testen har 10 spørgsmål vedrørende dine følelser og tanker over den sidste måned. Besvar spørgsmålene relativt hurtigt baseret på din mavefornemmelse — du behøver ikke tælle præcis, hvor mange gange du har haft en bestemt oplevelse. Din score beregnes til en værdi mellem 0 og 40.
+            </p>
+            <p class="text-gray-600 text-base leading-relaxed mb-4">
+                Testen er baseret på <strong class="text-plum">Cohen's Perceived Stress Scale (PSS)</strong>. Her anvendes et spørgeskema med ti spørgsmål, hvor det angives i hvilken grad du oplever, at livet er uforudsigeligt, ukontrollabelt og overvældende. Skemaet er ikke velegnet til at stille diagnoser, men kan give et billede af din mentale sundhed.
+            </p>
+            <a href="https://www.ncbi.nlm.nih.gov/pubmed/26111225" target="_blank" rel="noopener noreferrer"
+                class="text-plum text-[0.75rem] uppercase tracking-widest font-bold border-b border-purple-300 pb-0.5 hover:opacity-70 transition-opacity">
+                Se validering af testen →
+            </a>
+        </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="test-section" class="py-12 bg-white">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <p class="text-gray-500 text-base mb-10 text-center">Sæt markering ved hvert af de 10 spørgsmål.</p>
+            <form id="stress-form" novalidate>
+
+                <div class="space-y-6">
+
+                    <div class="quiz-question-card fade-in fade-in-delay-1">
+                        <p class="flex items-start gap-3 text-gray-700 font-medium text-base leading-snug"><span class="question-number">1</span>Hvor ofte inden for den sidste måned er du blevet oprevet over noget, der skete uventet?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option"><input type="radio" name="linje1" value="1">Aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje1" value="2">Næsten aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje1" value="3">Ind imellem</label>
+                            <label class="quiz-option"><input type="radio" name="linje1" value="4">Ret ofte</label>
+                            <label class="quiz-option"><input type="radio" name="linje1" value="5">Meget ofte</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question-card fade-in fade-in-delay-2">
+                        <p class="flex items-start gap-3 text-gray-700 font-medium text-base leading-snug"><span class="question-number">2</span>Hvor ofte inden for den sidste måned har du følt, at du har været ude af stand til at kontrollere de betydningsfulde ting i dit liv?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option"><input type="radio" name="linje2" value="1">Aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje2" value="2">Næsten aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje2" value="3">Ind imellem</label>
+                            <label class="quiz-option"><input type="radio" name="linje2" value="4">Ret ofte</label>
+                            <label class="quiz-option"><input type="radio" name="linje2" value="5">Meget ofte</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question-card fade-in fade-in-delay-3">
+                        <p class="flex items-start gap-3 text-gray-700 font-medium text-base leading-snug"><span class="question-number">3</span>Hvor ofte inden for den sidste måned har du følt dig nervøs og "stresset"?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option"><input type="radio" name="linje3" value="1">Aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje3" value="2">Næsten aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje3" value="3">Ind imellem</label>
+                            <label class="quiz-option"><input type="radio" name="linje3" value="4">Ret ofte</label>
+                            <label class="quiz-option"><input type="radio" name="linje3" value="5">Meget ofte</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question-card fade-in fade-in-delay-4">
+                        <p class="flex items-start gap-3 text-gray-700 font-medium text-base leading-snug"><span class="question-number">4</span>Hvor ofte inden for den sidste måned har du følt dig sikker på dine evner til at klare dine personlige problemer?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option"><input type="radio" name="linje4" value="1">Aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje4" value="2">Næsten aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje4" value="3">Ind imellem</label>
+                            <label class="quiz-option"><input type="radio" name="linje4" value="4">Ret ofte</label>
+                            <label class="quiz-option"><input type="radio" name="linje4" value="5">Meget ofte</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question-card fade-in fade-in-delay-1">
+                        <p class="flex items-start gap-3 text-gray-700 font-medium text-base leading-snug"><span class="question-number">5</span>Hvor ofte inden for den sidste måned har du følt, at tingene gik som du ønskede?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option"><input type="radio" name="linje5" value="1">Aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje5" value="2">Næsten aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje5" value="3">Ind imellem</label>
+                            <label class="quiz-option"><input type="radio" name="linje5" value="4">Ret ofte</label>
+                            <label class="quiz-option"><input type="radio" name="linje5" value="5">Meget ofte</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question-card fade-in fade-in-delay-2">
+                        <p class="flex items-start gap-3 text-gray-700 font-medium text-base leading-snug"><span class="question-number">6</span>Hvor ofte inden for den sidste måned har du oplevet, at du ikke kunne overkomme alt det du skulle?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option"><input type="radio" name="linje6" value="1">Aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje6" value="2">Næsten aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje6" value="3">Ind imellem</label>
+                            <label class="quiz-option"><input type="radio" name="linje6" value="4">Ret ofte</label>
+                            <label class="quiz-option"><input type="radio" name="linje6" value="5">Meget ofte</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question-card fade-in fade-in-delay-3">
+                        <p class="flex items-start gap-3 text-gray-700 font-medium text-base leading-snug"><span class="question-number">7</span>Hvor ofte inden for den sidste måned har du været i stand til at håndtere ting, som irriterer dig?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option"><input type="radio" name="linje7" value="1">Aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje7" value="2">Næsten aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje7" value="3">Ind imellem</label>
+                            <label class="quiz-option"><input type="radio" name="linje7" value="4">Ret ofte</label>
+                            <label class="quiz-option"><input type="radio" name="linje7" value="5">Meget ofte</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question-card fade-in fade-in-delay-4">
+                        <p class="flex items-start gap-3 text-gray-700 font-medium text-base leading-snug"><span class="question-number">8</span>Hvor ofte inden for den sidste måned har du følt, at du havde styr på tingene?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option"><input type="radio" name="linje8" value="1">Aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje8" value="2">Næsten aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje8" value="3">Ind imellem</label>
+                            <label class="quiz-option"><input type="radio" name="linje8" value="4">Ret ofte</label>
+                            <label class="quiz-option"><input type="radio" name="linje8" value="5">Meget ofte</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question-card fade-in fade-in-delay-1">
+                        <p class="flex items-start gap-3 text-gray-700 font-medium text-base leading-snug"><span class="question-number">9</span>Hvor ofte inden for den sidste måned er du blevet vred over ting, du ikke havde indflydelse på?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option"><input type="radio" name="linje9" value="1">Aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje9" value="2">Næsten aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje9" value="3">Ind imellem</label>
+                            <label class="quiz-option"><input type="radio" name="linje9" value="4">Ret ofte</label>
+                            <label class="quiz-option"><input type="radio" name="linje9" value="5">Meget ofte</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question-card fade-in fade-in-delay-2">
+                        <p class="flex items-start gap-3 text-gray-700 font-medium text-base leading-snug"><span class="question-number">10</span>Hvor ofte inden for den sidste måned har du følt, at vanskelighederne hobede sig så meget op, at du ikke kunne klare dem?</p>
+                        <div class="quiz-options">
+                            <label class="quiz-option"><input type="radio" name="linje10" value="1">Aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje10" value="2">Næsten aldrig</label>
+                            <label class="quiz-option"><input type="radio" name="linje10" value="3">Ind imellem</label>
+                            <label class="quiz-option"><input type="radio" name="linje10" value="4">Ret ofte</label>
+                            <label class="quiz-option"><input type="radio" name="linje10" value="5">Meget ofte</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="quiz-error" class="hidden mt-6 text-center text-red-600 font-medium text-base py-3 bg-red-50 rounded-lg">
+                    Husk at besvare alle 10 spørgsmål, før du indsender.
+                </div>
+
+                <div class="mt-10 text-center">
+                    <button type="submit" class="btn-primary rounded-full">Indsend besvarelse og se resultat</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- RESULT -->
+    <section id="result-section" class="hidden py-16 bg-off-white">
+        <div class="container mx-auto px-6 max-w-3xl">
+
+            <div class="text-center mb-10 fade-in">
+                <h2 class="text-3xl font-bold text-plum serif italic mb-6">Dit resultat er:</h2>
+                <div id="result-badge-wrap">
+                    <span id="result-badge" class="result-badge"></span>
+                </div>
+            </div>
+
+            <div id="result-text-lavt" class="hidden bg-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-sm mb-10 text-gray-600 text-base leading-relaxed space-y-4 fade-in">
+                <p>Du har scoret mellem 0 og 13 i PSS stresstesten. Dette er den gode stress, hvor du oplever at være tændt, være klar og at yde uden at være begrænset. Du oplever, at hjerne og krop arbejder godt sammen. Nogle af de klassiske reaktioner på den gode stress er midlertidig hjertebanken, svedige håndflader, sommerfugle i maven og spænding i muskler. Men det er kun lige omkring de situationer, hvor du skal yde ekstra. Dette er naturligt og hjælper dig i situationen.</p>
+                <p>For at blive i grøn zone er det vigtigt at forebygge og sørge for, at du prioriterer at lade op. Så sørg for at holde pauser i løbet af dagen både på arbejde og privat. Du forebygger og opretholder din mentale sundhed gennem aktiviteter som eksempelvis yoga, meditation, motion og søvn.</p>
+            </div>
+
+            <div id="result-text-moderat" class="hidden bg-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-sm mb-10 text-gray-600 text-base leading-relaxed space-y-4 fade-in">
+                <p>Du har scoret mellem 14 og 26 i PSS stresstesten. Overgangen fra den grønne til den gule zone er ofte flydende, og sker når krav og forventninger overstiger vores personlige ressourcer. Nogle af de klassiske symptomer på stresstilstanden i gul zone er dårlig nattesøvn, koncentrationsbesvær, glemsomhed og irritabilitet.</p>
+                <p>Det er vigtigt at handle nu, og at du sætter fokus på det, du kan gøre noget ved. Din krop reagerer på overbelastning, og du skal lytte efter din krops signaler og fokusere på at prioritere dine opgaver og at lade op.</p>
+                <p>Tal med dine nærmeste og din leder og bed om hjælp til at bryde det mønster, der giver dig moderat stress. Du skal overveje at få individuel hjælp fra en professionel, der har erfaringer med at arbejde med stress-reaktioner. Prioriter tid til din genopbygning gennem aktiviteter som eksempelvis yoga, meditation, gåture i naturen og søvn.</p>
+                <p>Dit resultat ligger i det gule område og du bør tage det alvorligt. Du er velkommen til at booke en gratis afklarende samtale – bare udfyld formularen herunder, så bliver du kontaktet mhp. at aftale en tid. Du er også velkommen til selv at ringe på <a href="tel:+4560873626" class="text-plum font-semibold hover:underline">60 87 36 26</a>.</p>
+            </div>
+
+            <div id="result-text-hoejt" class="hidden bg-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-sm mb-10 text-gray-600 text-base leading-relaxed space-y-4 fade-in">
+                <p>Du har scoret mellem 27 og 40 i PSS stresstesten. Du har i gennem for lang tid overskredet din personlige grænse for hvad din krop kan klare. Du er stresset og risikerer at få følgeskab af depression, angst, udbrændthed og at din krop siger fra. Har du mange stressreaktioner i den røde zone, har stress alvorlig indflydelse på din hverdag.</p>
+                <p>Nogle af symptomerne kan være søvnløshed, hukommelsestab, manglende energi, aggressivitet og fysiske smerter.</p>
+                <p>Du har brug for hjælp! Søg den hos venner, familie og/eller din leder. Det er også nødvendigt at få individuel hjælp fra en professionel, der har erfaringer med at behandle stress-reaktioner. I samarbejde med din behandler finder I frem til, hvad der er det bedste behandlingsforløb for dig.</p>
+                <p>Dit resultat ligger i det røde område og du bør tage det alvorligt. Du er velkommen til at booke en gratis afklarende samtale – bare udfyld formularen herunder, så bliver du kontaktet mhp. at aftale en tid. Du er også velkommen til selv at ringe på <a href="tel:+4560873626" class="text-plum font-semibold hover:underline">60 87 36 26</a>.</p>
+            </div>
+
+            <!-- BOOKING FORM -->
+            <div class="bg-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-sm fade-in">
+                <h3 class="text-2xl font-bold text-plum serif italic mb-2">Indsend resultat / Få en gratis afklarende samtale</h3>
+                <p class="text-gray-500 text-base mb-8">Udfyld felterne herunder og indsend dit resultat. Jeg vender tilbage snarest muligt.</p>
+
+                <form name="stress-resultat" data-netlify="true" netlify-honeypot="bot-field" id="contact-form" class="space-y-6">
+                    <input type="hidden" name="form-name" value="stress-resultat">
+                    <p class="hidden"><label>Må ikke udfyldes: <input name="bot-field"></label></p>
+                    <input type="hidden" name="score" id="hidden-score">
+                    <input type="hidden" name="niveau" id="hidden-niveau">
+                    <input type="hidden" name="svar" id="hidden-svar">
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">Navn *</label>
+                            <input type="text" name="navn" required placeholder="Dit fulde navn"
+                                class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">Telefon</label>
+                            <input type="tel" name="telefon" placeholder="Dit telefonnummer"
+                                class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">E-mail *</label>
+                        <input type="email" name="email" required placeholder="Din e-mailadresse"
+                            class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
+                    </div>
+
+                    <div class="space-y-3 pt-2">
+                        <label class="flex items-start gap-3 cursor-pointer">
+                            <input type="checkbox" name="booking" value="1" checked
+                                class="mt-1 w-4 h-4 accent-[#462b58] flex-shrink-0">
+                            <span class="text-gray-600 text-base">Jeg vil gerne indsende mit resultat og booke en gratis afklarende samtale</span>
+                        </label>
+                        <label class="flex items-start gap-3 cursor-pointer">
+                            <input type="checkbox" name="nyhedsbrev" value="1"
+                                class="mt-1 w-4 h-4 accent-[#462b58] flex-shrink-0">
+                            <span class="text-gray-600 text-base">Jeg accepterer, at min mailadresse bliver gemt, så jeg kan få nyheder om kommende events – du bliver ikke spammet ♡</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn-primary rounded-full">Indsend resultat</button>
+                    </div>
+
+                    <div id="contact-success" class="hidden text-center text-base text-purple-700 font-medium py-3 bg-purple-50 rounded-lg">
+                        ✓ Tak! Dit resultat er sendt. Birgitte vender tilbage snarest.
+                    </div>
+                    <div id="contact-error" class="hidden text-center text-base text-red-600 font-medium py-3 bg-red-50 rounded-lg">
+                        Der skete en fejl. Prøv igen eller ring på <a href="tel:+4560873626" class="underline">60 87 36 26</a>.
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="site-footer"></div>
+    <script src="footer.js"></script>
+
+    <script>
+        const REVERSE_SCORED = [4, 5, 7, 8];
+        const LABELS = ['Aldrig', 'Næsten aldrig', 'Ind imellem', 'Ret ofte', 'Meget ofte'];
+
+        function calculateScore(data) {
+            let total = 0;
+            for (let i = 1; i <= 10; i++) {
+                const raw = parseInt(data.get('linje' + i));
+                const val = raw - 1;
+                total += REVERSE_SCORED.includes(i) ? (4 - val) : val;
+            }
+            return total;
+        }
+
+        function getLevel(score) {
+            if (score > 26) return 'hoejt';
+            if (score > 13) return 'moderat';
+            return 'lavt';
+        }
+
+        function buildAnswerSummary(data) {
+            const questions = [
+                'Oprevet over noget uventet',
+                'Ude af stand til at kontrollere de vigtige ting',
+                'Nervøs og stresset',
+                'Sikker på evner til at klare problemer',
+                'Tingene gik som ønsket',
+                'Ikke kunne overkomme alt du skulle',
+                'I stand til at håndtere irriterende ting',
+                'Følte du havde styr på tingene',
+                'Vred over ting du ikke havde indflydelse på',
+                'Vanskeligheder hobede sig op'
+            ];
+            return questions.map((q, i) => {
+                const val = parseInt(data.get('linje' + (i + 1)));
+                return (i + 1) + ') ' + q + ': ' + LABELS[val - 1];
+            }).join('\n');
+        }
+
+        // Style selected quiz options
+        document.querySelectorAll('.quiz-option input[type="radio"]').forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                document.querySelectorAll('.quiz-option input[name="' + this.name + '"]').forEach(function(r) {
+                    r.closest('.quiz-option').classList.remove('selected');
+                });
+                this.closest('.quiz-option').classList.add('selected');
+            });
+        });
+
+        // Quiz form submit
+        document.getElementById('stress-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const data = new FormData(this);
+            for (let i = 1; i <= 10; i++) {
+                if (!data.get('linje' + i)) {
+                    const err = document.getElementById('quiz-error');
+                    err.classList.remove('hidden');
+                    err.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return;
+                }
+            }
+            document.getElementById('quiz-error').classList.add('hidden');
+
+            const score = calculateScore(data);
+            const level = getLevel(score);
+            const levelLabels = { lavt: 'Lavt stressniveau', moderat: 'Moderat stressniveau', hoejt: 'Højt stressniveau' };
+
+            const badge = document.getElementById('result-badge');
+            badge.textContent = score + ' – ' + levelLabels[level];
+            badge.className = 'result-badge ' + level;
+
+            ['lavt', 'moderat', 'hoejt'].forEach(function(l) {
+                document.getElementById('result-text-' + l).classList.toggle('hidden', l !== level);
+            });
+
+            document.getElementById('hidden-score').value = score + ' – ' + levelLabels[level];
+            document.getElementById('hidden-niveau').value = levelLabels[level];
+            document.getElementById('hidden-svar').value = buildAnswerSummary(data);
+
+            const resultSection = document.getElementById('result-section');
+            resultSection.classList.remove('hidden');
+            setTimeout(function() {
+                resultSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 80);
+        });
+
+        // Netlify AJAX submit
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(new FormData(form)).toString()
+            }).then(function() {
+                form.classList.add('hidden');
+                document.getElementById('contact-success').classList.remove('hidden');
+            }).catch(function() {
+                document.getElementById('contact-error').classList.remove('hidden');
+            });
+        });
+    </script>
+
+    <script src="/js/content-loader.js"></script>
+</body>
+
+</html>
