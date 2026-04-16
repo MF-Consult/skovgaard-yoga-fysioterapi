@@ -36,7 +36,7 @@
               <a href="konsulent.html">Ekstern konsulent</a>
             </div>
           </div>
-          ${navLink('https://www.skovgaardyogaogfysioterapi.dk/cohen/', 'Stresstest')}
+          ${navLink('stresstest.html', 'Stresstest')}
           ${navLink('om.html', 'Om mig')}
           ${navLink('priser.html', 'Priser')}
           ${navLink('kontakt.html', 'Kontakt')}
@@ -71,7 +71,7 @@
           <a href="boern.html">Børnefysioterapi</a>
           <a href="konsulent.html">Ekstern konsulent</a>
         </div>
-        ${drawerLink('https://www.skovgaardyogaogfysioterapi.dk/cohen/', 'Stresstest')}
+        ${drawerLink('stresstest.html', 'Stresstest')}
         ${drawerLink('om.html', 'Om mig')}
         ${drawerLink('priser.html', 'Priser')}
         ${drawerLink('kontakt.html', 'Kontakt')}
