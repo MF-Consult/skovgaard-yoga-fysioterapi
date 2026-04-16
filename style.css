@@ -70,7 +70,7 @@ h4,
   color: white;
   padding: 16px 36px;
   text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   letter-spacing: 0.15em;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -146,7 +146,7 @@ header.scrolled {
 .nav-dropdown-menu a {
   display: block;
   padding: 0.6rem 1.5rem;
-  font-size: 10px;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -335,7 +335,7 @@ header.scrolled {
 .drawer-sub-menu a {
   display: block;
   padding: 0.6rem 1.25rem;
-  font-size: 10px;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -372,7 +372,7 @@ header.scrolled {
   color: white;
   padding: 16px 0;
   border-radius: 9999px;
-  font-size: 11px;
+  font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
