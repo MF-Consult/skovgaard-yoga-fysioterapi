@@ -70,7 +70,7 @@
       + '<ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.7rem;">'
       + '<li><a href="om.html" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Om mig</a></li>'
       + '<li><a href="priser.html" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Priser</a></li>'
-      + '<li><a href="https://www.skovgaardyogaogfysioterapi.dk/cohen/" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Stresstest</a></li>'
+      + '<li><a href="stresstest.html" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Stresstest</a></li>'
       + '<li><a href="kontakt.html" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Kontakt</a></li>'
       + '<li><a href="kontakt.html" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Book tid</a></li>'
       + '</ul>'
