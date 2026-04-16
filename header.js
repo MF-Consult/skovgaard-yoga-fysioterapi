@@ -18,11 +18,11 @@
     <header id="header" class="fixed top-0 left-0 right-0 z-50 py-6 transition-all duration-300">
       <div class="container mx-auto px-6 flex justify-between items-center">
         <a href="${logoHref}">
-          <img src="Assets/aflangtlogo_web_final.png" alt="Skovgaard Logo" class="h-10 md:h-12 brightness-0 invert" id="logo">
+          <img src="Assets/aflangtlogo_web_final.png" alt="Skovgaard Logo" class="h-12 md:h-16 brightness-0 invert" id="logo">
         </a>
-        <nav class="hidden lg:flex space-x-10 text-[11px] uppercase tracking-[0.2em] font-bold text-white" id="nav">
+        <nav class="hidden lg:flex space-x-10 text-[0.75rem] uppercase tracking-[0.2em] font-bold text-white" id="nav">
           <div class="nav-dropdown">
-            <button style="background:none;border:none;cursor:pointer;color:inherit;padding:0" class="hover:opacity-70 flex items-center gap-1 uppercase tracking-[0.2em] font-bold text-[11px]">
+            <button style="background:none;border:none;cursor:pointer;color:inherit;padding:0" class="hover:opacity-70 flex items-center gap-1 uppercase tracking-[0.2em] font-bold text-[0.75rem]">
               Ydelser <span style="font-size:8px">▾</span>
             </button>
             <div class="nav-dropdown-menu">
@@ -41,7 +41,7 @@
           ${navLink('priser.html', 'Priser')}
           ${navLink('kontakt.html', 'Kontakt')}
         </nav>
-        <a href="kontakt.html" id="cta-link" class="hidden sm:inline text-white border-b-2 border-white pb-1 text-[11px] uppercase tracking-[0.2em] font-bold hover:opacity-70 transition-all">Book tid</a>
+        <a href="kontakt.html" id="cta-link" class="hidden sm:inline text-white border-b-2 border-white pb-1 text-[0.85rem] uppercase tracking-[0.2em] font-bold hover:opacity-70 transition-all">Book tid</a>
         <button class="hamburger-btn lg:hidden text-white" id="hamburger-btn" aria-label="Åbn menu">
           <span></span><span></span><span></span>
         </button>

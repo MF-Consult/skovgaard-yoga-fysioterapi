@@ -34,7 +34,7 @@
     <!-- Meget kort sidehoved -->
     <section class="pt-32 pb-8 md:pt-36 md:pb-12 brand-gradient text-white relative">
         <div class="container mx-auto px-6 text-center relative z-10">
-            <span class="uppercase tracking-[0.4em] text-[10px] mb-3 block font-bold" style="color: #e2d5f8;" data-content-key="hero.label">Kom i gang</span>
+            <span class="uppercase tracking-[0.4em] text-[0.75rem] mb-3 block font-bold" style="color: #e2d5f8;" data-content-key="hero.label">Kom i gang</span>
             <h1 class="text-4xl md:text-5xl font-bold serif italic leading-tight" data-content-key="hero.heading">Kontakt mig</h1>
         </div>
     </section>
@@ -49,16 +49,16 @@
                 <div class="lg:w-[55%] p-8 md:p-12 lg:p-16 flex flex-col justify-center">
                     <div class="mb-10">
                         <h2 class="text-3xl font-bold text-plum serif italic mb-4" data-content-key="form.heading">Send en besked</h2>
-                        <p class="text-gray-500 text-sm leading-relaxed mb-4" data-content-key="form.intro">
+                        <p class="text-gray-500 text-base leading-relaxed mb-4" data-content-key="form.intro">
                             Udfyld felterne herunder, og jeg vender tilbage inden for 24 timer. Har du spørgsmål, der kræver et hurtigere svar, er du altid velkommen til at kontakte mig direkte.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4 sm:gap-8 mt-6 pt-6 border-t border-gray-100">
                             <div>
-                                <h5 class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1">Telefon</h5>
+                                <h5 class="text-[0.75rem] font-bold uppercase tracking-widest text-gray-400 mb-1">Telefon</h5>
                                 <a href="tel:+4560873626" class="text-plum font-semibold hover:text-purple-900 transition-colors">60 87 36 26</a>
                             </div>
                             <div>
-                                <h5 class="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1">E-mail</h5>
+                                <h5 class="text-[0.75rem] font-bold uppercase tracking-widest text-gray-400 mb-1">E-mail</h5>
                                 <a href="mailto:birgitte@skyf.dk" class="text-plum font-semibold hover:text-purple-900 transition-colors">birgitte@skyf.dk</a>
                             </div>
                         </div>
@@ -67,24 +67,24 @@
                     <form class="space-y-6" onsubmit="handleFormSubmit(event)">
                         <div class="grid sm:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Navn</label>
+                                <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">Navn</label>
                                 <input type="text" required placeholder="Dit fulde navn"
-                                    class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
+                                    class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
                             </div>
                             <div>
-                                <label class="block text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Telefon</label>
+                                <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">Telefon</label>
                                 <input type="tel" placeholder="Dit telefonnummer"
-                                    class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
+                                    class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
                             </div>
                         </div>
                         <div>
-                            <label class="block text-[10px] font-bold uppercase tracking-widest text-plum mb-2">E-mail</label>
+                            <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">E-mail</label>
                             <input type="email" required placeholder="Din e-mailadresse"
-                                class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
+                                class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
                         </div>
                         <div>
-                            <label class="block text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Hvad søger du hjælp til?</label>
-                            <select class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg appearance-none">
+                            <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">Hvad søger du hjælp til?</label>
+                            <select class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg appearance-none">
                                 <option value="">Vælg en kategori...</option>
                                 <option>Fysioterapi & Genoptræning</option>
                                 <option>Børnefysioterapi</option>
@@ -98,12 +98,12 @@
                             </select>
                         </div>
                         <div>
-                            <label class="block text-[10px] font-bold uppercase tracking-widest text-plum mb-2">Besked</label>
+                            <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">Besked</label>
                             <textarea rows="4" placeholder="Fortæl kort om din situation..."
-                                class="w-full border border-gray-200 px-4 py-3 text-sm text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg resize-none"></textarea>
+                                class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg resize-none"></textarea>
                         </div>
                         <button type="submit" class="btn-primary w-full sm:w-auto px-10">Send besked</button>
-                        <div id="form-success" class="hidden text-center text-sm text-purple-700 font-medium py-3 bg-purple-50 rounded-lg mt-4" data-content-key="form.success_message">
+                        <div id="form-success" class="hidden text-center text-base text-purple-700 font-medium py-3 bg-purple-50 rounded-lg mt-4" data-content-key="form.success_message">
                             ✓ Tak! Din besked er sendt. Jeg vender tilbage snarest.
                         </div>
                     </form>
@@ -119,7 +119,7 @@
                     <!-- Tekst hen over billedet -->
                     <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 text-white">
                         <p class="font-serif italic text-2xl md:text-3xl mb-2 text-white shadow-sm" data-content-key="form.image_overlay_heading">Jeg glæder mig til at høre fra dig</p>
-                        <p class="text-xs tracking-widest uppercase font-bold text-[#e2d5f8]">Skovgaard Yoga- & Fysioterapi</p>
+                        <p class="text-[0.95rem] tracking-widest uppercase font-bold text-[#e2d5f8]">Skovgaard Yoga- & Fysioterapi</p>
                     </div>
                 </div>
 
@@ -133,22 +133,22 @@
             <div class="grid md:grid-cols-2 gap-8 items-center fade-in">
                 <div class="address-card" style="border-color: rgba(70,43,88,0.06)">
                     <h3 class="text-lg font-bold text-plum serif italic mb-4" data-content-key="address.heading">Find klinikken</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                    <p class="text-gray-600 text-base leading-relaxed mb-3">
                         <strong class="text-gray-700 font-semibold">Skovgaard Yoga- & Fysioterapi</strong><br>
                         Vordingborgvej 61C (i gården)<br>
                         4700 Næstved
                     </p>
-                    <p class="text-gray-400 text-xs leading-relaxed mb-4">Klinikken ligger i gården ved
+                    <p class="text-gray-400 text-[0.95rem] leading-relaxed mb-4">Klinikken ligger i gården ved
                         Vordingborgvej
                         61C. Parkering er mulig på Norgesvej.</p>
                     <a href="https://maps.google.com/?q=Vordingborgvej+61C,+4700+Næstved" target="_blank"
                         rel="noopener noreferrer"
-                        class="text-plum text-[10px] uppercase tracking-widest font-bold border-b border-purple-300 pb-0.5 hover:opacity-70 transition-opacity">Se
+                        class="text-plum text-[0.75rem] uppercase tracking-widest font-bold border-b border-purple-300 pb-0.5 hover:opacity-70 transition-opacity">Se
                         på Google Maps →</a>
                 </div>
                 <div class="address-card" style="border-color: rgba(70,43,88,0.06)">
                     <h3 class="text-lg font-bold text-plum serif italic mb-4">Åbningstider</h3>
-                    <div class="space-y-2 text-sm">
+                    <div class="space-y-2 text-base">
                         <div class="flex justify-between text-gray-600">
                             <span>Mandag</span><span>10:00 – 17:00</span>
                         </div>
