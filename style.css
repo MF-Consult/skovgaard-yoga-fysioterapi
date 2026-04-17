@@ -96,6 +96,15 @@ h4,
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .hero-fullscreen {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+}
+
 /* Sub-page hero (default — each page overrides bg-image inline) */
 .page-hero {
   height: 55vh;
