@@ -26,7 +26,7 @@
     <!-- HERO -->
     <section class="pt-32 pb-8 md:pt-36 md:pb-12 brand-gradient text-white relative">
         <div class="container mx-auto px-6 text-center relative z-10">
-            <span class="uppercase tracking-[0.4em] text-[0.75rem] mb-3 block font-bold" style="color: #e2d5f8;">Cohen's PSS</span>
+            <span class="uppercase tracking-[0.4em] text-[0.75rem] mb-3 block font-bold text-hero-label">Cohen's PSS</span>
             <h1 class="text-4xl md:text-5xl font-bold serif italic leading-tight">Stresstest</h1>
             <p class="mt-4 text-base opacity-85 max-w-xl mx-auto font-light">Find ud af dit stressniveau på under 3 minutter.</p>
         </div>
@@ -265,14 +265,13 @@
                     <div>
                         <button type="submit" class="btn-primary rounded-full">Indsend resultat</button>
                     </div>
-
-                    <div id="contact-success" class="hidden text-center text-base text-purple-700 font-medium py-3 bg-purple-50 rounded-lg">
-                        ✓ Tak! Dit resultat er sendt. Birgitte vender tilbage snarest.
-                    </div>
-                    <div id="contact-error" class="hidden text-center text-base text-red-600 font-medium py-3 bg-red-50 rounded-lg">
-                        Der skete en fejl. Prøv igen eller ring på <a href="tel:+4560873626" class="underline">60 87 36 26</a>.
-                    </div>
                 </form>
+                <div id="contact-success" class="hidden text-center text-base text-purple-700 font-medium py-3 bg-purple-50 rounded-lg mt-4">
+                    ✓ Tak! Dit resultat er sendt. Birgitte vender tilbage snarest.
+                </div>
+                <div id="contact-error" class="hidden text-center text-base text-red-600 font-medium py-3 bg-red-50 rounded-lg mt-4">
+                    Der skete en fejl. Prøv igen eller ring på <a href="tel:+4560873626" class="underline">60 87 36 26</a>.
+                </div>
             </div>
 
         </div>
@@ -381,7 +380,8 @@
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: new URLSearchParams(new FormData(form)).toString()
-            }).then(function() {
+            }).then(function(res) {
+                if (!res.ok) throw new Error('server error');
                 form.classList.add('hidden');
                 document.getElementById('contact-success').classList.remove('hidden');
             }).catch(function() {

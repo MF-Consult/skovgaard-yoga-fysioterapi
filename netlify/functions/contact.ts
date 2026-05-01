@@ -32,7 +32,7 @@ export const handler: Handler = async (event) => {
   try {
     await resend.emails.send({
       from: 'noreply@skyf.dk',
-      to: 'birgitte@skyf.dk',
+      to: 'mark@mfconsult.dk',
       subject: `Ny henvendelse fra ${navn}`,
       text: emailBody,
       replyTo: email,
