@@ -3,39 +3,39 @@
     "label": "Ydelser",
     "heading": "Yogaterapi",
     "tagline": "Find hjem til dig selv gennem bevægelse, åndedræt og nærvær.",
-    "bg_image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=2000"
+    "bg_image": "/Assets/KimWendt-2319.jpg"
   },
   "intro": {
     "label": "Yogaterapi & Hold",
     "heading": "Yoga som helbredende praksis",
     "image": "https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&q=80&w=800",
-    "para1": "Yoga hos mig er ikke kun motion — det er en helhedsorienteret praksis, der forbinder krop, sind og åndedræt. Jeg tilbyder både individuel yogaterapi og holdundervisning tilpasset alle niveauer.",
-    "para2": "Med over 1300+ timers yogauddannelse kombinerer jeg min viden om kroppen som fysioterapeut med dybden i yogaens traditioner for at skabe en unik og virkningsfuld praksis.",
-    "cta": "Tilmeld dig"
+    "para1": "Yoga betyder forbundet. Forbundet og i kontakt med både krop, sind og ånd.\n\nVi arbejder derfor med alle lagene i yogaterapi.",
+    "para2": "Med over 1300+ timers yogauddannelse kombinerer jeg min viden om kroppen, som fysioterapeut, med dybden i yogaens holistiske sundhedssystem og livsfilosofi og sammen skaber vi en potent og virkningsfuld praksis.\n\nDu er også velkommen, hvis dit fokus mere er på forebyggelse og personlig udvikling.\n\n\"På måtten\" bliver vi virkelig konfronteret med os selv. Det er samtidig netop dér, forandring bliver mulig!",
+    "cta": "Kontakt mig her"
   },
   "offers": {
     "label": "Hvad tilbyder jeg?",
     "heading": "Mine yogatilbud",
     "item1_title": "Individuel yogaterapi",
-    "item1_body": "Et personligt forløb skræddersyet til dine specifikke udfordringer, hvad enten det er smerter, stress eller et ønske om dybere fordybelse.",
+    "item1_body": "Jeg tilbyder individuel yogaterapi, hvor du får din helt egen skræddersyede, personlige og individuelt tilrettelagte yogapraksis, som arbejder med præcis de ting og temaer, du ønsker at arbejde med, tilpasset præcist til dét niveau du har behov for og er klar til at arbejde med <3\n\nDet være sig fysiske temaer, tankemylder og evne til at fokusere, følelsesmæssige temaer, selvregulering, langvarig stress og udbrændthed, et ønske om personlig udvikling eller fordybelse og tilpasning af en praksis, du allerede har.",
     "item2_title": "Holdundervisning",
-    "item2_body": "Blide og tilgængelige yogahold for alle niveauer. Et trygt fællesskab, hvor du kan udforske din praksis i dit eget tempo.",
+    "item2_body": "Jeg tilbyder enkelte yogahold;\n\nEt lille eksklusivt mandehold, for dem, der gerne vil opnå en mere fleksibel krop og samtidig arbejde med selv at kunne skabe bedre plads og ro indeni, så der også kommer et større overskud af energi og livsglæde :)\n\nEt Mediyogahold til dem, der har behov for særlige hensyn. Dette hold kan du læse mere om og tilmelde dig gennem FOF her:\n\n<https://www.fof.dk/aftenskolen/fof-syd-og-vestsjaelland/mediyoga>\n\n![](/Assets/alm-5-.jpg)",
     "item3_title": "Åndedrætsarbejde",
-    "item3_body": "Pranayama og åndedrætsteknikker, der roer nervesystemet, øger energien og skaber indre balance."
+    "item3_body": "Pranayama og åndedrætsteknikker, der regulerer nervesystemet, vi arbejder med forskellige teknikker, der kan forskellige ting. Blandt andet øge energien, sænke eller hæve arousal (vågenhedstilstanden), få dig ud af alarmberedskabet og aktivere kroppens eget selvhelbredende system."
   },
   "audience": {
-    "label": "Hvem er yoga for?",
     "heading": "Yoga er for alle kroppe",
-    "image": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&q=80&w=800",
-    "intro": "Du behøver ikke at være smidig eller have erfaring. Yoga tilpasses din krop og dine behov — ikke omvendt. Jeg møder dig præcis, hvor du er.",
     "group1_title": "Begyndere",
-    "group1_body": "Blid introduktion til yogaens grundprincipper i et trygt miljø.",
     "group2_title": "Med smerter eller skader",
-    "group2_body": "Tilpasset yoga, der støtter helingsprocessen og øger bevægelighed.",
-    "group3_title": "Under stress",
+    "group4_body": "Dybere arbejde med krop, åndedræt og meditation for dem med erfaring.",
+    "intro": "Du behøver ikke at være smidig eller have erfaring. Yoga tilpasses din krop og dine behov — ikke omvendt. Jeg møder dig præcis, hvor du er.",
     "group3_body": "Yoga som redskab til at finde ro og genoprette balancen i hverdagen.",
+    "group3_title": "Under stress",
+    "group2_body": "Tilpasset yoga, der støtter helingsprocessen og øger bevægelighed.",
     "group4_title": "Erfarne udøvere",
-    "group4_body": "Dybere arbejde med krop, åndedræt og meditation for dem med erfaring."
+    "group1_body": "Blid introduktion til yogaens grundprincipper i et trygt miljø.",
+    "label": "Hvem er yoga for?",
+    "image": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&q=80&w=800"
   },
   "cta": {
     "heading": "Klar til at finde din ro?",
