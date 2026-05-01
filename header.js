@@ -27,21 +27,21 @@
             </button>
             <div class="nav-dropdown-menu">
               <a href="stress.html">Stressforløb (Privat)</a>
-              <a href="stress-erhverv.html">Stressforløb (Virksomhed)</a>
+              <a href="stress-erhverv.html">Stressforløb for virksomheder</a>
+              <a href="evalueringer.html">Evalueringer</a>
               <a href="glad.html">GLA:D® Træning</a>
               <a href="gifted.html">Høj Begavelse</a>
               <a href="fysioterapi.html">Fysioterapi</a>
-              <a href="yoga.html">Yogaterapi</a>
               <a href="boern.html">Børnefysioterapi</a>
+              <a href="yoga.html">Yogaterapi</a>
               <a href="konsulent.html">Ekstern konsulent</a>
             </div>
           </div>
           ${navLink('stresstest.html', 'Stresstest')}
           ${navLink('om.html', 'Om mig')}
           ${navLink('priser.html', 'Priser')}
-          ${navLink('kontakt.html', 'Kontakt')}
         </nav>
-        <a href="kontakt.html" id="cta-link" class="hidden sm:inline text-white border-b-2 border-white pb-1 text-[0.85rem] uppercase tracking-[0.2em] font-bold hover:opacity-70 transition-all">Book tid</a>
+        <a href="kontakt.html" id="cta-link" class="hidden sm:inline text-white border-b-2 border-white pb-1 text-[0.85rem] uppercase tracking-[0.2em] font-bold hover:opacity-70 transition-all">Skriv til mig</a>
         <button class="hamburger-btn lg:hidden text-white" id="hamburger-btn" aria-label="Åbn menu">
           <span></span><span></span><span></span>
         </button>
@@ -63,21 +63,21 @@
         </button>
         <div class="drawer-sub-menu" id="drawer-ydelser-sub">
           <a href="stress.html">Stressforløb (Privat)</a>
-          <a href="stress-erhverv.html">Stressforløb (Virksomhed)</a>
+          <a href="stress-erhverv.html">Stressforløb for virksomheder</a>
+          <a href="evalueringer.html">Evalueringer</a>
           <a href="glad.html">GLA:D® Træning</a>
           <a href="gifted.html">Høj Begavelse</a>
           <a href="fysioterapi.html">Fysioterapi</a>
-          <a href="yoga.html">Yoga</a>
           <a href="boern.html">Børnefysioterapi</a>
+          <a href="yoga.html">Yoga</a>
           <a href="konsulent.html">Ekstern konsulent</a>
         </div>
         ${drawerLink('stresstest.html', 'Stresstest')}
         ${drawerLink('om.html', 'Om mig')}
         ${drawerLink('priser.html', 'Priser')}
-        ${drawerLink('kontakt.html', 'Kontakt')}
       </nav>
       <div class="drawer-footer">
-        <a href="kontakt.html" class="drawer-cta">Book tid</a>
+        <a href="kontakt.html" class="drawer-cta">Skriv til mig</a>
       </div>
     </div>
   `;

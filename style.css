@@ -14,6 +14,7 @@
   --off-white: #fdfaf7;
   --nude: #f7f3ef;
   --text-dark: #2d2d2d;
+  --text-hero-label: #e2d5f8; /* Light lavender — small labels on dark/gradient hero backgrounds */
 
   /* Typography — font families */
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -89,6 +90,12 @@ p {
 }
 
 /* ── 3. Brand Utilities ─────────────────────────────────────── */
+/* Soft tint / divider helpers derived from --brand-purple */
+.bg-plum-soft     { background-color: rgba(70, 43, 88, 0.05); }
+.border-plum-soft { border-color:      rgba(70, 43, 88, 0.1);  }
+.divider-plum     { background: linear-gradient(90deg, transparent, rgba(70, 43, 88, 0.1), transparent); }
+
+
 .brand-gradient {
   background: linear-gradient(135deg,
       var(--brand-purple) 0%,
@@ -112,8 +119,16 @@ p {
   background-color: var(--brand-purple);
 }
 
+.border-plum {
+  border-color: var(--brand-purple);
+}
+
 .text-nude {
   color: var(--nude);
+}
+
+.text-hero-label {
+  color: var(--text-hero-label);
 }
 
 /* ── 4. Buttons ─────────────────────────────────────────────── */
@@ -549,32 +564,50 @@ header.scrolled {
 }
 
 /* ── 12. Stress Quiz ────────────────────────────────────────── */
+
+/* Progress bar */
+.quiz-progress-wrap {
+  height: 3px;
+  background: rgba(70, 43, 88, 0.08);
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand-purple), var(--brand-gradient-end));
+  border-radius: 9999px;
+  transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 0%;
+}
+
+/* Question cards */
 .quiz-question-card {
   background: white;
-  border: 1px solid rgba(70, 43, 88, 0.08);
-  border-radius: 1rem;
+  border: 1px solid rgba(70, 43, 88, 0.07);
+  border-left: 3px solid var(--brand-gradient-end);
+  border-radius: 0 1rem 1rem 0;
   padding: 1.75rem 2rem;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.25s ease, border-left-color 0.25s ease;
 }
 
 .quiz-question-card:focus-within {
-  box-shadow: 0 8px 24px rgba(70, 43, 88, 0.08);
+  box-shadow: 0 8px 28px rgba(70, 43, 88, 0.09);
+  border-left-color: var(--brand-purple);
 }
 
+/* Question number — elegant italic, no bubble */
 .question-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--brand-purple);
-  color: white;
   font-family: 'Playfair Display', serif;
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--brand-gradient-end);
+  line-height: 1;
   flex-shrink: 0;
-  margin-right: 0.75rem;
+  min-width: 2rem;
+  padding-top: 0.1rem;
 }
 
 .quiz-options {
@@ -588,14 +621,14 @@ header.scrolled {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1.1rem;
-  border: 1.5px solid rgba(70, 43, 88, 0.2);
+  padding: 0.55rem 1.2rem;
+  border: 1.5px solid rgba(70, 43, 88, 0.18);
   border-radius: 9999px;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--brand-purple);
-  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
   user-select: none;
 }
 
@@ -605,7 +638,8 @@ header.scrolled {
 
 .quiz-option:hover {
   background: var(--nude);
-  border-color: var(--brand-purple);
+  border-color: var(--brand-mid);
+  transform: translateY(-1px);
 }
 
 .quiz-option.selected {
@@ -614,6 +648,40 @@ header.scrolled {
   color: white;
 }
 
+/* Result — large score number */
+.result-score-number {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.result-score-number.lavt    { color: #10b981; }
+.result-score-number.moderat { color: #d97706; }
+.result-score-number.hoejt   { color: #ef4444; }
+
+/* Result score meter bar */
+.score-meter-wrap {
+  height: 6px;
+  background: rgba(70, 43, 88, 0.08);
+  border-radius: 9999px;
+  overflow: hidden;
+  margin: 1.25rem auto;
+  max-width: 280px;
+}
+
+.score-meter-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.score-meter-fill.lavt    { background: linear-gradient(90deg, #34d399, #10b981); }
+.score-meter-fill.moderat { background: linear-gradient(90deg, #fbbf24, #f59e0b); }
+.score-meter-fill.hoejt   { background: linear-gradient(90deg, #f87171, #ef4444); }
+
+/* Keep old result-badge for any fallback references */
 .result-badge {
   display: inline-block;
   padding: 0.5rem 1.5rem;
@@ -623,17 +691,6 @@ header.scrolled {
   letter-spacing: 0.02em;
 }
 
-.result-badge.lavt {
-  background: #00C000;
-  color: white;
-}
-
-.result-badge.moderat {
-  background: #e6e600;
-  color: #1a1a00;
-}
-
-.result-badge.hoejt {
-  background: #C00000;
-  color: white;
-}
+.result-badge.lavt    { background: #10b981; color: white; }
+.result-badge.moderat { background: #f59e0b; color: white; }
+.result-badge.hoejt   { background: #ef4444; color: white; }

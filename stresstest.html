@@ -24,11 +24,12 @@
     <script src="header.js"></script>
 
     <!-- HERO -->
-    <section class="pt-32 pb-8 md:pt-36 md:pb-12 brand-gradient text-white relative">
-        <div class="container mx-auto px-6 text-center relative z-10">
-            <span class="uppercase tracking-[0.4em] text-[0.75rem] mb-3 block font-bold text-hero-label">Cohen's PSS</span>
-            <h1 class="text-4xl md:text-5xl font-bold serif italic leading-tight">Stresstest</h1>
-            <p class="mt-4 text-base opacity-85 max-w-xl mx-auto font-light">Find ud af dit stressniveau på under 3 minutter.</p>
+    <section class="page-hero"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=2000'); background-position: center;">
+        <div class="text-center text-white px-6">
+            <span class="uppercase tracking-[0.4em] text-[0.75rem] mb-4 block opacity-80 font-bold">Cohen's PSS</span>
+            <h1 class="text-5xl md:text-6xl font-bold serif italic leading-tight">Stresstest</h1>
+            <p class="mt-6 text-base md:text-lg opacity-85 max-w-xl mx-auto font-light">Find ud af dit stressniveau på under 3 minutter.</p>
         </div>
     </section>
 
@@ -36,6 +37,11 @@
     <section class="py-16 bg-off-white">
         <div class="container mx-auto px-6 max-w-3xl text-center fade-in">
             <h2 class="text-3xl font-bold text-plum serif italic mb-6">Om testen</h2>
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <span class="inline-flex items-center gap-2 bg-white border border-gray-100 rounded-full px-4 py-2 text-[0.75rem] font-bold uppercase tracking-widest text-plum shadow-sm">10 spørgsmål</span>
+                <span class="inline-flex items-center gap-2 bg-white border border-gray-100 rounded-full px-4 py-2 text-[0.75rem] font-bold uppercase tracking-widest text-plum shadow-sm">Under 3 min</span>
+                <span class="inline-flex items-center gap-2 bg-white border border-gray-100 rounded-full px-4 py-2 text-[0.75rem] font-bold uppercase tracking-widest text-plum shadow-sm">Valideret test</span>
+            </div>
             <p class="text-gray-600 text-base leading-relaxed mb-4">
                 Stress-testen har 10 spørgsmål vedrørende dine følelser og tanker over den sidste måned. Besvar spørgsmålene relativt hurtigt baseret på din mavefornemmelse — du behøver ikke tælle præcis, hvor mange gange du har haft en bestemt oplevelse. Din score beregnes til en værdi mellem 0 og 40.
             </p>
@@ -52,7 +58,14 @@
     <!-- QUIZ -->
     <section id="test-section" class="py-12 bg-white">
         <div class="container mx-auto px-6 max-w-3xl">
-            <p class="text-gray-500 text-base mb-10 text-center">Sæt markering ved hvert af de 10 spørgsmål.</p>
+            <p class="text-gray-500 text-base mb-6 text-center">Sæt markering ved hvert af de 10 spørgsmål.</p>
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-[0.75rem] font-bold uppercase tracking-widest text-plum">Din fremgang</span>
+                <span id="progress-label" class="text-[0.75rem] font-medium text-gray-400">0 / 10</span>
+            </div>
+            <div class="quiz-progress-wrap">
+                <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+            </div>
             <form id="stress-form" novalidate>
 
                 <div class="space-y-6">
@@ -188,7 +201,12 @@
             <div class="text-center mb-10 fade-in">
                 <h2 class="text-3xl font-bold text-plum serif italic mb-6">Dit resultat er:</h2>
                 <div id="result-badge-wrap">
-                    <span id="result-badge" class="result-badge"></span>
+                    <div id="result-score-number" class="result-score-number mb-2">—</div>
+                    <div id="result-score-label" class="text-[0.75rem] font-bold uppercase tracking-widest text-gray-400 mb-1">point ud af 40 mulige</div>
+                    <div class="score-meter-wrap">
+                        <div id="score-meter-fill" class="score-meter-fill" style="width:0%"></div>
+                    </div>
+                    <div id="result-level-label" class="text-base font-bold text-gray-600 mt-3"></div>
                 </div>
             </div>
 
@@ -320,13 +338,24 @@
             }).join('\n');
         }
 
-        // Style selected quiz options
+        // Progress bar
+        function updateProgress() {
+            var answered = 0;
+            for (var i = 1; i <= 10; i++) {
+                if (document.querySelector('input[name="linje' + i + '"]:checked')) answered++;
+            }
+            document.getElementById('quiz-progress-fill').style.width = (answered * 10) + '%';
+            document.getElementById('progress-label').textContent = answered + ' / 10';
+        }
+
+        // Style selected quiz options + update progress
         document.querySelectorAll('.quiz-option input[type="radio"]').forEach(function(radio) {
             radio.addEventListener('change', function() {
                 document.querySelectorAll('.quiz-option input[name="' + this.name + '"]').forEach(function(r) {
                     r.closest('.quiz-option').classList.remove('selected');
                 });
                 this.closest('.quiz-option').classList.add('selected');
+                updateProgress();
             });
         });
 
@@ -348,15 +377,23 @@
             const level = getLevel(score);
             const levelLabels = { lavt: 'Lavt stressniveau', moderat: 'Moderat stressniveau', hoejt: 'Højt stressniveau' };
 
-            const badge = document.getElementById('result-badge');
-            badge.textContent = score + ' – ' + levelLabels[level];
-            badge.className = 'result-badge ' + level;
+            const scoreEl = document.getElementById('result-score-number');
+            scoreEl.textContent = score;
+            scoreEl.className = 'result-score-number ' + level;
+
+            document.getElementById('result-level-label').textContent = levelLabels[level];
+
+            const meterFill = document.getElementById('score-meter-fill');
+            meterFill.className = 'score-meter-fill ' + level;
+            setTimeout(function() {
+                meterFill.style.width = Math.round((score / 40) * 100) + '%';
+            }, 100);
 
             ['lavt', 'moderat', 'hoejt'].forEach(function(l) {
                 document.getElementById('result-text-' + l).classList.toggle('hidden', l !== level);
             });
 
-            document.getElementById('hidden-score').value = score + ' – ' + levelLabels[level];
+            document.getElementById('hidden-score').value = score + ' point – ' + levelLabels[level];
             document.getElementById('hidden-niveau').value = levelLabels[level];
             document.getElementById('hidden-svar').value = buildAnswerSummary(data);
 
