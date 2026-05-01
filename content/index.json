@@ -1,11 +1,30 @@
 {
-  "hero": {
-    "label": "Fra hjerte til hjerte",
-    "heading": "Genfind roen i din krop og din hverdag",
-    "body": "Holistisk fysioterapi og yogaterapi med hjertet i centrum. Et trygt rum, hvor krop, sind og sjæl får lov til at finde hinanden igen.",
-    "cta_primary": "Tag din gratis stresstest",
-    "cta_secondary": "Mød Mig",
-    "image": "Assets/595f18ec-928c-4b5c-b34c-2e9871d2b90b.jpg"
+  "gifted": {
+    "label": "Særligt fokus",
+    "heading": "Et fristed for det intensive sind",
+    "image": "/Assets/dreng-med-kamera.jpg",
+    "lead": "Mennesker med høj begavelse oplever ofte verden mere intenst. Hos mig finder du et trygt rum med fokus på at skabe ro i et nervesystem, der ofte kører i højeste gear.",
+    "body": "Som samarbejdspartner med Gifted Children tilbyder jeg specialiserede forløb og workshops tilpasset både børn, unge og voksne – altid med nærvær og det hele menneske i centrum.",
+    "cta": "Find ro her"
+  },
+  "process": {
+    "step3_title": "Forløbet",
+    "step4_title": "Balance",
+    "heading": "Vejen til din balance",
+    "intro": "Jeg sørger for, at du føler dig tryg fra første kontakt.",
+    "label": "Processen",
+    "step4_body": "Gennem nærværende og professionel støtte genfinder du din kropslige bevidsthed, din indre ro og din styrke.",
+    "step3_body": "Vi skaber i fællesskab et skræddersyet forløb, der favner dig og passer naturligt ind i dit liv.",
+    "step2_body": "Du besøger mig i klinikken til en undersøgelse i rolige, trygge rammer, hvor der er plads til hele dig.",
+    "step1_body": "Du starter med en samtale eller test, så vi sammen forstår dine sande behov og udfordringer.",
+    "step1_title": "Afklaring",
+    "step2_title": "Mødet"
+  },
+  "cta": {
+    "heading": "Klar til at tage det første skridt?",
+    "body": "Det kan være svært at vide, hvor man skal starte. Lad os finde den rette vej sammen.",
+    "cta_primary": "Tag afklaringstest",
+    "cta_secondary": "Book tid nu"
   },
   "stress": {
     "label": "Specialisering",
@@ -22,34 +41,6 @@
       "cta": "Se tilbud til erhverv"
     }
   },
-  "gifted": {
-    "label": "Særligt fokus",
-    "heading": "Et fristed for det intensive sind",
-    "image": "https://images.unsplash.com/photo-1637766717192-0f2d350ba7ee?auto=format&fit=crop&q=80&w=800",
-    "lead": "Mennesker med høj begavelse oplever ofte verden mere intenst. Hos mig finder du et trygt rum med fokus på at skabe ro i et nervesystem, der ofte kører i højeste gear.",
-    "body": "Som samarbejdspartner med Gifted Children tilbyder jeg specialiserede forløb og workshops tilpasset både børn, unge og voksne – altid med nærvær og det hele menneske i centrum.",
-    "cta": "Find ro her"
-  },
-  "children": {
-    "label": "Specialisering",
-    "heading": "Børnenes Fysioterapi",
-    "image": "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800",
-    "lead": "Som autoriseret børnefysioterapeut har jeg fokus på barnets motoriske udvikling og trivsel. Jeg møder barnet i øjenhøjde og gør træningen til en tryg leg, så vi støtter både den fysiske styrke og den indre ro.",
-    "bullet1": "Motoriske screeninger og test af børn i alle aldre med et helhedsorienteret blik.",
-    "bullet2": "Individuelle og nærværende forløb tilpasset barnets behov og familiens hverdag.",
-    "cta": "Læs om børneforløb"
-  },
-  "services": {
-    "label": "Holistisk støtte",
-    "heading": "Flere veje til velvære",
-    "intro": "Uanset hvor du er i livet, finder vi sammen den form for støtte, der giver bedst mening for din krop og dit sind.",
-    "item1_title": "Fysioterapi",
-    "item1_body": "Behandling, der favner hele dig. Jeg arbejder ud fra en jordnær professionalisme, hvor klassisk fysioterapi kombineres med en dyb forståelse for sammenhængen mellem din krop, psyke og sjæl.",
-    "item2_title": "Yogaterapi",
-    "item2_body": "Et trygt og helende rum, hvor vi gennem blid bevægelse, åndedrætsteknikker og nærvær genopbygger din kropslige bevidsthed, så du kan mærke dig selv igen.",
-    "item3_title": "GLA:D® Træning",
-    "item3_body": "Professionel og evidensbaseret holdtræning for dig med slidgigt. Vi styrker kroppen sikkert, skaber mærkbar smertelindring og forbedrer din livskvalitet i fællesskab."
-  },
   "testimonials": {
     "heading": "Erfaringer fra klinikken",
     "intro": "Det vigtigste for mig er ikke kun metoderne, men den forskel det gør i din hverdag.",
@@ -60,30 +51,39 @@
     "item2_quote": "Deltog i en 3 timers workshop - Opnå ro indeni. De 3+ timer fløj forbi i fantastiske Birgittes selskab. Birgitte delte ud af sin store viden om hvordan vi påvirkes fx af stress og hvordan vi kan komme i bedre balance og trivsel. Vi oplevede på egen krop hvordan vi kunne opnå ro gennem praktiske yoga- og åndedrætsøvelser, og fik mange praktisk redskaber med hjem til at mindske stress i hverdagen. Kan kun anbefale Birgitte hvis du ønsker tryg og kompetent behandling af det hele menneske.",
     "item2_name": "Helle Rasmussen"
   },
-  "process": {
-    "label": "Processen",
-    "heading": "Vejen til din balance",
-    "intro": "Jeg sørger for, at du føler dig tryg fra første kontakt.",
-    "step1_title": "Afklaring",
-    "step1_body": "Du starter med en samtale eller test, så vi sammen forstår dine sande behov og udfordringer.",
-    "step2_title": "Mødet",
-    "step2_body": "Du besøger mig i klinikken til en undersøgelse i rolige, trygge rammer, hvor der er plads til hele dig.",
-    "step3_title": "Forløbet",
-    "step3_body": "Vi skaber i fællesskab et skræddersyet forløb, der favner dig og passer naturligt ind i dit liv.",
-    "step4_title": "Balance",
-    "step4_body": "Gennem nærværende og professionel støtte genfinder du din kropslige bevidsthed, din indre ro og din styrke."
-  },
-  "cta": {
-    "heading": "Klar til at tage det første skridt?",
-    "body": "Det kan være svært at vide, hvor man skal starte. Lad os finde den rette vej sammen.",
-    "cta_primary": "Tag afklaringstest",
-    "cta_secondary": "Book tid nu"
-  },
   "about_preview": {
     "label": "Mød mig",
     "heading": "Faglighed møder nærvær",
     "image": "https://www.skovgaardyogaogfysioterapi.dk/wp-content/uploads/2022/12/Profilbillede-1.jpg",
     "background": "Autoriseret fysioterapeut (2000) og Yogaterapeut med over 1000 timers professionel træning.",
     "approach": "Jeg kombinerer dyb, evidensbaseret viden med en ægte forståelse for sammenhængen mellem krop, sind og sjæl."
+  },
+  "hero": {
+    "label": "Fra hjerte til hjerte",
+    "heading": "Genfind roen i din krop og din hverdag",
+    "body": "Holistisk fysioterapi og yogaterapi med hjertet i centrum. Et trygt rum, hvor krop, sind og sjæl får lov til at finde hinanden igen.",
+    "cta_primary": "Tag din gratis stresstest",
+    "cta_secondary": "Mød Mig",
+    "image": "Assets/595f18ec-928c-4b5c-b34c-2e9871d2b90b.jpg"
+  },
+  "services": {
+    "item3_body": "Professionel og evidensbaseret holdtræning for dig med slidgigt. Vi styrker kroppen sikkert, skaber mærkbar smertelindring og forbedrer din livskvalitet i fællesskab.",
+    "heading": "Flere veje til velvære",
+    "item2_body": "Et trygt og helende rum, hvor vi gennem blid bevægelse, åndedrætsteknikker og nærvær genopbygger din kropslige bevidsthed, så du kan mærke dig selv igen.",
+    "item1_body": "Behandling, der favner hele dig. Jeg arbejder ud fra en jordnær professionalisme, hvor klassisk fysioterapi kombineres med en dyb forståelse for sammenhængen mellem din krop, psyke og sjæl.",
+    "intro": "Uanset hvor du er i livet, finder vi sammen den form for støtte, der giver bedst mening for din krop og dit sind.",
+    "label": "Holistisk støtte",
+    "item1_title": "Fysioterapi",
+    "item2_title": "Yogaterapi",
+    "item3_title": "GLA:D® Træning"
+  },
+  "children": {
+    "label": "Specialisering",
+    "heading": "Børnenes Fysioterapi",
+    "image": "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=800",
+    "lead": "Som autoriseret børnefysioterapeut har jeg fokus på barnets motoriske udvikling og trivsel. Jeg møder barnet i øjenhøjde og gør træningen til en tryg leg, så vi støtter både den fysiske styrke og den indre ro.",
+    "bullet1": "Motoriske screeninger og test af børn i alle aldre med et helhedsorienteret blik.",
+    "bullet2": "Individuelle og nærværende forløb tilpasset barnets behov og familiens hverdag.",
+    "cta": "Læs om børneforløb"
   }
 }
