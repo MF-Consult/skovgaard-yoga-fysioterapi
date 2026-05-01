@@ -24,10 +24,10 @@
   "adults": {
     "label": "For voksne",
     "heading": "At forstå sig selv",
-    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800",
-    "para1": "Voksne højt begavede kan ofte føle sig presset af systemer eller forventninger, der ikke tager højde for deres kropslige og mentale intensitet. Individuelle forløb hos mig giver dig indsigt i dit nervesystem og konkrete teknikker til at skabe den nødvendige pause i hverdagen.",
-    "para2": "Vi arbejder med kropsbevidsthed, åndedræt og samtale for at mindske følelsen af overvældelse og genfinde din kerne.",
-    "cta": "Book en samtale"
+    "image": "/Assets/old_phone.png",
+    "para1": "Voksne højt begavede kan ofte føle sig presset af systemer eller forventninger, der ikke tager højde for deres måde at være i verden på og dermed heller ikke passer til deres behov for at kunne trives.\n\nIndividuelle forløb hos mig giver dig bedre indsigt i dit eget nervesystem og du får konkrete teknikker, som du kan bruge med det samme i din hverdag, for at skabe ro i dit nervesystem og dermed bedre selv kan skabe de små nødvendige pauser, hvor du kommer rigtigt ned i gear.",
+    "para2": "Vi arbejder med kropsbevidsthed, åndedrætsteknikker, blide dynamiske bevægelser, afspænding, meditation og ikke mindst den vigtige samtale for at komme bedst muligt rundt om hele dig.",
+    "cta": "Kontakt mig her"
   },
   "parents": {
     "parent_title": "Støtte til forældre",
