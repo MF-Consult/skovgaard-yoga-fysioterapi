@@ -221,16 +221,16 @@
                     <input type="hidden" name="score" id="hidden-score">
                     <input type="hidden" name="niveau" id="hidden-niveau">
                     <input type="hidden" name="svar" id="hidden-svar">
-                    <input type="hidden" name="linje1" id="hidden-linje1">
-                    <input type="hidden" name="linje2" id="hidden-linje2">
-                    <input type="hidden" name="linje3" id="hidden-linje3">
-                    <input type="hidden" name="linje4" id="hidden-linje4">
-                    <input type="hidden" name="linje5" id="hidden-linje5">
-                    <input type="hidden" name="linje6" id="hidden-linje6">
-                    <input type="hidden" name="linje7" id="hidden-linje7">
-                    <input type="hidden" name="linje8" id="hidden-linje8">
-                    <input type="hidden" name="linje9" id="hidden-linje9">
-                    <input type="hidden" name="linje10" id="hidden-linje10">
+                    <input type="hidden" name="Oprevet over noget uventet" id="hidden-linje1">
+                    <input type="hidden" name="Ude af stand til at kontrollere de vigtige ting" id="hidden-linje2">
+                    <input type="hidden" name="Nervøs og stresset" id="hidden-linje3">
+                    <input type="hidden" name="Sikker på evner til at klare problemer" id="hidden-linje4">
+                    <input type="hidden" name="Tingene gik som ønsket" id="hidden-linje5">
+                    <input type="hidden" name="Ikke kunne overkomme alt du skulle" id="hidden-linje6">
+                    <input type="hidden" name="I stand til at håndtere irriterende ting" id="hidden-linje7">
+                    <input type="hidden" name="Følte du havde styr på tingene" id="hidden-linje8">
+                    <input type="hidden" name="Vred over ting du ikke havde indflydelse på" id="hidden-linje9">
+                    <input type="hidden" name="Vanskeligheder hobede sig op" id="hidden-linje10">
 
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div>
@@ -362,9 +362,10 @@
             document.getElementById('hidden-niveau').value = levelLabels[level];
             document.getElementById('hidden-svar').value = buildAnswerSummary(data);
 
-            // Kopier individuelle svar til hidden felter
+            // Kopier individuelle svar til hidden felter (som læsbare labels)
             for (var i = 1; i <= 10; i++) {
-                document.getElementById('hidden-linje' + i).value = data.get('linje' + i) || '';
+                var val = parseInt(data.get('linje' + i) || '0');
+                document.getElementById('hidden-linje' + i).value = val > 0 ? LABELS[val - 1] : '';
             }
 
             const resultSection = document.getElementById('result-section');
