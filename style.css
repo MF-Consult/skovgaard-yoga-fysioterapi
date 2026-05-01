@@ -7,15 +7,42 @@
 
 /* ── 1. Brand Tokens ────────────────────────────────────────── */
 :root {
+  /* Colors */
   --brand-purple: #462b58;
-  /* Primary brand purple */
   --brand-gradient-end: #aa81c5;
-  /* Gradient end (soft lavender) */
   --brand-mid: #6b4488;
-  /* Gradient midpoint */
   --off-white: #fdfaf7;
   --nude: #f7f3ef;
   --text-dark: #2d2d2d;
+
+  /* Typography — font families */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+
+  /* Typography — type scale */
+  --text-xs:   0.75rem;    /* 12px  — labels, tags, captions */
+  --text-sm:   0.875rem;   /* 14px  — small UI text, nav sub-items */
+  --text-base: 1rem;       /* 16px  — body default (WCAG minimum) */
+  --text-md:   1.0625rem;  /* 17px  — comfortable body / lead paragraphs */
+  --text-lg:   1.125rem;   /* 18px  — emphasized body, intro text */
+  --text-xl:   1.25rem;    /* 20px  — h4, step headings */
+  --text-2xl:  1.5rem;     /* 24px  — h3, service card titles */
+  --text-3xl:  1.875rem;   /* 30px  — h2 compact / CTA sections */
+  --text-4xl:  2.25rem;    /* 36px  — h2 standard sections */
+  --text-5xl:  3rem;       /* 48px  — h1 sub-pages */
+  --text-hero: clamp(2.75rem, 3vw + 1.5rem, 4.5rem); /* fluid — fullscreen hero h1 */
+
+  /* Typography — line heights */
+  --leading-tight:   1.2;
+  --leading-snug:    1.35;
+  --leading-normal:  1.7;
+  --leading-relaxed: 1.85;
+
+  /* Typography — letter spacing */
+  --tracking-tight:   -0.01em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.05em;
+  --tracking-widest:   0.15em;
 }
 
 /* ── 2. Base Styles ─────────────────────────────────────────── */
@@ -34,6 +61,31 @@ h3,
 h4,
 .serif {
   font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+}
+
+h2 {
+  font-size: var(--text-4xl);
+  line-height: var(--leading-snug);
+}
+
+h3 {
+  font-size: var(--text-2xl);
+  line-height: var(--leading-snug);
+}
+
+h4 {
+  font-size: var(--text-xl);
+  line-height: var(--leading-snug);
+}
+
+p {
+  max-width: 68ch;
 }
 
 /* ── 3. Brand Utilities ─────────────────────────────────────── */

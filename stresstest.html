@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cohen's Stresstest (PSS) | Skovgaard Yoga &amp; Fysioterapi Næstved</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Tag Cohen's Perceived Stress Scale (PSS) stresstest og find ud af, om du har lavt, moderat eller højt stressniveau. Gratis – på under 3 minutter.">
     <link rel="canonical" href="https://birgitte-skovgaard.netlify.app/stresstest.html">
@@ -216,12 +216,21 @@
                 <h3 class="text-2xl font-bold text-plum serif italic mb-2">Indsend resultat / Få en gratis afklarende samtale</h3>
                 <p class="text-gray-500 text-base mb-8">Udfyld felterne herunder og indsend dit resultat. Jeg vender tilbage snarest muligt.</p>
 
-                <form name="stress-resultat" data-netlify="true" netlify-honeypot="bot-field" id="contact-form" class="space-y-6">
-                    <input type="hidden" name="form-name" value="stress-resultat">
-                    <p class="hidden"><label>Må ikke udfyldes: <input name="bot-field"></label></p>
+                <form name="stresstest" data-netlify="true" id="contact-form" class="space-y-6">
+                    <input type="hidden" name="form-name" value="stresstest">
                     <input type="hidden" name="score" id="hidden-score">
                     <input type="hidden" name="niveau" id="hidden-niveau">
                     <input type="hidden" name="svar" id="hidden-svar">
+                    <input type="hidden" name="linje1" id="hidden-linje1">
+                    <input type="hidden" name="linje2" id="hidden-linje2">
+                    <input type="hidden" name="linje3" id="hidden-linje3">
+                    <input type="hidden" name="linje4" id="hidden-linje4">
+                    <input type="hidden" name="linje5" id="hidden-linje5">
+                    <input type="hidden" name="linje6" id="hidden-linje6">
+                    <input type="hidden" name="linje7" id="hidden-linje7">
+                    <input type="hidden" name="linje8" id="hidden-linje8">
+                    <input type="hidden" name="linje9" id="hidden-linje9">
+                    <input type="hidden" name="linje10" id="hidden-linje10">
 
                     <div class="grid sm:grid-cols-2 gap-6">
                         <div>
@@ -353,6 +362,11 @@
             document.getElementById('hidden-niveau').value = levelLabels[level];
             document.getElementById('hidden-svar').value = buildAnswerSummary(data);
 
+            // Kopier individuelle svar til hidden felter
+            for (var i = 1; i <= 10; i++) {
+                document.getElementById('hidden-linje' + i).value = data.get('linje' + i) || '';
+            }
+
             const resultSection = document.getElementById('result-section');
             resultSection.classList.remove('hidden');
             setTimeout(function() {
@@ -360,7 +374,7 @@
             }, 80);
         });
 
-        // Netlify AJAX submit
+        // Netlify Forms AJAX submit
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const form = this;

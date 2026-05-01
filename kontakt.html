@@ -7,7 +7,7 @@
     <title>Kontakt | Book tid – Skovgaard Yoga &amp; Fysioterapi Næstved</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- SEO -->
@@ -64,27 +64,28 @@
                         </div>
                     </div>
                     
-                    <form class="space-y-6" onsubmit="handleFormSubmit(event)">
+                    <form name="kontakt" data-netlify="true" class="space-y-6" onsubmit="handleFormSubmit(event)">
+                        <input type="hidden" name="form-name" value="kontakt">
                         <div class="grid sm:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">Navn</label>
-                                <input type="text" required placeholder="Dit fulde navn"
+                                <input type="text" name="navn" required placeholder="Dit fulde navn"
                                     class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
                             </div>
                             <div>
                                 <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">Telefon</label>
-                                <input type="tel" placeholder="Dit telefonnummer"
+                                <input type="tel" name="telefon" placeholder="Dit telefonnummer"
                                     class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
                             </div>
                         </div>
                         <div>
                             <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">E-mail</label>
-                            <input type="email" required placeholder="Din e-mailadresse"
+                            <input type="email" name="email" required placeholder="Din e-mailadresse"
                                 class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg">
                         </div>
                         <div>
                             <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">Hvad søger du hjælp til?</label>
-                            <select class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg appearance-none">
+                            <select name="kategori" class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg appearance-none">
                                 <option value="">Vælg en kategori...</option>
                                 <option>Fysioterapi & Genoptræning</option>
                                 <option>Børnefysioterapi</option>
@@ -99,12 +100,15 @@
                         </div>
                         <div>
                             <label class="block text-[0.75rem] font-bold uppercase tracking-widest text-plum mb-2">Besked</label>
-                            <textarea rows="4" placeholder="Fortæl kort om din situation..."
+                            <textarea name="besked" rows="4" placeholder="Fortæl kort om din situation..."
                                 class="w-full border border-gray-200 px-4 py-3 text-base text-gray-700 focus:outline-none focus:border-purple-400 transition-colors bg-off-white rounded-lg resize-none"></textarea>
                         </div>
                         <button type="submit" class="btn-primary w-full sm:w-auto px-10">Send besked</button>
                         <div id="form-success" class="hidden text-center text-base text-purple-700 font-medium py-3 bg-purple-50 rounded-lg mt-4" data-content-key="form.success_message">
                             ✓ Tak! Din besked er sendt. Jeg vender tilbage snarest.
+                        </div>
+                        <div id="form-error" class="hidden text-center text-base text-red-600 font-medium py-3 bg-red-50 rounded-lg mt-4">
+                            Der skete en fejl. Prøv igen eller ring på <a href="tel:+4560873626" class="underline">60 87 36 26</a>.
                         </div>
                     </form>
                 </div>
@@ -178,12 +182,25 @@
     <script src="footer.js"></script>
 
     <script>
-        function handleFormSubmit(e) {
+        async function handleFormSubmit(e) {
             e.preventDefault();
+            const form = e.target;
             const successMsg = document.getElementById('form-success');
-            successMsg.classList.remove('hidden');
-            e.target.reset();
-            setTimeout(() => successMsg.classList.add('hidden'), 6000);
+            const errorMsg = document.getElementById('form-error');
+            successMsg.classList.add('hidden');
+            errorMsg.classList.add('hidden');
+
+            try {
+                await fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(new FormData(form)).toString()
+                });
+                successMsg.classList.remove('hidden');
+                form.reset();
+            } catch (_) {
+                errorMsg.classList.remove('hidden');
+            }
         }
     </script>
     <script src="/js/content-loader.js"></script>
