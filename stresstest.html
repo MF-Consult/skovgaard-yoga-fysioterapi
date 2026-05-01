@@ -216,8 +216,7 @@
                 <h3 class="text-2xl font-bold text-plum serif italic mb-2">Indsend resultat / Få en gratis afklarende samtale</h3>
                 <p class="text-gray-500 text-base mb-8">Udfyld felterne herunder og indsend dit resultat. Jeg vender tilbage snarest muligt.</p>
 
-                <form name="stresstest" data-netlify="true" id="contact-form" class="space-y-6">
-                    <input type="hidden" name="form-name" value="stresstest">
+                <form id="contact-form" class="space-y-6">
                     <input type="hidden" name="score" id="hidden-score">
                     <input type="hidden" name="niveau" id="hidden-niveau">
                     <input type="hidden" name="svar" id="hidden-svar">
@@ -375,11 +374,10 @@
             }, 80);
         });
 
-        // Netlify Forms AJAX submit
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const form = this;
-            fetch('/', {
+            fetch('/.netlify/functions/stresstest', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: new URLSearchParams(new FormData(form)).toString()
