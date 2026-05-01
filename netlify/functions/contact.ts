@@ -100,7 +100,7 @@ export const handler: Handler = async (event) => {
   try {
     await resend.emails.send({
       from: 'noreply@skyf.dk',
-      to: 'mark@mfconsult.dk',
+      to: 'birgitte@skyf.dk',
       subject: `Ny henvendelse fra ${navn}${kategori ? ` – ${kategori}` : ''}`,
       html: buildHtmlEmail(navn, email, telefon, kategori, besked),
       text: textBody,
