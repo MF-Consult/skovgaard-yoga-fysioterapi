@@ -40,6 +40,7 @@
           ${navLink('stresstest.html', 'Stresstest')}
           ${navLink('om.html', 'Om mig')}
           ${navLink('priser.html', 'Priser')}
+          ${navLink('kontakt.html', 'Kontakt')}
         </nav>
         <a href="kontakt.html" id="cta-link" class="hidden sm:inline text-white border-b-2 border-white pb-1 text-[0.85rem] uppercase tracking-[0.2em] font-bold hover:opacity-70 transition-all">Skriv til mig</a>
         <button class="hamburger-btn lg:hidden text-white" id="hamburger-btn" aria-label="Åbn menu">
@@ -76,10 +77,8 @@
         ${drawerLink('stresstest.html', 'Stresstest')}
         ${drawerLink('om.html', 'Om mig')}
         ${drawerLink('priser.html', 'Priser')}
+        ${drawerLink('kontakt.html', 'Kontakt')}
       </nav>
-      <div class="drawer-footer">
-        <a href="kontakt.html" class="drawer-cta">Skriv til mig</a>
-      </div>
     </div>
   `;
 
