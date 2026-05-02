@@ -97,6 +97,11 @@ export const handler: Handler = async (event) => {
   }
 
   const params = new URLSearchParams(event.body ?? '')
+
+  if (params.get('website')) {
+    return { statusCode: 200, body: JSON.stringify({ success: true }) }
+  }
+
   const navn = params.get('navn') ?? ''
   const email = params.get('email') ?? ''
   const score = params.get('score') ?? 'Resultat'

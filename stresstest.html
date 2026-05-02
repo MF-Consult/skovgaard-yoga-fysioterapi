@@ -200,7 +200,7 @@
 
             <div class="text-center mb-10 fade-in">
                 <h2 class="text-3xl font-bold text-plum serif italic mb-6">Dit resultat er:</h2>
-                <div id="result-badge-wrap">
+                <div id="result-badge-wrap" class="bg-white rounded-2xl py-8 px-10 inline-block shadow-sm border border-gray-100">
                     <div id="result-score-number" class="result-score-number mb-2">—</div>
                     <div id="result-score-label" class="text-[0.75rem] font-bold uppercase tracking-widest text-gray-400 mb-1">point ud af 40 mulige</div>
                     <div class="score-meter-wrap">
@@ -211,11 +211,13 @@
             </div>
 
             <div id="result-text-lavt" class="hidden bg-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-sm mb-10 text-gray-600 text-base leading-relaxed space-y-4 fade-in">
+                <div class="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-2 font-bold text-sm text-white" style="background:#16a34a;">● Grøn zone – Lavt stressniveau</div>
                 <p>Du har scoret mellem 0 og 13 i PSS stresstesten. Dette er den gode stress, hvor du oplever at være tændt, være klar og at yde uden at være begrænset. Du oplever, at hjerne og krop arbejder godt sammen. Nogle af de klassiske reaktioner på den gode stress er midlertidig hjertebanken, svedige håndflader, sommerfugle i maven og spænding i muskler. Men det er kun lige omkring de situationer, hvor du skal yde ekstra. Dette er naturligt og hjælper dig i situationen.</p>
                 <p>For at blive i grøn zone er det vigtigt at forebygge og sørge for, at du prioriterer at lade op. Så sørg for at holde pauser i løbet af dagen både på arbejde og privat. Du forebygger og opretholder din mentale sundhed gennem aktiviteter som eksempelvis yoga, meditation, motion og søvn.</p>
             </div>
 
             <div id="result-text-moderat" class="hidden bg-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-sm mb-10 text-gray-600 text-base leading-relaxed space-y-4 fade-in">
+                <div class="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-2 font-bold text-sm text-white" style="background:#ca8a04;">● Gul zone – Moderat stressniveau</div>
                 <p>Du har scoret mellem 14 og 26 i PSS stresstesten. Overgangen fra den grønne til den gule zone er ofte flydende, og sker når krav og forventninger overstiger vores personlige ressourcer. Nogle af de klassiske symptomer på stresstilstanden i gul zone er dårlig nattesøvn, koncentrationsbesvær, glemsomhed og irritabilitet.</p>
                 <p>Det er vigtigt at handle nu, og at du sætter fokus på det, du kan gøre noget ved. Din krop reagerer på overbelastning, og du skal lytte efter din krops signaler og fokusere på at prioritere dine opgaver og at lade op.</p>
                 <p>Tal med dine nærmeste og din leder og bed om hjælp til at bryde det mønster, der giver dig moderat stress. Du skal overveje at få individuel hjælp fra en professionel, der har erfaringer med at arbejde med stress-reaktioner. Prioriter tid til din genopbygning gennem aktiviteter som eksempelvis yoga, meditation, gåture i naturen og søvn.</p>
@@ -223,6 +225,7 @@
             </div>
 
             <div id="result-text-hoejt" class="hidden bg-white rounded-2xl p-8 md:p-10 border border-gray-100 shadow-sm mb-10 text-gray-600 text-base leading-relaxed space-y-4 fade-in">
+                <div class="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-2 font-bold text-sm text-white" style="background:#dc2626;">● Rød zone – Højt stressniveau</div>
                 <p>Du har scoret mellem 27 og 40 i PSS stresstesten. Du har i gennem for lang tid overskredet din personlige grænse for hvad din krop kan klare. Du er stresset og risikerer at få følgeskab af depression, angst, udbrændthed og at din krop siger fra. Har du mange stressreaktioner i den røde zone, har stress alvorlig indflydelse på din hverdag.</p>
                 <p>Nogle af symptomerne kan være søvnløshed, hukommelsestab, manglende energi, aggressivitet og fysiske smerter.</p>
                 <p>Du har brug for hjælp! Søg den hos venner, familie og/eller din leder. Det er også nødvendigt at få individuel hjælp fra en professionel, der har erfaringer med at behandle stress-reaktioner. I samarbejde med din behandler finder I frem til, hvad der er det bedste behandlingsforløb for dig.</p>
@@ -235,6 +238,10 @@
                 <p class="text-gray-500 text-base mb-8">Udfyld felterne herunder og indsend dit resultat. Jeg vender tilbage snarest muligt.</p>
 
                 <form id="contact-form" class="space-y-6">
+                    <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true">
+                        <label>Lad dette felt stå tomt</label>
+                        <input type="text" name="website" tabindex="-1" autocomplete="off">
+                    </div>
                     <input type="hidden" name="score" id="hidden-score">
                     <input type="hidden" name="niveau" id="hidden-niveau">
                     <input type="hidden" name="svar" id="hidden-svar">
@@ -413,6 +420,18 @@
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const form = this;
+            const navn = form.querySelector('[name="navn"]').value.trim();
+            const email = form.querySelector('[name="email"]').value.trim();
+            const errEl = document.getElementById('contact-error');
+
+            if (!navn || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                errEl.textContent = 'Udfyld venligst navn og en gyldig e-mailadresse.';
+                errEl.classList.remove('hidden');
+                errEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+            errEl.classList.add('hidden');
+
             fetch('/.netlify/functions/stresstest', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -422,7 +441,8 @@
                 form.classList.add('hidden');
                 document.getElementById('contact-success').classList.remove('hidden');
             }).catch(function() {
-                document.getElementById('contact-error').classList.remove('hidden');
+                errEl.textContent = 'Der skete en fejl. Prøv igen eller ring på 60 87 36 26.';
+                errEl.classList.remove('hidden');
             });
         });
     </script>
