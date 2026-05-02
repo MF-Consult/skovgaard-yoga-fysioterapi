@@ -276,7 +276,7 @@ z-index: 99;
 
 Mobile nav items: Playfair Display italic, plum, 1.3rem, `text-decoration: none`  
 Ydelser accordion chevron rotates 180° when open.  
-"Book tid" CTA: full-width, rounded-full pill at bottom of drawer.
+"Skriv til mig" CTA: full-width, rounded-full pill at bottom of drawer.
 
 ---
 
@@ -447,7 +447,7 @@ Production: Replace with real photography of Birgitte and the clinic.
 | Spiritual register | Present but not abstract — concrete and reassuring |
 | Headlines | Poetic, slightly philosophical ("Genfind roen i din krop") |
 | Body copy | Short paragraphs, plain language, empathetic |
-| CTAs | Action-oriented, never pushy ("Book tid", "Læs mere", "Tag afklaringstest") |
+| CTAs | Action-oriented, never pushy ("Skriv til mig", "Læs mere", "Tag afklaringstest") |
 | Avoid | Jargon, bullet-point overload, cold/corporate tone |
 
 ---
@@ -473,7 +473,7 @@ kontakt.html        ← Kontakt
 ### Desktop
 
 ```
-[Logo]   Ydelser ▾   Stresstest   Om os   Kontakt   [Book tid →]
+[Logo]   Ydelser ▾   Stresstest   Om os   Kontakt   [Skriv til mig →]
               ├ Fysioterapi
               ├ Børnefysioterapi
               ├ Yoga
@@ -498,7 +498,7 @@ kontakt.html        ← Kontakt
   Kontakt
 
   ──────────────────
-  [ Book tid ]      ← full-width pill CTA
+  [ Skriv til mig ] ← full-width pill CTA
 ```
 
 ---
