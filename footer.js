@@ -72,7 +72,7 @@
       + '<li><a href="priser.html" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Priser</a></li>'
       + '<li><a href="stresstest.html" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Stresstest</a></li>'
       + '<li><a href="kontakt.html" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Kontakt</a></li>'
-      + '<li><a href="kontakt.html" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Book tid</a></li>'
+      + '<li><a href="kontakt.html" style="color:#c4b0df; font-size:0.95rem; text-decoration:none;" onmouseover="this.style.color=\'#fff\'" onmouseout="this.style.color=\'#c4b0df\'">Skriv til mig</a></li>'
       + '</ul>'
       + '</div>'
 
@@ -142,8 +142,8 @@
         footer: {
           tagline: 'Fra hjerte til hjerte.\nHolistisk terapi og undervisning\ni N\u00e6stved.',
           cta_heading: 'Klar til at tage det f\u00f8rste skridt?',
-          cta_subtext: 'Book en uforpligtende samtale \u2014 jeg svarer inden for 24 timer.',
-          cta_button: 'Book tid nu',
+          cta_subtext: 'Skriv til mig om en uforpligtende samtale \u2014 jeg svarer inden for 24 timer.',
+          cta_button: 'Kontakt mig her',
           copyright: '\u00a9 2026 Skovgaard Yoga- & Fysioterapi \u00b7 CVR 26002680',
           credit: 'Designet og udviklet i Danmark'
         }
