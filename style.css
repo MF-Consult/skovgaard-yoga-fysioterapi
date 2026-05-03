@@ -654,12 +654,13 @@ header.scrolled {
   font-style: italic;
   font-size: clamp(3rem, 5vw, 4.5rem);
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.15;
+  padding-bottom: 0.1em;
 }
 
-.result-score-number.lavt    { color: #10b981; }
-.result-score-number.moderat { color: #d97706; }
-.result-score-number.hoejt   { color: #ef4444; }
+.result-score-number.lavt    { color: #16a34a; }
+.result-score-number.moderat { color: #ca8a04; }
+.result-score-number.hoejt   { color: #dc2626; }
 
 /* Result score meter bar */
 .score-meter-wrap {
@@ -677,9 +678,9 @@ header.scrolled {
   transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.score-meter-fill.lavt    { background: linear-gradient(90deg, #34d399, #10b981); }
-.score-meter-fill.moderat { background: linear-gradient(90deg, #fbbf24, #f59e0b); }
-.score-meter-fill.hoejt   { background: linear-gradient(90deg, #f87171, #ef4444); }
+.score-meter-fill.lavt    { background: linear-gradient(90deg, #4ade80, #16a34a); }
+.score-meter-fill.moderat { background: linear-gradient(90deg, #fde047, #eab308); }
+.score-meter-fill.hoejt   { background: linear-gradient(90deg, #f87171, #dc2626); }
 
 /* Keep old result-badge for any fallback references */
 .result-badge {
@@ -691,6 +692,6 @@ header.scrolled {
   letter-spacing: 0.02em;
 }
 
-.result-badge.lavt    { background: #10b981; color: white; }
-.result-badge.moderat { background: #f59e0b; color: white; }
-.result-badge.hoejt   { background: #ef4444; color: white; }
+.result-badge.lavt    { background: #16a34a; color: white; }
+.result-badge.moderat { background: #eab308; color: white; }
+.result-badge.hoejt   { background: #dc2626; color: white; }
