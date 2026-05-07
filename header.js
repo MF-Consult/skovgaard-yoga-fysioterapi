@@ -71,7 +71,7 @@
           <a href="gifted.html">Høj Begavelse</a>
           <a href="fysioterapi.html">Fysioterapi</a>
           <a href="boern.html">Børnefysioterapi</a>
-          <a href="yoga.html">Yoga</a>
+          <a href="yoga.html">Yogaterapi</a>
           <a href="konsulent.html">Ekstern konsulent</a>
         </div>
         ${drawerLink('stresstest.html', 'Stresstest')}

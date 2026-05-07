@@ -1,6 +1,6 @@
 {
   "hero": {
-    "label": "Specialisering",
+    "label": "Ydelser",
     "heading": "Høj Begavelse",
     "tagline": "Et fristed for det intensive sind — hvor der er plads til at være præcis den, du er.",
     "bg_image": "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=2000"
@@ -19,7 +19,7 @@
     "li1": "Specielt tilrettelagte workshops",
     "li2": "Teknikker til selvregulering",
     "li3": "Fokus på succesoplevelser og kropslig mestring",
-    "cta": "Kontakt mig her"
+    "cta": "Spørg om workshops"
   },
   "adults": {
     "label": "For voksne",
@@ -27,7 +27,7 @@
     "image": "/Assets/old_phone.png",
     "para1": "Voksne højt begavede kan ofte føle sig presset af systemer eller forventninger, der ikke tager højde for deres måde at være i verden på og dermed heller ikke passer til deres behov for at kunne trives.\n\nIndividuelle forløb hos mig giver dig bedre indsigt i dit eget nervesystem og du får konkrete teknikker, som du kan bruge med det samme i din hverdag, for at skabe ro i dit nervesystem og dermed bedre selv kan skabe de små nødvendige pauser, hvor du kommer rigtigt ned i gear.",
     "para2": "Vi arbejder med kropsbevidsthed, åndedrætsteknikker, blide dynamiske bevægelser, afspænding, meditation og ikke mindst den vigtige samtale for at komme bedst muligt rundt om hele dig.",
-    "cta": "Kontakt mig her"
+    "cta": "Send en besked"
   },
   "parents": {
     "parent_title": "Støtte til forældre",
@@ -39,6 +39,6 @@
   "cta": {
     "heading": "Lad os skabe roen sammen",
     "body": "Uanset om du er barn, ung eller voksen, er du velkommen her.\n\nKontakt mig gerne for en uforpligtende samtale om, hvordan jeg kan hjælpe dig eller dit barn.",
-    "button": "Kontakt mig her"
+    "button": "Kontakt mig nu"
   }
 }

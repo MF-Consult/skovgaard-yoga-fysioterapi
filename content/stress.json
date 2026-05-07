@@ -1,6 +1,6 @@
 {
   "hero": {
-    "label": "Ydelser (Privat)",
+    "label": "Ydelser",
     "heading": "Stressforløb (Privat)",
     "tagline": "Redskaber til at finde ro, når nervesystemet er på overarbejde.",
     "bg_image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=2000"
@@ -19,7 +19,7 @@
     "sign1": "Du sover dårligt og vågner udmattet, selvom du har sovet nok timer.",
     "sign2": "Du har svært ved at koncentrere dig og glemmer ting, du normalt husker.",
     "sign3": "Du føler dig konstant på vagt og kan ikke slappe af, selv når du har fri.",
-    "sign4": "Kroppen giver tegn: spændinger, hovedpine, hjertebanken eller maveproblemer.",
+    "sign4": "Kroppen giver tegn: Spændinger, hovedpine, hjertebanken eller maveproblemer.",
     "sign5": "Du har mistet glæden ved ting, du normalt holder af."
   },
   "approach": {
